@@ -1,0 +1,11 @@
+jupyter
+jupyter-book
+scipy
+matplotlib
+sklearn
+pandas
+friendly
+otter-grader
+ipyturtle
+RISE
+jupyter_contrib_nbextensions
