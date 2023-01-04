@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: "ENGR 131: Winter 2022: Introductory Programming for Engineers"
+title: "ENGR 131: Winter 2023: Introductory Programming for Engineers"
 author: Shannon Capps and Joshua C. Agar
 logo: jupyterbook/assets/Drexel_Vertical stacked_Lockup_HEX.png
 
@@ -22,7 +22,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/jagar2/Winter_2023_ENGR_131 # Online location of your book
+  url: https://github.com/DrexelEngineering/ENGR131_W2023 # Online location of your book
   branch: main # Which branch of the repository should be used when creating links (optional)
   # path_to_book: jupyterbook # Optional path to your book, relative to the repository root
 
