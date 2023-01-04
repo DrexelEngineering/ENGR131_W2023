@@ -34,5 +34,6 @@ html:
 
 # Adds colab button to book
 launch_buttons:
+  notebook_interface: "jupyterlab"
   colab_url: "https://colab.research.google.com"
   jupyterhub_url: "https://jupyterhub.coe.drexel.edu"
