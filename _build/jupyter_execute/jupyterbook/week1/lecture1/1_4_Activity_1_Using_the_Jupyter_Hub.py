@@ -22,5 +22,3 @@
 # 8. Press "Shift + Enter" to execute the code in the cell. You should see the output.
 # 
 # That's it! You have now created a simple "Hello, World!" assignment in JupyterHub.
-
-# 

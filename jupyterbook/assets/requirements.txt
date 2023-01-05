@@ -2,10 +2,11 @@ jupyter
 jupyter-book
 scipy
 matplotlib
-sklearn
+scikit-learn
 pandas
 friendly
 otter-grader
 ipyturtle
 RISE
 jupyter_contrib_nbextensions
+scikit-image
