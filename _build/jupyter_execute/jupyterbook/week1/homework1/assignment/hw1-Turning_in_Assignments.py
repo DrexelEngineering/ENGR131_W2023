@@ -6,7 +6,7 @@
 
 # Initialize Otter
 import otter
-grader = otter.Notebook("hw1-Turning_in_Assignments.ipynb")
+grader = otter.Notebook("hw1-turning_in_assignments.ipynb")
 
 
 # # Homework 1 - Using Jupyter and Turning in Assignments
@@ -175,15 +175,17 @@ grader = otter.Notebook("hw1-Turning_in_Assignments.ipynb")
 # ```
 # 
 # 3. As you can see we have used `#` to add comments to the code. This is an important part of your assignments and grade. Comments show us that you not only completed the assignments but understand the code. 
-# 4. The following code has 3 problems which need to be fixed so that it can run. We would like you to get comfortable reading error messages and using the `friendly.jupyter` to help you discover your errors. There are small errors or corrections that need to be made on lines 6, 11, and 124. 
+# 4. The following code has 3 problems which need to be fixed so that it can run. We would like you to get comfortable reading error messages and using the `friendly.jupyter` to help you discover your errors. There are small errors or corrections that need to be made on lines 5, 25, and 130. 
 # 
-# Hint: you can simply view the line numbers by pressing `shift + l` when in a cell. 
+# Hint: you can simply view the line numbers by pressing `shift + l` when in a cell. You can toggle between typing and edit mode using the `esc` key.
 # 
-# 5. We would like you to call the `build_image` function to produce your image. You do this by typing `build_image("Your Name")` into a new cell after running the copied code. You replace \<Your Name\> with your actual name. Make sure your name is in `"` as this defines a string of characters in python. 
+# 5. You need to instantiate the the class by typing `shirt =  your_branded_shirt()`
+# 
+# 6. We would like you to call the `shirt.build_image` function to produce your image. You do this by typing `shirt.build_image("Your Name")` into a new cell after running the copied code. You replace \<Your Name\> with your actual name. Make sure your name is in `"` as this defines a string of characters in python. 
 # 
 # Hint: cells can be run by pressing `shift` + `enter`
 # 
-# 1. We would like you to download the `.ipynb` file and your image from the jupyter hub. Please upload these files to bblearn for grading. 
+# 7. We would like you to download the `.ipynb` file and your image from the jupyter hub. Please upload these files to bblearn for grading. 
 # 
 # Because of the size of the class we are using autograding technologies to assist with grading. Thus ensuring that your files match the naming convention is critical to receiving credit. 
 # 
@@ -206,7 +208,6 @@ from friendly.jupyter import *
 # Paste your code here
 
 ...
-
 
 
 # In[3]:
