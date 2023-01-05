@@ -11,3 +11,5 @@ RISE
 jupyter_contrib_nbextensions
 scikit-image
 mobilechelonian
+pytorch
+sympy
