@@ -11,7 +11,7 @@ RISE
 jupyter_contrib_nbextensions
 scikit-image
 mobilechelonian
-pytorch
+torch
 sympy
 wget
 opencv-python
