@@ -6,10 +6,10 @@
 # * Programming allows you to automate analysis of data, control systems, and efficiently visualize information
 # 
 
-# * Many of your fellow colleagues might have less programming skills than you do, this will make you a valued resource
+# * Many of your fellow colleagues might have less programming skills than you do, which could make you a valued resource
 # 
 
-# * Knowing programming allows you to customize, and modify software and hardware. 
+# * Knowing programming allows you to customize and modify software and hardware. 
 
 # ## Chemical and Biomolecular Engineering
 # 
@@ -25,7 +25,13 @@ IFrame("https://alphafold.ebi.ac.uk/entry/A0A5E8GAP1", width=800, height=1200)
 
 # ## Civil and Environmental Engineering
 
-# @Shannon, Could you add one here
+# Forecasting air quality to help those who might be affected by air pollution make informed choices.
+
+# In[2]:
+
+
+IFrame("https://airquality.weather.gov/#",width=1200,height=800)
+
 
 # ## Electrical and Computer Engineering
 
@@ -37,7 +43,7 @@ IFrame("https://alphafold.ebi.ac.uk/entry/A0A5E8GAP1", width=800, height=1200)
 # 
 # Creating interactive dashboards and visualizations
 
-# In[2]:
+# In[3]:
 
 
 IFrame("https://ourworldindata.org/grapher/total-cases-covid-19?tab=map", width=800, height=800)
@@ -47,7 +53,7 @@ IFrame("https://ourworldindata.org/grapher/total-cases-covid-19?tab=map", width=
 # 
 # Discovering new Materials
 
-# In[3]:
+# In[4]:
 
 
 IFrame("https://materialsproject.org/materials/mp-1106215?chemsys=Pb-Ti-O", width=800, height=800)
@@ -57,15 +63,19 @@ IFrame("https://materialsproject.org/materials/mp-1106215?chemsys=Pb-Ti-O", widt
 # 
 # Robotics and control systems
 
-# In[4]:
+# In[5]:
 
 
 IFrame('https://www.youtube.com/embed/x4O8pojMF0w', width=800, height=400)
 
 
+# # Survey to Understand your Understanding
+# 
+# Please complete [this brief survey](https://forms.office.com/r/zre0PErg8A) before we proceed with learning more about programming with python.
+
 # # Other Cool Applications AI and Machine Learning
 
-# In[5]:
+# In[6]:
 
 
 IFrame('https://www.youtube.com/embed/UuhECwm31dM', width=800, height=400)

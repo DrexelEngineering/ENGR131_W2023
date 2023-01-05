@@ -197,7 +197,7 @@ print(Drexel("Arts and Sciences"))
 # In[10]:
 
 
-get_ipython().run_cell_magic('writefile', 'drexel.py', '\ndef Drexel(name):\n    return "I, " + name + " am a Drexel Dragon"\n')
+get_ipython().run_cell_magic('writefile', 'drexel.py', '\ndef Drexel(name):\n    return "I, " + name + " am a Drexel Dragon"')
 
 
 # In[11]:
@@ -221,7 +221,7 @@ Drexel.Drexel("Jay")
 # In[13]:
 
 
-get_ipython().run_cell_magic('writefile', 'drexel.py', '\ndef Drexel(name):\n    return "I, " + name + " am a Drexel Dragon Engineer!!"\n')
+get_ipython().run_cell_magic('writefile', 'drexel.py', '\ndef Drexel(name):\n    return "I, " + name + " am a Drexel Dragon Engineer!!"')
 
 
 # Using `importlib.reload` to reload the module. 

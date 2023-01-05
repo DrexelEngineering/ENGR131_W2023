@@ -34,7 +34,9 @@
 # 
 # ![](figs/loging_Jhub.png)
 # 
-# Type your Drexel University Username and Password
+# Type your Drexel University email address (example abc123@drexel.edu) and Password
+# 
+# Throughout the course we will provide you with other credentials. These are considered public credentials and should not be used for storing your personal work (just team projects).
 
 # ## Computing Requirements for ENGR 131
 # 

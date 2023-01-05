@@ -3,6 +3,8 @@
 
 # # Activity: Hello World JupyterHub
 # 
+# Please share with the instructors something about yourself and your neighbor in [this brief form](https://forms.office.com/r/3PCDmYRyAm) before proceeding.
+# 
 # Here are the steps to create a "Hello, World!" assignment in JupyterHub:
 # 
 # 1. Check your email, we have sent you an email with your group, user name, seating assignments, token, and password
@@ -22,3 +24,5 @@
 # 8. Press "Shift + Enter" to execute the code in the cell. You should see the output.
 # 
 # That's it! You have now created a simple "Hello, World!" assignment in JupyterHub.
+
+# 

@@ -105,9 +105,3 @@ while x < 1000:
 
 turtle.exitonclick()
 
-
-# In[ ]:
-
-
-
-
