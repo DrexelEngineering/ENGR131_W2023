@@ -25,4 +25,4 @@ parts:
           - file: jupyterbook/week1/lecture1/1_8_Programming_Basics
           - file: jupyterbook/week1/lecture1/1_9_Modules_and_Packages
       - file: jupyterbook/week1/homework1/assignment/hw1-turning_in_assignments
-#     - file: jupyterbook/week1/lab1/lab1-randomization
+      - file: jupyterbook/week1/lab1/lab1-randomization
