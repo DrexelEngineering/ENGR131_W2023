@@ -24,5 +24,7 @@ parts:
           - file: jupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub
           - file: jupyterbook/week1/lecture1/1_8_Programming_Basics
           - file: jupyterbook/week1/lecture1/1_9_Modules_and_Packages
+          - file: jupyterbook/week1/lecture1/1_10_Variables
+          - file: jupyterbook/week1/lecture1/1_11_Operators
       - file: jupyterbook/week1/homework1/assignment/hw1-turning_in_assignments
       - file: jupyterbook/week1/lab1/lab1-randomization

@@ -12,9 +12,3 @@ HTML('<iframe src="https://drexel0-my.sharepoint.com/personal/jca92_drexel_edu/_
 
 
 # [Direct Link]( https://drexel0-my.sharepoint.com/:p:/g/personal/jca92_drexel_edu/EQY_rcGHdp5AlDXUk7WXGhUBsrIOExSzdIS8-IiLFX63tg)
-
-# In[ ]:
-
-
-
-
