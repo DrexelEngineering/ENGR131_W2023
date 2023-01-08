@@ -18,6 +18,7 @@ parts:
           - file: jupyterbook/week1/lecture1/1_1_Why_Coding_is_the_most_important_skill
           - file: jupyterbook/week1/lecture1/1_2_Who_is_Prof_Capps
           - file: jupyterbook/week1/lecture1/1_3_Who_is_Prof_Agar
+          - file: jupyterbook/week1/lecture1/engr131_instructors
           - file: jupyterbook/week1/lecture1/1_4_Activity_1_Using_the_Jupyter_Hub
           - file: jupyterbook/week1/lecture1/1_5_Introduction_to_Python
           - file: jupyterbook/week1/lecture1/1_6_Accessing_Course_Content
