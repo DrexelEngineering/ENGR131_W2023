@@ -6,6 +6,18 @@
 # In[1]:
 
 
-from IPython.display import IFrame
-IFrame('https://www.dropbox.com/s/vtjughp8606xd8l/selfIntroCapps.pdf?dl=0', width=800, height=500)
+from IPython.display import IFrame, HTML
+HTML('<iframe src="https://www.slideshare.net/slideshow/embed_code/key/5sXsJnjgYYqrIz?hostedIn=slideshare&page=upload" width="1200" height="800" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')
+
+
+# In[9]:
+
+
+
+
+
+# In[ ]:
+
+
+
 

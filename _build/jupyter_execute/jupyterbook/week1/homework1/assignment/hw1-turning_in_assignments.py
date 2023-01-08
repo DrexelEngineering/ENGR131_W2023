@@ -9,7 +9,7 @@ import otter
 grader = otter.Notebook("hw1-turning_in_assignments.ipynb")
 
 
-# # Homework 1 - Using Jupyter and Turning in Assignments
+# # Homework 1 🏡📝 - Using Jupyter and Turning in Assignments
 # 
 # In this class we will be using Jupyter Notebooks for completing homeworks. This homework assignment will make sure you are comfortable using these tools. 
 # 

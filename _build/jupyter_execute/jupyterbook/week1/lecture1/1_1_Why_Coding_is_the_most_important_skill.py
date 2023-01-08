@@ -30,7 +30,7 @@ IFrame("https://alphafold.ebi.ac.uk/entry/A0A5E8GAP1", width=800, height=1200)
 # In[2]:
 
 
-IFrame("https://airquality.weather.gov/#",width=1200,height=800)
+IFrame("https://airquality.weather.gov/#",width=800,height=800)
 
 
 # ## Electrical and Computer Engineering
