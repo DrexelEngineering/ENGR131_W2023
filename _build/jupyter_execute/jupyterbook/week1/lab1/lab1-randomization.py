@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Lab 1: Commenting Code 🧪🖥
+# # 🧪🖥 Lab 1: Commenting Code 
 # 
 # As an engineer, it is important to not only be able to write code, but also to read and understand code written by others. One way to improve your understanding of someone else's code is by adding comments to the code.
 # 
@@ -121,7 +121,7 @@ if len(student_list) % num_groups == 0:
 
     group_sizes = [group_size] * num_groups
 
-elif len(student_list) % num_groups <= group_size * .8:
+else:
     group_sizes = [group_size] * (num_groups - (len(student_list) % num_groups)) + [
         group_size + 1] * (len(student_list) % num_groups)
 
@@ -176,7 +176,7 @@ for week in range(num_of_weeks):
 
 # ## Print out the groups
 
-# In[7]:
+# In[ ]:
 
 
 for week in week_list:

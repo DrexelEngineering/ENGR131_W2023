@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Activity: Hello World JupyterHub
+# # 💻 Activity: Hello World JupyterHub
 # 
 # Please share with the instructors something about yourself and your neighbor in [this brief form](https://forms.office.com/r/3PCDmYRyAm) before proceeding.
 # 

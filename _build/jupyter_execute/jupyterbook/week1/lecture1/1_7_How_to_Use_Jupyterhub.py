@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # How to Use JupyterHub
+# # 📝 How to Use JupyterHub
 
 # There are a variety of ways that you can use, program, and interact with Python. All have their advantages and disadvantages.
 # 
@@ -42,7 +42,7 @@
 # 
 # When you login to the JupyterHub all of the computation is conducted on a remote server. You can access the JupyterHub on any laptop with a web browser (Windows, Mac, Linux, Chromebook). You can even access the JupyterHub from a tablet or phone. 
 # 
-# If you have concerns about access to computing resources please contact Prof. [Capps](mailto:shannon.capps@drexel.edu), or Prof. [Agar](mailto:jca92@drexel.edu)
+# If you have concerns about access to computing resources please contact Prof. [Capps](mailto:engr131w23@drexel.edu), or Prof. [Agar](mailto:engr131w23@drexel.edu)
 
 # ### JupyterLab Interface
 

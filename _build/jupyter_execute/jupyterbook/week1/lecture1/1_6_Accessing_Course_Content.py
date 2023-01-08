@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Accessing Course Content
+# # 📝 Accessing Course Content
 # 
 
 # 

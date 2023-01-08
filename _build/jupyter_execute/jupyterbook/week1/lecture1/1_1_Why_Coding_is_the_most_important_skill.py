@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Why Computer Programming is an Essential Skill
+# # 📝 Why Computer Programming is an Essential Skill
 
 # * Programming allows you to automate analysis of data, control systems, and efficiently visualize information
 # 

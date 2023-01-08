@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Why Python?
+# # 📝Why Python?
 
 # * Engineers need to be proficient in programming to work smarter not harder
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Variables and Objects
+# # 📝 Variables and Objects
 
 # Variables are containers for storing data values.
 # 

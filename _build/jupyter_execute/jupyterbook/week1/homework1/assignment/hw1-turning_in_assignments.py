@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 # Initialize Otter
@@ -9,7 +9,7 @@ import otter
 grader = otter.Notebook("hw1-turning_in_assignments.ipynb")
 
 
-# # Homework 1 🏡📝 - Using Jupyter and Turning in Assignments
+# # 🏡📝 Homework 1  - Using Jupyter and Turning in Assignments
 # 
 # In this class we will be using Jupyter Notebooks for completing homeworks. This homework assignment will make sure you are comfortable using these tools. 
 # 
@@ -202,7 +202,7 @@ from friendly.jupyter import *
 # 
 # 
 
-# In[2]:
+# In[ ]:
 
 
 # Paste your code here
@@ -210,7 +210,7 @@ from friendly.jupyter import *
 ...
 
 
-# In[3]:
+# In[ ]:
 
 
 # Your command to run build image goes here
@@ -218,7 +218,7 @@ from friendly.jupyter import *
 ...
 
 
-# In[4]:
+# In[ ]:
 
 
 grader.check("q1-Make Your Branded Shirt")

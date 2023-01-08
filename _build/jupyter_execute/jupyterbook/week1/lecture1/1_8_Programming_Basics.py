@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Programming Basics
+# # 📝Programming Basics
 
 # Printing `hello world` is not enough, is it? Computer programs provide us an interface with the digital world.
 
