@@ -1,0 +1,862 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>📝 How to Use JupyterHub &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="📝Programming Basics" href="1_8_Programming_Basics.html" />
+    <link rel="prev" title="📝 Accessing Course Content" href="1_6_Accessing_Course_Content.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/Drexel_Vertical stacked_Lockup_HEX.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">ENGR 131: Winter 2023: Introductory Programming for Engineers</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ENGR 131
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../course_documents/syllabus.html">
+   Syllabus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="lecture1.html">
+   👩‍🏫 Lecture
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference external" href="https://htmlpreview.github.io/?https://github.com/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week1/lecture1/figs/ENGR131_lecture_B_Week_1_seat_map.html">
+     🪑 Seat Map Section B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://htmlpreview.github.io/?https://github.com/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week1/lecture1/figs/ENGR131_lecture_C_Week_1_seat_map.html">
+     🪑 Seat Map Section C
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_1_Why_Coding_is_the_most_important_skill.html">
+     📝 Why Computer Programming is an Essential Skill
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_2_Who_is_Prof_Capps.html">
+     📝 Who is Professor Capps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_3_Who_is_Prof_Agar.html">
+     📝 Who is Professor Agar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="engr131_instructors.html">
+     Engineering 131 Winter 2023 Instructors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_4_Activity_1_Using_the_Jupyter_Hub.html">
+     💻 Activity: Hello World JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_5_Introduction_to_Python.html">
+     📝Why Python?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_6_Accessing_Course_Content.html">
+     📝 Accessing Course Content
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     📝 How to Use JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_8_Programming_Basics.html">
+     📝Programming Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_9_Modules_and_Packages.html">
+     📝Modules and Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_10_Variables.html">
+     📝 Variables and Objects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_11_Operators.html">
+     📝 Python Operators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_12_Activity_1_2.html">
+     💻 Activity: Practice with Variables and Operators
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../homework1/assignment/hw1-turning_in_assignments.html">
+   🏡📝 Homework 1  - Using Jupyter and Turning in Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab1/lab1-randomization.html">
+   🧪🖥 Lab 1: Commenting Code
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/jupyterbook/week1/lecture1/1_7_How_to_Use_Jupyterhub.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drexel-jupyterhub">
+   Drexel JupyterHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#connecting">
+     Connecting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-access-and-vpn">
+     Network Access and VPN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logging-in">
+     Logging In
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-requirements-for-engr-131">
+   Computing Requirements for ENGR 131
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyterlab-interface">
+     JupyterLab Interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menu-bar">
+     Menu Bar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#left-sidebar">
+     Left Sidebar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-sidebar">
+     Right Sidebar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#main-work-area">
+     Main Work Area
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navigating-tabs">
+     Navigating Tabs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#context-menus">
+     Context Menus
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supported-tasks-and-file-types">
+     Supported Tasks and File Types
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#terminal">
+       Terminal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebook">
+       Jupyter Notebook
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-editor">
+       Python Editor
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>📝 How to Use JupyterHub</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drexel-jupyterhub">
+   Drexel JupyterHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#connecting">
+     Connecting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-access-and-vpn">
+     Network Access and VPN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logging-in">
+     Logging In
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-requirements-for-engr-131">
+   Computing Requirements for ENGR 131
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyterlab-interface">
+     JupyterLab Interface
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menu-bar">
+     Menu Bar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#left-sidebar">
+     Left Sidebar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-sidebar">
+     Right Sidebar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#main-work-area">
+     Main Work Area
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navigating-tabs">
+     Navigating Tabs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#context-menus">
+     Context Menus
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supported-tasks-and-file-types">
+     Supported Tasks and File Types
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#terminal">
+       Terminal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebook">
+       Jupyter Notebook
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-editor">
+       Python Editor
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="how-to-use-jupyterhub">
+<h1>📝 How to Use JupyterHub<a class="headerlink" href="#how-to-use-jupyterhub" title="Permalink to this headline">#</a></h1>
+<p>There are a variety of ways that you can use, program, and interact with Python. All have their advantages and disadvantages.</p>
+<p>For this course we have set up a JupyterHub. This will be the supported computing platform for this course.</p>
+<section id="drexel-jupyterhub">
+<h2>Drexel JupyterHub<a class="headerlink" href="#drexel-jupyterhub" title="Permalink to this headline">#</a></h2>
+<section id="connecting">
+<h3>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">#</a></h3>
+<p>The JupyterHub can be accessed at <a class="reference external" href="https://jupyterhub.coe.drexel.edu">https://jupyterhub.coe.drexel.edu</a></p>
+</section>
+<section id="network-access-and-vpn">
+<h3>Network Access and VPN<a class="headerlink" href="#network-access-and-vpn" title="Permalink to this headline">#</a></h3>
+<p>To gain access you must be logged into the campus network Dragonfly3 or be connected to using the Drexel Virtual Private Network.</p>
+<div class="admonition tip alert alert-warning">
+<p class="first admonition-title" style="font-weight: bold;">Tip</p>
+If you do not have the VPN installed please follow the instructions at <href>https://drexel.edu/it/help/a-z/VPN/</href>
+</div></section>
+<section id="logging-in">
+<h3>Logging In<a class="headerlink" href="#logging-in" title="Permalink to this headline">#</a></h3>
+<p>When navigating to the website you will be presented with a login screen.</p>
+<p><img alt="" src="../../../_images/loging_Jhub.png" /></p>
+<p>Type your Drexel University email address (example <a class="reference external" href="mailto:abc123&#37;&#52;&#48;drexel&#46;edu">abc123<span>&#64;</span>drexel<span>&#46;</span>edu</a>) and Password</p>
+<p>Throughout the course we will provide you with other credentials. These are considered public credentials and should not be used for storing your personal work (just team projects).</p>
+</section>
+</section>
+<section id="computing-requirements-for-engr-131">
+<h2>Computing Requirements for ENGR 131<a class="headerlink" href="#computing-requirements-for-engr-131" title="Permalink to this headline">#</a></h2>
+<p>When you login to the JupyterHub all of the computation is conducted on a remote server. You can access the JupyterHub on any laptop with a web browser (Windows, Mac, Linux, Chromebook). You can even access the JupyterHub from a tablet or phone.</p>
+<p>If you have concerns about access to computing resources please contact Prof. <a class="reference external" href="mailto:engr131w23&#37;&#52;&#48;drexel&#46;edu">Capps</a>, or Prof. <a class="reference external" href="mailto:engr131w23&#37;&#52;&#48;drexel&#46;edu">Agar</a></p>
+<section id="jupyterlab-interface">
+<h3>JupyterLab Interface<a class="headerlink" href="#jupyterlab-interface" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="../../../_images/interface_jupyterlab.webp" /></p>
+<ul class="simple">
+<li><p>JupyterLab provides flexible building blocks for interactive, exploratory computing.</p></li>
+</ul>
+</section>
+<section id="menu-bar">
+<h3>Menu Bar<a class="headerlink" href="#menu-bar" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>File: actions related to files and directories</p></li>
+<li><p>Edit: actions related to editing documents and other activities</p></li>
+<li><p>View: actions that alter the appearance of JupyterLab</p></li>
+<li><p>Run: actions for running code in different activities such as notebooks and code consoles</p></li>
+<li><p>Kernel: actions for managing kernels, which are separate processes for running code</p></li>
+<li><p>Tabs: a list of the open documents and activities in the dock panel</p></li>
+<li><p>Settings: common settings and an advanced settings editor</p></li>
+<li><p>Help: a list of JupyterLab and kernel help links</p></li>
+</ul>
+</section>
+<section id="left-sidebar">
+<h3>Left Sidebar<a class="headerlink" href="#left-sidebar" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="../../../_images/interface_left.png" /></p>
+<p>The left sidebar contains a number of commonly-used tabs including:</p>
+<ul class="simple">
+<li><p>A file browser</p></li>
+<li><p>A list of tabs in the main work and of running kernels and terminals</p></li>
+<li><p>The command palette</p></li>
+<li><p>The <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/toc.html#toc">table of contents</a></p></li>
+<li><p>The <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html#extension-manager">extension manager</a></p></li>
+</ul>
+</section>
+<section id="right-sidebar">
+<h3>Right Sidebar<a class="headerlink" href="#right-sidebar" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="../../../_images/interface_right.png" /></p>
+<ul class="simple">
+<li><p>The property inspector (active in notebooks)</p></li>
+<li><p>The debugger</p></li>
+</ul>
+</section>
+<section id="main-work-area">
+<h3>Main Work Area<a class="headerlink" href="#main-work-area" title="Permalink to this headline">#</a></h3>
+<p>The main work area in JupyterLab enables you to arrange documents (notebooks, text files, etc.) and other activities (terminals, code consoles, etc.) into panels of tabs that can be resized or subdivided.</p>
+<p>Drag a tab to the center of a tab panel to move the tab to the panel. Subdivide a tab panel by dragging a tab to the left, right, top, or bottom of the panel:</p>
+</section>
+<section id="navigating-tabs">
+<h3>Navigating Tabs<a class="headerlink" href="#navigating-tabs" title="Permalink to this headline">#</a></h3>
+<p>The Tabs panel in the left sidebar lists the open documents or activities in the main work area:</p>
+<p><img alt="" src="../../../_images/interface_tabs.webp" /></p>
+<p>The same information is also available in the Tabs menu:</p>
+<p><img alt="" src="../../../_images/interface_tabs_menu.png" /></p>
+</section>
+<section id="context-menus">
+<h3>Context Menus<a class="headerlink" href="#context-menus" title="Permalink to this headline">#</a></h3>
+<p><img alt="" src="../../../_images/Context_Menu.png" /></p>
+<p>Context of files can be accessed using a right-click</p>
+</section>
+<section id="supported-tasks-and-file-types">
+<h3>Supported Tasks and File Types<a class="headerlink" href="#supported-tasks-and-file-types" title="Permalink to this headline">#</a></h3>
+<p>JupyerLab supports most standard file types. Most files can be opened directly within the browser.</p>
+<p>You will use many of the functionality inside JupyterLab</p>
+<section id="terminal">
+<h4>Terminal<a class="headerlink" href="#terminal" title="Permalink to this headline">#</a></h4>
+<p>You can access a terminal by clicking:</p>
+<p><img alt="" src="../../../_images/Terminal.png" /></p>
+<p>The terminal provides a command-line prompt. This allows you to provide text-based instructions to the computer.</p>
+<ul class="simple">
+<li><p>Nearly every operation on a computer can be done using the command line</p></li>
+<li><p>We will primarily use the terminal to interact with files and folders and run scripts.</p></li>
+</ul>
+</section>
+<section id="jupyter-notebook">
+<h4>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">#</a></h4>
+<p><img alt="" src="../../../_images/jupyter_notebook.png" /></p>
+<ul class="simple">
+<li><p>Jupyter Notebooks is an open-source interactive programming environments</p></li>
+<li><p>They work with more than 40 languages including Python</p></li>
+<li><p>Your code can produce rich, interactive output: HTML, images, videos, LaTeX, and custom MIME types</p></li>
+<li><p>Notebooks can be shared with others using email, Dropbox, GitHub and the Jupyter Notebook Viewer</p></li>
+</ul>
+</section>
+<section id="python-editor">
+<h4>Python Editor<a class="headerlink" href="#python-editor" title="Permalink to this headline">#</a></h4>
+<p><img alt="" src="../../../_images/Python_editor.png" /></p>
+<ul class="simple">
+<li><p>You can use JupyterLab as a interactive development environment to write Python files</p></li>
+<li><p>This allows you to make scripts and packages</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./jupyterbook/week1/lecture1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="1_6_Accessing_Course_Content.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">📝 Accessing Course Content</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="1_8_Programming_Basics.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">📝Programming Basics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Shannon Capps and Joshua C. Agar<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
