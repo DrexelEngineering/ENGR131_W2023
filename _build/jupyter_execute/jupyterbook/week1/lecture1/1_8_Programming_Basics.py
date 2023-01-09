@@ -17,7 +17,7 @@
 # **Ada Lovelace 1815**
 # 
 # 
-# ![](figs/Ada-Lovelace.webp)
+# ![](figs/Ada-Lovelace.png)
 # 
 # she wrote of one such sequence—how to calculate Bernoulli numbers
 # 
@@ -25,7 +25,7 @@
 # 
 # **Analytical Engine**
 # 
-# ![](figs/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.webp)
+# ![](figs/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.png)
 
 # ## Computational Thinking
 # 

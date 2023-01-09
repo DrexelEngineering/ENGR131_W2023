@@ -9,3 +9,6 @@
 7. {doc}`How to Use JupyterHub                              <./1_7_How_to_Use_Jupyterhub>`
 8. {doc}`Programming Basics                                 <./1_8_Programming_Basics>`
 9. {doc}`Modules and Packages                               <./1_9_Modules_and_Packages>`
+10. {doc}`Variables and Objects                             <./1_10_Variables>`
+11. {doc}`Operators and Assignment                          <./1_11_Operators>`
+13. {doc}`Activity 1-2: Using Variables, Operators, and Assignments  <./1_4_Activity_1_Using_the_Jupyter_Hub>`
