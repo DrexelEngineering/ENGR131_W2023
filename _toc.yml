@@ -10,6 +10,11 @@ parts:
     chapters:
       - file: jupyterbook/course_documents/syllabus
         title: "Syllabus"
+  - caption: "Resources"
+    chapters:
+      - file: jupyterbook/resources/resources
+        sections:
+          - file: jupyterbook/resources/peer_programming
   - caption: "Week 1\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week1/lecture1/lecture1
@@ -33,4 +38,5 @@ parts:
           - file: jupyterbook/week1/lecture1/1_11_Operators
           - file: jupyterbook/week1/lecture1/1_12_Activity_1_2
       - file: jupyterbook/week1/homework1/assignment/hw1-turning_in_assignments
+      - file: jupyterbook/week1/lab1/week_1_lab_intro
       - file: jupyterbook/week1/lab1/lab1-randomization
