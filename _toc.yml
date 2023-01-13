@@ -10,24 +10,14 @@ parts:
     chapters:
       - file: jupyterbook/course_documents/syllabus
         title: "Syllabus"
-  - caption: "Resources"
-    chapters:
-      - file: jupyterbook/resources/resources
-        sections:
-          - file: jupyterbook/resources/peer_programming
   - caption: "Week 1\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week1/lecture1/lecture1
-        title: "👩‍🏫 Lecture"
+        title: "Lecture 👩‍🏫"
         sections:
-          - url: https://htmlpreview.github.io/?https://github.com/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week1/lecture1/figs/ENGR131_lecture_B_Week_1_seat_map.html
-            title: 🪑 Seat Map Section B
-          - url: https://htmlpreview.github.io/?https://github.com/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week1/lecture1/figs/ENGR131_lecture_C_Week_1_seat_map.html
-            title: 🪑 Seat Map Section C
           - file: jupyterbook/week1/lecture1/1_1_Why_Coding_is_the_most_important_skill
           - file: jupyterbook/week1/lecture1/1_2_Who_is_Prof_Capps
           - file: jupyterbook/week1/lecture1/1_3_Who_is_Prof_Agar
-          - file: jupyterbook/week1/lecture1/engr131_instructors
           - file: jupyterbook/week1/lecture1/1_4_Activity_1_Using_the_Jupyter_Hub
           - file: jupyterbook/week1/lecture1/1_5_Introduction_to_Python
           - file: jupyterbook/week1/lecture1/1_6_Accessing_Course_Content
@@ -36,7 +26,9 @@ parts:
           - file: jupyterbook/week1/lecture1/1_9_Modules_and_Packages
           - file: jupyterbook/week1/lecture1/1_10_Variables
           - file: jupyterbook/week1/lecture1/1_11_Operators
-          - file: jupyterbook/week1/lecture1/1_12_Activity_1_2
       - file: jupyterbook/week1/homework1/assignment/hw1-turning_in_assignments
-      - file: jupyterbook/week1/lab1/week_1_lab_intro
+      - file: jupyterbook/week1/lab1/lab1-introduction
       - file: jupyterbook/week1/lab1/lab1-randomization
+  - caption: "Week 2\uFE0F\u20E3"
+    chapters:
+      - file: jupyterbook/week2/homework2/hw2-math
