@@ -10,6 +10,11 @@ parts:
     chapters:
       - file: jupyterbook/course_documents/syllabus
         title: "Syllabus"
+  - caption: "Resources"
+    chapters:
+      - file: jupyterbook/resources/resources
+        sections:
+          - file: jupyterbook/resources/peer_programming
   - caption: "Week 1\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week1/lecture1/lecture1

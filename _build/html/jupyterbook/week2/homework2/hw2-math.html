@@ -1,0 +1,1035 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Homework 2 &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="🧪🖥 Lab 1: Commenting Code" href="../../week1/lab1/lab1-randomization.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/Drexel_Vertical stacked_Lockup_HEX.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">ENGR 131: Winter 2023: Introductory Programming for Engineers</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ENGR 131
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../course_documents/syllabus.html">
+   Syllabus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../resources/resources.html">
+   Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../resources/peer_programming.html">
+     Peer Programing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week1/lecture1/lecture1.html">
+   Lecture 👩‍🏫
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_1_Why_Coding_is_the_most_important_skill.html">
+     📝 Why Computer Programming is an Essential Skill
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_2_Who_is_Prof_Capps.html">
+     📝 Who is Professor Capps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_3_Who_is_Prof_Agar.html">
+     📝 Who is Professor Agar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_4_Activity_1_Using_the_Jupyter_Hub.html">
+     💻 Activity: Hello World JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_5_Introduction_to_Python.html">
+     📝Why Python?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_6_Accessing_Course_Content.html">
+     📝 Accessing Course Content
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_7_How_to_Use_Jupyterhub.html">
+     📝 How to Use JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_8_Programming_Basics.html">
+     📝Programming Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_9_Modules_and_Packages.html">
+     📝Modules and Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_10_Variables.html">
+     📝 Variables and Objects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_11_Operators.html">
+     📝 Python Operators
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/homework1/assignment/hw1-turning_in_assignments.html">
+   🏡📝 Homework 1  - Using Jupyter and Turning in Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/lab1/lab1-randomization.html">
+   🧪🖥 Lab 1: Commenting Code
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 2
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week2/homework2/hw2-math.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week2/homework2/hw2-math.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week2/homework2/hw2-math.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week2/homework2/hw2-math.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/jupyterbook/week2/homework2/hw2-math.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Homework 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize Otter</span>
+<span class="kn">import</span> <span class="nn">otter</span>
+<span class="n">grader</span> <span class="o">=</span> <span class="n">otter</span><span class="o">.</span><span class="n">Notebook</span><span class="p">(</span><span class="s2">&quot;hw2-math.ipynb&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="homework-2">
+<h1>Homework 2<a class="headerlink" href="#homework-2" title="Permalink to this headline">#</a></h1>
+<p>This assignment will explore using python’s capabilities for mathematical calculations.</p>
+<p><strong>Question 1: Interest rate calculation</strong></p>
+<p>Let <span class="math notranslate nohighlight">\(r\)</span> be a bank’s interest rate in percent per year. An inital amount of money <span class="math notranslate nohighlight">\(P\)</span>, also called a principal, will mature to an amount of</p>
+<div class="math notranslate nohighlight">
+\[ P\left(1 + \frac{r}{100}\right)^{n} \]</div>
+<p>after <span class="math notranslate nohighlight">\(n\)</span> years have passed.</p>
+<p>Write python code to do the following:</p>
+<ul class="simple">
+<li><p>Define variables: <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">1000</span></code>, <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">=</span> <span class="pre">0.95</span></code>, and <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">5</span></code></p></li>
+<li><p>Calculate the interest rate based on the equation above</p></li>
+<li><p>Store the final value in a variable called <code class="docutils literal notranslate"><span class="pre">v</span></code></p></li>
+</ul>
+<p>Note: Your code should be indented under what’s called the function definition: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">question_1():</span></code>. This helps the autograder run all the code you write by calling a single name. (Functions will be taught in future weeks.).</p>
+<p>Note: Python cares about <strong>Tabs</strong> make sure the spacing is correct. If you get an <code class="docutils literal notranslate"><span class="pre">Indention</span> <span class="pre">Error</span></code> it likely means your spacing is not correct.</p>
+<p>Your solution should look like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">question</span> <span class="p">():</span>
+    <span class="n">line1</span> <span class="o">=</span> <span class="n">line1_code</span> <span class="c1"># line 1 of code</span>
+    <span class="n">line2</span> <span class="o">=</span> <span class="n">line2_code</span> <span class="c1"># line 2 of code</span>
+
+    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="c1"># variables to return seperated by commas</span>
+</pre></div>
+</div>
+<p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function called question_1 to be used for grading</span>
+<span class="k">def</span> <span class="nf">question_1</span><span class="p">():</span>
+
+    <span class="o">...</span>
+
+    <span class="c1"># The following line outputs these values from the function so that they can be accessed by the grader</span>
+    <span class="k">return</span> <span class="n">P</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q1-interest&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q1-interest</pre> results:</strong></p><p><strong><pre style='display: inline;'>q1-interest - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q1-interest - 1</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        P, r, n, v = question_1()
+    Expecting nothing
+    **********************************************************************
+    Line 2, in q1-interest 0
+    Failed example:
+        P, r, n, v = question_1()
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q1-interest 0[0]>", line 1, in <module>
+            P, r, n, v = question_1()
+          File "/tmp/ipykernel_3098/775359423.py", line 7, in question_1
+            return P, r, n, v
+        NameError: name 'P' is not defined
+    Trying:
+        assert P == 1000 and r == 0.95 and n == 5
+    Expecting nothing
+    **********************************************************************
+    Line 4, in q1-interest 0
+    Failed example:
+        assert P == 1000 and r == 0.95 and n == 5
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q1-interest 0[1]>", line 1, in <module>
+            assert P == 1000 and r == 0.95 and n == 5
+        NameError: name 'P' is not defined
+</pre><p><strong><pre style='display: inline;'>q1-interest - 2</pre> message:</strong> Final answer is incorrect.</p><p><strong><pre style='display: inline;'>q1-interest - 2</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        P, r, n, v = question_1()
+    Expecting nothing
+    **********************************************************************
+    Line 3, in q1-interest 1
+    Failed example:
+        P, r, n, v = question_1()
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q1-interest 1[1]>", line 1, in <module>
+            P, r, n, v = question_1()
+          File "/tmp/ipykernel_3098/775359423.py", line 7, in question_1
+            return P, r, n, v
+        NameError: name 'P' is not defined
+    Trying:
+        assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
+    Expecting nothing
+    **********************************************************************
+    Line 5, in q1-interest 1
+    Failed example:
+        assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q1-interest 1[2]>", line 1, in <module>
+            assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
+        NameError: name 'P' is not defined
+</pre></div></div>
+</div>
+<p><strong>Question 2: Musical note frequencies</strong></p>
+<p>On a piano, each key has a fundamental frequency <span class="math notranslate nohighlight">\(f\)</span>. Each higher key (black or white) has a fundamental frequency of</p>
+<div class="math notranslate nohighlight">
+\[ f * 2^{(\frac{n}{12})} \]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> is the distance away from the starting key. The key <span class="math notranslate nohighlight">\(A_4\)</span>, near the center of the piano keyboard, has a fundamental frequency of 440 Hz. Your task is to calculate the fundamental frequency of <span class="math notranslate nohighlight">\(D_5\)</span>, which is 5 keys higher.</p>
+<p>Write python code to do the following:</p>
+<ul class="simple">
+<li><p>Define variables: <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">440</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">5</span></code></p></li>
+<li><p>Calculate the interest rate based on the equation above</p></li>
+<li><p>Store the frequency of <span class="math notranslate nohighlight">\(D_5\)</span> in a variable called <code class="docutils literal notranslate"><span class="pre">d</span></code></p></li>
+</ul>
+<p>Again, your code should be indented under the function definition: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">question_2():</span></code>.</p>
+<p>Your code replaces the prompt: <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function called question_2 to be used for grading</span>
+<span class="k">def</span> <span class="nf">question_2</span><span class="p">():</span>
+
+    <span class="o">...</span>
+
+    <span class="c1"># output these values from the function so that they can be accessed by the grader</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q2-music&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q2-music</pre> results:</strong></p><p><strong><pre style='display: inline;'>q2-music - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q2-music - 1</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        f, n, d = question_2()
+    Expecting nothing
+    **********************************************************************
+    Line 1, in q2-music 0
+    Failed example:
+        f, n, d = question_2()
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q2-music 0[0]>", line 1, in <module>
+            f, n, d = question_2()
+          File "/tmp/ipykernel_3098/810543486.py", line 7, in question_2
+            return f, n, d
+        NameError: name 'f' is not defined
+    Trying:
+        assert f == 440 and n == 5
+    Expecting nothing
+    **********************************************************************
+    Line 3, in q2-music 0
+    Failed example:
+        assert f == 440 and n == 5
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q2-music 0[1]>", line 1, in <module>
+            assert f == 440 and n == 5
+        NameError: name 'f' is not defined
+</pre><p><strong><pre style='display: inline;'>q2-music - 2</pre> message:</strong> Final answer is incorrect.</p><p><strong><pre style='display: inline;'>q2-music - 2</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        f, n, d = question_2()
+    Expecting nothing
+    **********************************************************************
+    Line 2, in q2-music 1
+    Failed example:
+        f, n, d = question_2()
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q2-music 1[1]>", line 1, in <module>
+            f, n, d = question_2()
+          File "/tmp/ipykernel_3098/810543486.py", line 7, in question_2
+            return f, n, d
+        NameError: name 'f' is not defined
+    Trying:
+        assert np.isclose(sum([f,n,d]),1032.329535834815)
+    Expecting nothing
+    **********************************************************************
+    Line 4, in q2-music 1
+    Failed example:
+        assert np.isclose(sum([f,n,d]),1032.329535834815)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q2-music 1[2]>", line 1, in <module>
+            assert np.isclose(sum([f,n,d]),1032.329535834815)
+        NameError: name 'f' is not defined
+</pre></div></div>
+</div>
+<p><strong>Question 3: Using Python as a calculator</strong></p>
+<p>We have seen how Python can be used to evaluate mathematical expressions. This problem provides practice incorporating various mathematical functions and constants.</p>
+<p>Write python code to do the following:</p>
+<ul class="simple">
+<li><p>Define variables: <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">=</span> <span class="pre">-6</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">4</span></code>, and <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">2</span></code></p></li>
+<li><p>For each of the quantities <span class="math notranslate nohighlight">\(E_0\)</span> through <span class="math notranslate nohighlight">\(E_7\)</span>, construct a one-line Python expression that computes the value and assigns it to a variable. (You should perform your computations using the variable names <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> instead of their numerical values). In Python, we will use variable names <code class="docutils literal notranslate"><span class="pre">E0</span></code> through <code class="docutils literal notranslate"><span class="pre">E7</span></code> to store the values <span class="math notranslate nohighlight">\(E_0\)</span> through <span class="math notranslate nohighlight">\(E_7\)</span>. Definitions of the variables <code class="docutils literal notranslate"><span class="pre">E0</span></code> through <code class="docutils literal notranslate"><span class="pre">E7</span></code> have been started for you in the template.</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\text{i.  } E_0 = \sqrt{a^2+b^2+c^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{ii.  } E_1 = \ln(3x-a)\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{iii.  } E_2 = \log_{10} \left(3 \left|x\right|+\frac{c}{5} \right)\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{iv.  } E_3 = \left( ax+\frac{ab}{c} \right)^{1/3}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{v.  } E_4 = \frac{x^2+1}{(ax-1)\left|b-e^x\right|}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{vi.  }  E_5 = \left( cos \left( \frac{\sqrt{a}}{3}\pi \right) \right)^2+\cos \left( \frac{\sqrt{a}}{3}\pi \right)^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{vii.  }  E_6 = \arccos(\cos(x))\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{viii.  }  E_7 = \frac{a+2c}{\sin \left( \frac{b+2c}{\sqrt{a^2+b^2+c^2}} \right) }\)</span></p>
+<p>You should use the <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> library for the required mathematical functions. You can discover the necessary functions using the <a class="reference external" href="https://numpy.org/doc/stable/reference/">Numpy Documentation</a></p>
+<p>We have used the standard <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> convention <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></code>, thus, for example the <code class="docutils literal notranslate"><span class="pre">cos</span></code> function is used by typing <code class="docutils literal notranslate"><span class="pre">np.cos(&lt;value&gt;)</span></code></p>
+<p>Again, your code should be indented under the function definition: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">question_3():</span></code>.</p>
+<p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the np library to be used</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># define a function called question_3 to be used for grading</span>
+<span class="k">def</span> <span class="nf">question_3</span><span class="p">():</span>
+
+    <span class="n">a</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="o">...</span>
+
+    <span class="n">E0</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E1</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E2</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E3</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E4</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E5</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E6</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="n">E7</span> <span class="o">=</span> <span class="o">...</span>
+
+    <span class="c1"># output these values from the function so that they can be accessed by the grader</span>
+    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">E0</span><span class="p">,</span> <span class="n">E1</span><span class="p">,</span> <span class="n">E2</span><span class="p">,</span> <span class="n">E3</span><span class="p">,</span> <span class="n">E4</span><span class="p">,</span> <span class="n">E5</span><span class="p">,</span> <span class="n">E6</span><span class="p">,</span> <span class="n">E7</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q3-calculator&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q3-calculator</pre> results:</strong></p><p><strong><pre style='display: inline;'>q3-calculator - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q3-calculator - 1</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert a == 3 and b == -6.0 and c == 4 and x == 2
+    Expecting nothing
+    **********************************************************************
+    Line 3, in q3-calculator 0
+    Failed example:
+        assert a == 3 and b == -6.0 and c == 4 and x == 2
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 0[1]>", line 1, in <module>
+            assert a == 3 and b == -6.0 and c == 4 and x == 2
+        AssertionError
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 2</pre> message:</strong> E0 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 2</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
+    Expecting nothing
+    **********************************************************************
+    Line 5, in q3-calculator 1
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 1[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 3</pre> message:</strong> E1 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 3</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 2
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 2[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 4</pre> message:</strong> E2 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 4</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 3
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 3[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 5</pre> message:</strong> E3 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 5</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 4
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 4[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 6</pre> message:</strong> E4 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 6</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 5
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 5[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 7</pre> message:</strong> E5 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 7</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 6
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 6[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 8</pre> message:</strong> E6 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 8</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E6]), 5.0)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 7
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E6]), 5.0)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 7[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E6]), 5.0)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre><p><strong><pre style='display: inline;'>q3-calculator - 9</pre> message:</strong> E7 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 9</pre> result:</strong></p><pre>    ❌ Test case failed
+    Trying:
+        import numpy as np
+    Expecting nothing
+    ok
+    Trying:
+        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
+    Expecting nothing
+    ok
+    Trying:
+        assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
+    Expecting nothing
+    **********************************************************************
+    Line 6, in q3-calculator 8
+    Failed example:
+        assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
+    Exception raised:
+        Traceback (most recent call last):
+          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
+            exec(compile(example.source, filename, "single",
+          File "<doctest q3-calculator 8[2]>", line 1, in <module>
+            assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
+        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
+</pre></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./jupyterbook/week2/homework2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../../week1/lab1/lab1-randomization.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">🧪🖥 Lab 1: Commenting Code</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Shannon Capps and Joshua C. Agar<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
