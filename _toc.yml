@@ -39,3 +39,4 @@ parts:
   - caption: "Week 2\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week2/homework2/hw2-math
+      - file: jupyterbook/week2/lab2/neural_network_image_classifier
