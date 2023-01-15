@@ -114,7 +114,7 @@ grader.check("q2-music")
 # 
 # $\text{ii.  } E_1 = \ln(3x-a)$
 # 
-# $\text{iii.  } E_2 = \log_{10} \left(3 \left|x\right|+\frac{c}{5} \right)$
+# $\text{iii.  } E_2 = \log_{10} \left(3 \left|b\right|+\frac{c}{5} \right)$
 # 
 # $\text{iv.  } E_3 = \left( ax+\frac{ab}{c} \right)^{1/3}$
 # 
