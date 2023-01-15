@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 # Initialize Otter
@@ -9,7 +9,7 @@ import otter
 grader = otter.Notebook("hw2-math.ipynb")
 
 
-# # Homework 2
+# #  🏡📝 Homework 2 - Using Python to Solve Math Problems
 # 
 # This assignment will explore using python's capabilities for mathematical calculations.
 # 
@@ -46,7 +46,7 @@ grader = otter.Notebook("hw2-math.ipynb")
 # 
 # Your code replaces the prompt:  `...`
 
-# In[2]:
+# In[ ]:
 
 
 # define a function called question_1 to be used for grading
@@ -58,7 +58,7 @@ def question_1():
     return P, r, n, v
 
 
-# In[3]:
+# In[ ]:
 
 
 grader.check("q1-interest")
@@ -85,12 +85,6 @@ grader.check("q1-interest")
 # In[ ]:
 
 
-
-
-
-# In[4]:
-
-
 # define a function called question_2 to be used for grading
 def question_2():
 
@@ -100,7 +94,7 @@ def question_2():
     return f, n, d
 
 
-# In[5]:
+# In[ ]:
 
 
 grader.check("q2-music")
@@ -141,7 +135,7 @@ grader.check("q2-music")
 # 
 # Your code replaces the prompt:  `...`
 
-# In[6]:
+# In[ ]:
 
 
 # import the np library to be used
@@ -168,7 +162,7 @@ def question_3():
     return a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7
 
 
-# In[7]:
+# In[ ]:
 
 
 grader.check("q3-calculator")

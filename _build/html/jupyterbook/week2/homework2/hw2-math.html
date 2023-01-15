@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Homework 2 &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    <title>🏡📝 Homework 2 - Using Python to Solve Math Problems &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -182,6 +182,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/engr131_instructors.html">
+     Engineering 131 Winter 2023 Instructors
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../week1/lecture1/1_4_Activity_1_Using_the_Jupyter_Hub.html">
      💻 Activity: Hello World JupyterHub
     </a>
@@ -221,11 +226,21 @@ const thebe_selector_output = ".output, .cell_output"
      📝 Python Operators
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_12_Activity_1_2.html">
+     💻 Activity: Practice with Variables and Operators
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../week1/homework1/assignment/hw1-turning_in_assignments.html">
    🏡📝 Homework 1  - Using Jupyter and Turning in Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/lab1/week_1_lab_intro.html">
+   📝Week 1 - Lab Intro
   </a>
  </li>
  <li class="toctree-l1">
@@ -242,7 +257,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Homework 2
+   🏡📝 Homework 2 - Using Python to Solve Math Problems
   </a>
  </li>
 </ul>
@@ -477,7 +492,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Homework 2</h1>
+                <h1>🏡📝 Homework 2 - Using Python to Solve Math Problems</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -489,7 +504,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize Otter</span>
 <span class="kn">import</span> <span class="nn">otter</span>
@@ -498,8 +513,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="homework-2">
-<h1>Homework 2<a class="headerlink" href="#homework-2" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="homework-2-using-python-to-solve-math-problems">
+<h1>🏡📝 Homework 2 - Using Python to Solve Math Problems<a class="headerlink" href="#homework-2-using-python-to-solve-math-problems" title="Permalink to this headline">#</a></h1>
 <p>This assignment will explore using python’s capabilities for mathematical calculations.</p>
 <p><strong>Question 1: Interest rate calculation</strong></p>
 <p>Let <span class="math notranslate nohighlight">\(r\)</span> be a bank’s interest rate in percent per year. An inital amount of money <span class="math notranslate nohighlight">\(P\)</span>, also called a principal, will mature to an amount of</p>
@@ -523,7 +538,7 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function called question_1 to be used for grading</span>
 <span class="k">def</span> <span class="nf">question_1</span><span class="p">():</span>
@@ -536,80 +551,12 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q1-interest&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q1-interest</pre> results:</strong></p><p><strong><pre style='display: inline;'>q1-interest - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q1-interest - 1</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        P, r, n, v = question_1()
-    Expecting nothing
-    **********************************************************************
-    Line 2, in q1-interest 0
-    Failed example:
-        P, r, n, v = question_1()
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q1-interest 0[0]>", line 1, in <module>
-            P, r, n, v = question_1()
-          File "/tmp/ipykernel_3098/775359423.py", line 7, in question_1
-            return P, r, n, v
-        NameError: name 'P' is not defined
-    Trying:
-        assert P == 1000 and r == 0.95 and n == 5
-    Expecting nothing
-    **********************************************************************
-    Line 4, in q1-interest 0
-    Failed example:
-        assert P == 1000 and r == 0.95 and n == 5
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q1-interest 0[1]>", line 1, in <module>
-            assert P == 1000 and r == 0.95 and n == 5
-        NameError: name 'P' is not defined
-</pre><p><strong><pre style='display: inline;'>q1-interest - 2</pre> message:</strong> Final answer is incorrect.</p><p><strong><pre style='display: inline;'>q1-interest - 2</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        P, r, n, v = question_1()
-    Expecting nothing
-    **********************************************************************
-    Line 3, in q1-interest 1
-    Failed example:
-        P, r, n, v = question_1()
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q1-interest 1[1]>", line 1, in <module>
-            P, r, n, v = question_1()
-          File "/tmp/ipykernel_3098/775359423.py", line 7, in question_1
-            return P, r, n, v
-        NameError: name 'P' is not defined
-    Trying:
-        assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
-    Expecting nothing
-    **********************************************************************
-    Line 5, in q1-interest 1
-    Failed example:
-        assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q1-interest 1[2]>", line 1, in <module>
-            assert np.isclose(sum([P,r,n,v]),2054.3611145526907)
-        NameError: name 'P' is not defined
-</pre></div></div>
 </div>
 <p><strong>Question 2: Musical note frequencies</strong></p>
 <p>On a piano, each key has a fundamental frequency <span class="math notranslate nohighlight">\(f\)</span>. Each higher key (black or white) has a fundamental frequency of</p>
@@ -624,7 +571,7 @@ title="Print to PDF"
 </ul>
 <p>Again, your code should be indented under the function definition: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">question_2():</span></code>.</p>
 <p>Your code replaces the prompt: <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function called question_2 to be used for grading</span>
 <span class="k">def</span> <span class="nf">question_2</span><span class="p">():</span>
@@ -637,80 +584,12 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q2-music&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q2-music</pre> results:</strong></p><p><strong><pre style='display: inline;'>q2-music - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q2-music - 1</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        f, n, d = question_2()
-    Expecting nothing
-    **********************************************************************
-    Line 1, in q2-music 0
-    Failed example:
-        f, n, d = question_2()
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q2-music 0[0]>", line 1, in <module>
-            f, n, d = question_2()
-          File "/tmp/ipykernel_3098/810543486.py", line 7, in question_2
-            return f, n, d
-        NameError: name 'f' is not defined
-    Trying:
-        assert f == 440 and n == 5
-    Expecting nothing
-    **********************************************************************
-    Line 3, in q2-music 0
-    Failed example:
-        assert f == 440 and n == 5
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q2-music 0[1]>", line 1, in <module>
-            assert f == 440 and n == 5
-        NameError: name 'f' is not defined
-</pre><p><strong><pre style='display: inline;'>q2-music - 2</pre> message:</strong> Final answer is incorrect.</p><p><strong><pre style='display: inline;'>q2-music - 2</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        f, n, d = question_2()
-    Expecting nothing
-    **********************************************************************
-    Line 2, in q2-music 1
-    Failed example:
-        f, n, d = question_2()
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q2-music 1[1]>", line 1, in <module>
-            f, n, d = question_2()
-          File "/tmp/ipykernel_3098/810543486.py", line 7, in question_2
-            return f, n, d
-        NameError: name 'f' is not defined
-    Trying:
-        assert np.isclose(sum([f,n,d]),1032.329535834815)
-    Expecting nothing
-    **********************************************************************
-    Line 4, in q2-music 1
-    Failed example:
-        assert np.isclose(sum([f,n,d]),1032.329535834815)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q2-music 1[2]>", line 1, in <module>
-            assert np.isclose(sum([f,n,d]),1032.329535834815)
-        NameError: name 'f' is not defined
-</pre></div></div>
 </div>
 <p><strong>Question 3: Using Python as a calculator</strong></p>
 <p>We have seen how Python can be used to evaluate mathematical expressions. This problem provides practice incorporating various mathematical functions and constants.</p>
@@ -731,7 +610,7 @@ title="Print to PDF"
 <p>We have used the standard <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> convention <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></code>, thus, for example the <code class="docutils literal notranslate"><span class="pre">cos</span></code> function is used by typing <code class="docutils literal notranslate"><span class="pre">np.cos(&lt;value&gt;)</span></code></p>
 <p>Again, your code should be indented under the function definition: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">question_3():</span></code>.</p>
 <p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the np library to be used</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -759,217 +638,12 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;q3-calculator&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><p><strong style='color: red;'><pre style='display: inline;'>q3-calculator</pre> results:</strong></p><p><strong><pre style='display: inline;'>q3-calculator - 1</pre> message:</strong> Variables incorrectly defined.</p><p><strong><pre style='display: inline;'>q3-calculator - 1</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert a == 3 and b == -6.0 and c == 4 and x == 2
-    Expecting nothing
-    **********************************************************************
-    Line 3, in q3-calculator 0
-    Failed example:
-        assert a == 3 and b == -6.0 and c == 4 and x == 2
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 0[1]>", line 1, in <module>
-            assert a == 3 and b == -6.0 and c == 4 and x == 2
-        AssertionError
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 2</pre> message:</strong> E0 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 2</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
-    Expecting nothing
-    **********************************************************************
-    Line 5, in q3-calculator 1
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 1[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E0]), 10.810249675906654)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 3</pre> message:</strong> E1 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 3</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 2
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 2[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E1]), 4.09861228866811)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 4</pre> message:</strong> E2 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 4</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 3
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 3[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E2]), 4.27415784926368)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 5</pre> message:</strong> E3 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 5</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 4
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 4[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E3]), 4.144714242553332)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 6</pre> message:</strong> E4 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 6</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 5
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 5[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E4]), 3.074687863924916)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 7</pre> message:</strong> E5 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 7</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 6
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 6[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E5]), 2.0688699529757812)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 8</pre> message:</strong> E6 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 8</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E6]), 5.0)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 7
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E6]), 5.0)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 7[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E6]), 5.0)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre><p><strong><pre style='display: inline;'>q3-calculator - 9</pre> message:</strong> E7 answer incorrect.</p><p><strong><pre style='display: inline;'>q3-calculator - 9</pre> result:</strong></p><pre>    ❌ Test case failed
-    Trying:
-        import numpy as np
-    Expecting nothing
-    ok
-    Trying:
-        a, b, c, x, E0, E1, E2, E3, E4, E5, E6, E7 = question_3()
-    Expecting nothing
-    ok
-    Trying:
-        assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
-    Expecting nothing
-    **********************************************************************
-    Line 6, in q3-calculator 8
-    Failed example:
-        assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
-    Exception raised:
-        Traceback (most recent call last):
-          File "/home/jagar2/miniconda3/envs/ENGR_131/lib/python3.10/doctest.py", line 1348, in __run
-            exec(compile(example.source, filename, "single",
-          File "<doctest q3-calculator 8[2]>", line 1, in <module>
-            assert np.isclose(sum([a, b, c, x, E7]), 46.42945834082076)
-        TypeError: unsupported operand type(s) for +: 'int' and 'ellipsis'
-</pre></div></div>
 </div>
 </section>
 
