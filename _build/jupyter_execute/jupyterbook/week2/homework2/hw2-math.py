@@ -75,7 +75,7 @@ grader.check("q1-interest")
 # Write python code to do the following:
 # 
 # * Define variables: `f = 440` and `n = 5`
-# * Calculate the interest rate based on the equation above
+# * Calculate the fundamental frequency of $D_5$ based on the equation above
 # * Store the frequency of $D_5$ in a variable called `d`
 # 
 # Again, your code should be indented under the function definition: `def question_2():`.
