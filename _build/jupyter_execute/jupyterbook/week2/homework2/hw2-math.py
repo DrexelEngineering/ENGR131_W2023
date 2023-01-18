@@ -120,7 +120,7 @@ grader.check("q2-music")
 # 
 # $\text{v.  } E_4 = \frac{x^2+1}{(ax-1)\left|b-e^x\right|}$
 # 
-# $\text{vi.  }  E_5 = \left( cos \left( \frac{\sqrt{a}}{3}\pi \right) \right)^2+\cos \left( \frac{\sqrt{a}}{3}\pi \right)^2$
+# $\text{vi.  }  E_5 = \left( cos \left( \frac{\sqrt{a}}{3}\pi \right) \right)^2+\cos \left(\left( \frac{\sqrt{a}}{3}\pi \right)^2\right)$
 # 
 # $\text{vii.  }  E_6 = \arccos(\cos(x))$
 #     
