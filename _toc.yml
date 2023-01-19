@@ -42,4 +42,4 @@ parts:
       - file: jupyterbook/week2/lab2/neural_network_image_classifier
   - caption: "Week 3\uFE0F\u20E3"
     chapters:
-      - file: jupyterbook/week2/homework3/hw3-types
+      - file: jupyterbook/week3/homework3/hw3-types
