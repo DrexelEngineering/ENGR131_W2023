@@ -43,3 +43,4 @@ parts:
   - caption: "Week 3\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week3/homework3/hw3-types
+      - file: jupyterbook/week3/lab3/lab2-scrabble      
