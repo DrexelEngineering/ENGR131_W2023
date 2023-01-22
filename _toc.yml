@@ -42,5 +42,17 @@ parts:
       - file: jupyterbook/week2/lab2/neural_network_image_classifier
   - caption: "Week 3\uFE0F\u20E3"
     chapters:
+      - file: jupyterbook/week3/lecture3/lecture3
+        title: "Lecture 👩‍🏫"
+        sections:
+          - file: jupyterbook/week3/lecture3/3_0_HomeworkProcess_Survey
+          - file: jupyterbook/week3/lecture3/3_1_Data_Types_non_num
+          - file: jupyterbook/week3/lecture3/3_Activity_1_Boolean_Activity
+          - file: jupyterbook/week3/lecture3/3_2_Numerical_Data_Types
+          - file: jupyterbook/week3/lecture3/3_3_Lists_Tuples
+          - file: jupyterbook/week3/lecture3/3_4_Dictionaries
+          - file: jupyterbook/week3/lecture3/3_5_Working_with_Strings
+          - file: jupyterbook/week3/lecture3/3_Activity_2_Profanity_Detector
+          - file: jupyterbook/week3/lecture3/3_extra_Intro_to_numpy
       - file: jupyterbook/week3/homework3/hw3-types
       - file: jupyterbook/week3/lab3/lab2-scrabble      

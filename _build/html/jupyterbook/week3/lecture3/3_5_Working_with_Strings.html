@@ -1,0 +1,1639 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>📝 Working with Strings &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="💻 Activity 3.2: Profanity &amp; Word Count Detector" href="3_Activity_2_Profanity_Detector.html" />
+    <link rel="prev" title="📝 Dictionaries" href="3_4_Dictionaries.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/Drexel_Vertical stacked_Lockup_HEX.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">ENGR 131: Winter 2023: Introductory Programming for Engineers</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to ENGR 131
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Syllabus 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../course_documents/syllabus.html">
+   Syllabus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../resources/resources.html">
+   Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../resources/peer_programming.html">
+     Peer Programing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week1/lecture1/lecture1.html">
+   Lecture 👩‍🏫
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_1_Why_Coding_is_the_most_important_skill.html">
+     📝 Why Computer Programming is an Essential Skill
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_2_Who_is_Prof_Capps.html">
+     📝 Who is Professor Capps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_3_Who_is_Prof_Agar.html">
+     📝 Who is Professor Agar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/engr131_instructors.html">
+     Engineering 131 Winter 2023 Instructors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_4_Activity_1_Using_the_Jupyter_Hub.html">
+     💻 Activity: Hello World JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_5_Introduction_to_Python.html">
+     📝Why Python?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_6_Accessing_Course_Content.html">
+     📝 Accessing Course Content
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_7_How_to_Use_Jupyterhub.html">
+     📝 How to Use JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_8_Programming_Basics.html">
+     📝Programming Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_9_Modules_and_Packages.html">
+     📝Modules and Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_10_Variables.html">
+     📝 Variables and Objects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_11_Operators.html">
+     📝 Python Operators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week1/lecture1/1_12_Activity_1_2.html">
+     💻 Activity: Practice with Variables and Operators
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/homework1/assignment/hw1-turning_in_assignments.html">
+   🏡📝 Homework 1  - Using Jupyter and Turning in Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/lab1/week_1_lab_intro.html">
+   📝Week 1 - Lab Intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week1/lab1/lab1-randomization.html">
+   🧪🖥 Lab 1: Commenting Code
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week2/homework2/hw2-math.html">
+   🏡📝 Homework 2 - Using Python to Solve Math Problems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week2/lab2/neural_network_image_classifier.html">
+   🧪🖥 Lab Activity: Training a Neural Network Classifier
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="lecture3.html">
+   Lecture 👩‍🏫
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_0_HomeworkProcess_Survey.html">
+     📝 Homework Process
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_1_Data_Types_non_num.html">
+     📝Data Types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_Activity_1_Boolean_Activity.html">
+     💻 Activity 3.1: Boolean Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_2_Numerical_Data_Types.html">
+     📝 Numerical Data Types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_3_Lists_Tuples.html">
+     📝 Collections in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_4_Dictionaries.html">
+     📝 Dictionaries
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     📝 Working with Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_Activity_2_Profanity_Detector.html">
+     💻 Activity 3.2: Profanity &amp; Word Count Detector
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_extra_Intro_to_numpy.html">
+     📝 Introduction to NumPy
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../homework3/hw3-types.html">
+   🏡📝 Homework 3 - Using Different Types of Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab3/lab2-scrabble.html">
+   🧪🖥 Lab 2: Scrabble Score Calculator
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week3/lecture3/3_5_Working_with_Strings.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week3/lecture3/3_5_Working_with_Strings.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week3/lecture3/3_5_Working_with_Strings.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week3/lecture3/3_5_Working_with_Strings.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/jupyterbook/week3/lecture3/3_5_Working_with_Strings.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-strings">
+   Defining Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-within-a-string">
+   Formatting within a string
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#length-of-a-string">
+   Length of a String
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-slicing">
+   String Slicing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extracting-a-substring">
+   Extracting a Substring
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-a-stride">
+     Using a Stride
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reversing-a-string">
+     Reversing a String
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#concatenation-of-string">
+   Concatenation of String
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repeating-strings">
+   Repeating Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#built-in-string-methods">
+   Built-in String Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#capitalize-a-string">
+     Capitalize a String
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checks-if-lower-case">
+     Checks if lower case
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finds-substring">
+     Finds Substring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-occurrence">
+     Count Occurrence
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#replace-values">
+   Replace Values
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#splitting-strings">
+   Splitting Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-strings">
+   Formatting Strings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-version-3-6-formatter">
+     Python Version 3.6 Formatter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-version-3-6-f-strings">
+     Python Version &gt;3.6 F-strings
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>📝 Working with Strings</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-strings">
+   Defining Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-within-a-string">
+   Formatting within a string
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#length-of-a-string">
+   Length of a String
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-slicing">
+   String Slicing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extracting-a-substring">
+   Extracting a Substring
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-a-stride">
+     Using a Stride
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reversing-a-string">
+     Reversing a String
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#concatenation-of-string">
+   Concatenation of String
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repeating-strings">
+   Repeating Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#built-in-string-methods">
+   Built-in String Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#capitalize-a-string">
+     Capitalize a String
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checks-if-lower-case">
+     Checks if lower case
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finds-substring">
+     Finds Substring
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#count-occurrence">
+     Count Occurrence
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#replace-values">
+   Replace Values
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#splitting-strings">
+   Splitting Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-strings">
+   Formatting Strings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-version-3-6-formatter">
+     Python Version 3.6 Formatter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-version-3-6-f-strings">
+     Python Version &gt;3.6 F-strings
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="working-with-strings">
+<h1>📝 Working with Strings<a class="headerlink" href="#working-with-strings" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">friendly</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">friendly.jupyter</span> <span class="kn">import</span> <span class="n">friendly_tb</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>friendly_traceback 0.7.61; friendly 0.7.20.
+Type &#39;Friendly&#39; for basic help.
+</pre></div>
+</div>
+</div>
+</div>
+<p>A lot of times you want to relay information to a user or send new instructions to a program. One common method to perform these tasks in Python is to use strings.</p>
+<section id="defining-strings">
+<h2>Defining Strings<a class="headerlink" href="#defining-strings" title="Permalink to this headline">#</a></h2>
+<p>Recall that to represent a string you wrap it in quotes:</p>
+<ul class="simple">
+<li><p>Single quotes <code class="docutils literal notranslate"><span class="pre">'</span></code> allows you to embed double quotes <code class="docutils literal notranslate"><span class="pre">&quot;</span></code></p></li>
+<li><p>Double quotes <code class="docutils literal notranslate"><span class="pre">'</span></code> allows you to embed single quotes <code class="docutils literal notranslate"><span class="pre">'</span></code></p></li>
+<li><p>Triple quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> allows you to embed single and double quotes, and the string can span multiple lines</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">single_quote</span> <span class="o">=</span> <span class="s1">&#39;Single quote allow you to embed &quot;double&quot; quotes in your string.&#39;</span>
+<span class="n">double_quote</span> <span class="o">=</span> <span class="s2">&quot;Double quote allow you to embed &#39;single&#39; quotes in your string.&quot;</span>
+<span class="n">triple_quote</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Triple quotes allows to embed &quot;double quotes&quot; as well as &#39;single quotes&#39; in your string. </span>
+<span class="s2">And can also span across multiple lines.&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Strings are immutable which means you cannot replace a value in a string. You need to create a new string.</p>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title" style="font-weight: bold;">Definition</p>
+Immutable object -  an object whose state cannot be modified after it is created
+</div><div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">triple_quote</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;This is triple quoted string using &quot;single&quot; quotes.&quot;&quot;&quot;</span>
+<span class="n">triple_quote</span><span class="p">[</span><span class="mi">35</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&#39;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div id='friendly-message8'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span>: 'str' object does not support item assignment              
+</pre></div></div><div class="output text_html">
+<button
+    id='friendly-tb-btn-show8'
+    onclick='friendly_toggle_more8()'
+    style=''>
+More ...
+</button>
+<script type="text/Javascript"> function friendly_toggle_more8(){
+var btn = document.getElementById('friendly-tb-btn-show8');
+var btn_what = document.getElementById('friendly-tb-btn-show-what8');
+var btn_where = document.getElementById('friendly-tb-btn-show-where8');
+var btn_why = document.getElementById('friendly-tb-btn-show-why8');
+;
+var message = document.getElementById('friendly-message8');
+var friendly_tb_content = document.getElementById('friendly-tb-friendly_tb-content8');
+var what_content = document.getElementById('friendly-tb-what-content8');
+var why_content = document.getElementById('friendly-tb-why-content8');
+var where_content = document.getElementById('friendly-tb-where-content8');
+;
+
+if (btn_what.style.display == 'none'){
+    message.style.display = 'none';
+    btn_what.style.display = 'block';
+    btn_why.style.display = 'block';
+    btn_where.style.display = 'block';
+    friendly_tb_content.style.display = 'block';
+    ;
+    btn.textContent = "Show message only";
+    ;
+} else {
+    btn_what.style.display = 'none';
+    btn_what.textContent = 'what()';
+    btn_why.style.display = 'none';
+    btn_why.textContent = 'why()';
+    btn_where.style.display = 'none';
+    btn_where.textContent = 'where()';
+    what_content.style.display = 'none';
+    why_content.style.display = 'none';
+    where_content.style.display = 'none';
+    ;
+    friendly_tb_content.style.display = 'none';
+    message.style.display = 'block';
+    btn.textContent = "More ...";
+    ;
+}
+};
+</script>
+</div><div class="output text_html"><div id='friendly-tb-friendly_tb-content8' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">Traceback (most recent call last):</span><span style="background-color: #ffffff">                                                                  </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  File </span><span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">"[49]?"</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">, line 2, in </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">&lt;module&gt;</span><span style="background-color: #ffffff">                                                                 </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">triple_quote</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">[</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">35</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">]</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">=</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">"'"</span><span style="background-color: #ffffff">                                                                          </span>
+<span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">: </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">'str' object does not support item assignment</span><span style="background-color: #ffffff">                                            </span>
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_what8(){
+     var content = document.getElementById('friendly-tb-what-content8');
+     var btn = document.getElementById('friendly-tb-btn-show-what8');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide what()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "what()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-what8'
+         onclick='toggle_what8()'
+         style='display:none '>
+     what()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-what-content8' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'>A <span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span> is usually caused by trying to combine two incompatible   
+types of objects, by calling a function with the wrong type of object,
+or by trying to do an operation not allowed on a given type of object.
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_why8(){
+     var content = document.getElementById('friendly-tb-why-content8');
+     var btn = document.getElementById('friendly-tb-btn-show-why8');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide why()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "why()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-why8'
+         onclick='toggle_why8()'
+         style='display:none '>
+     why()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-why-content8' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'>In Python, some objects are known as immutable: once defined, their   
+value cannot be changed. You tried change part of such an immutable   
+object: a string (<span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">str</span>), most likely by using an indexing operation.   
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_where8(){
+     var content = document.getElementById('friendly-tb-where-content8');
+     var btn = document.getElementById('friendly-tb-btn-show-where8');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide where()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "where()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-where8'
+         onclick='toggle_where8()'
+         style='display:none '>
+     where()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-where-content8' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000">Exception raised on line </span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">2</span><span style="color: #dd0000; text-decoration-color: #dd0000"> of code block </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">[</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">49</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">]</span><span style="color: #dd0000; text-decoration-color: #dd0000">?.</span>                                                     
+
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       1|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> triple_quote</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> =</span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff"> '''This is triple quoted string using "single" quotes.'''</span>
+<span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">     &gt; </span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">2|</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> </span><span style="color: #ffffff; text-decoration-color: #ffffff; background-color: #cc0000">triple_quote[35]</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> =</span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff"> "'"</span>
+
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">triple_quote</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'This is triple quoted string using "single" quotes.'</span><span style="background-color: #ffffff">                            </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">triple_quote</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">[</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">35</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">]:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'"'</span><span style="background-color: #ffffff">                                                                          </span>
+</pre></div></div></div>
+</div>
+</section>
+<section id="formatting-within-a-string">
+<h2>Formatting within a string<a class="headerlink" href="#formatting-within-a-string" title="Permalink to this headline">#</a></h2>
+<p>You can add tabs to a string using <code class="docutils literal notranslate"><span class="pre">\t</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Drexel </span><span class="se">\t</span><span class="s2"> Engineering&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel 	 Engineering
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can add a line break with <code class="docutils literal notranslate"><span class="pre">\n</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Drexel </span><span class="se">\n</span><span class="s2">Engineering&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel 
+Engineering
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title" style="font-weight: bold;">Note</p>Did you notice the '\t', '\n' above? These are called escape characters. They start with a \ (backslash). 
+Internally, they are not interpreted as normal strings, but rather as special characters that represent something else. For example - '\t' represents a tab. There are many more escape characters.
+ </a>
+</div></section>
+<section id="length-of-a-string">
+<h2>Length of a String<a class="headerlink" href="#length-of-a-string" title="Permalink to this headline">#</a></h2>
+<p>You can find the length of a string using the built-in <code class="docutils literal notranslate"><span class="pre">len()</span></code> function:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">triple_quote</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #101010; text-decoration-color: #101010">130</span>
+</pre></div></div>
+</div>
+</section>
+<section id="string-slicing">
+<h2>String Slicing<a class="headerlink" href="#string-slicing" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Since strings are a sequence of characters, you can access it through slicing and indexing just like you would with Python lists or tuples.</p></li>
+<li><p>Strings are indexed with respect to each character in the string and the indexing begins at 0</p></li>
+</ul>
+<p><img alt="" src="jupyterbook/week3/lecture3/images%5CString_Index.webp" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snack</span> <span class="o">=</span> <span class="s2">&quot;Chocolate Cookie.&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>The first index starts at 0</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>The last index is the period at 16</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="mi">16</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>.
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>You can access the end of a string using [-1] index</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="extracting-a-substring">
+<h2>Extracting a Substring<a class="headerlink" href="#extracting-a-substring" title="Permalink to this headline">#</a></h2>
+<p>You can extract a substring using range slicing <code class="docutils literal notranslate"><span class="pre">[Start</span> <span class="pre">index</span> <span class="pre">(included):</span> <span class="pre">Stop</span> <span class="pre">index</span> <span class="pre">(excluded)]</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">16</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cookie
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also use a combination of positive and negative slicing</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cookie
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you do not specify a start or end index it will use the entire array</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Stop value not provided</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[</span><span class="mi">0</span><span class="p">:])</span>
+
+<span class="c1"># Start value not provided (Stop value excluded according to syntax)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># This is also allowed</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snack</span><span class="p">[:])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Chocolate Cookie.
+Chocolate Cookie
+Chocolate Cookie.
+</pre></div>
+</div>
+</div>
+</div>
+<section id="using-a-stride">
+<h3>Using a Stride<a class="headerlink" href="#using-a-stride" title="Permalink to this headline">#</a></h3>
+<p>It is possible to use a 3rd parameter stride to specify how many characters you would like to move forward.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mixed_string</span> <span class="o">=</span> <span class="s2">&quot;D0r0e0x0e0l0 0E0n0g0i0n0e0e0r0i0n0g&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mixed_string</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel Engineering
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="reversing-a-string">
+<h3>Reversing a String<a class="headerlink" href="#reversing-a-string" title="Permalink to this headline">#</a></h3>
+<p>Strides can be used to reverse a string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ordered_string</span> <span class="o">=</span> <span class="s2">&quot;ABCDEFG&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ordered_string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFEDCBA
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="concatenation-of-string">
+<h2>Concatenation of String<a class="headerlink" href="#concatenation-of-string" title="Permalink to this headline">#</a></h2>
+<p>There are many times where you might want to join or concatenate strings. In python this can be done using the simple addition operator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Drexel&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;Engineering&quot;</span>
+
+<span class="n">alma_mater</span> <span class="o">=</span> <span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alma_mater</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel Engineering
+</pre></div>
+</div>
+</div>
+</div>
+<p>This will only work if all the datatypes are strings</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Drexel&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;Engineering&quot;</span>
+<span class="n">string3</span> <span class="o">=</span> <span class="s2">&quot;Class of&quot;</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2027</span>
+
+<span class="n">alma_mater</span> <span class="o">=</span> <span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string3</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">year</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alma_mater</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div id='friendly-message1'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span>: can only concatenate str (not "int") to str                
+</pre></div></div><div class="output text_html">
+<button
+    id='friendly-tb-btn-show1'
+    onclick='friendly_toggle_more1()'
+    style=''>
+More ...
+</button>
+<script type="text/Javascript"> function friendly_toggle_more1(){
+var btn = document.getElementById('friendly-tb-btn-show1');
+var btn_what = document.getElementById('friendly-tb-btn-show-what1');
+var btn_where = document.getElementById('friendly-tb-btn-show-where1');
+var btn_why = document.getElementById('friendly-tb-btn-show-why1');
+;
+var message = document.getElementById('friendly-message1');
+var friendly_tb_content = document.getElementById('friendly-tb-friendly_tb-content1');
+var what_content = document.getElementById('friendly-tb-what-content1');
+var why_content = document.getElementById('friendly-tb-why-content1');
+var where_content = document.getElementById('friendly-tb-where-content1');
+;
+
+if (btn_what.style.display == 'none'){
+    message.style.display = 'none';
+    btn_what.style.display = 'block';
+    btn_why.style.display = 'block';
+    btn_where.style.display = 'block';
+    friendly_tb_content.style.display = 'block';
+    ;
+    btn.textContent = "Show message only";
+    ;
+} else {
+    btn_what.style.display = 'none';
+    btn_what.textContent = 'what()';
+    btn_why.style.display = 'none';
+    btn_why.textContent = 'why()';
+    btn_where.style.display = 'none';
+    btn_where.textContent = 'where()';
+    what_content.style.display = 'none';
+    why_content.style.display = 'none';
+    where_content.style.display = 'none';
+    ;
+    friendly_tb_content.style.display = 'none';
+    message.style.display = 'block';
+    btn.textContent = "More ...";
+    ;
+}
+};
+</script>
+</div><div class="output text_html"><div id='friendly-tb-friendly_tb-content1' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">Traceback (most recent call last):</span><span style="background-color: #ffffff">                                                                  </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  Code block </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">[</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">16</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">]</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">, line 6</span><span style="background-color: #ffffff">                                                                           </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">alma_mater</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">=</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string3</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">year</span><span style="background-color: #ffffff">                               </span>
+<span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">: </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">can only concatenate str (not "int") to str</span><span style="background-color: #ffffff">                                              </span>
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_what1(){
+     var content = document.getElementById('friendly-tb-what-content1');
+     var btn = document.getElementById('friendly-tb-btn-show-what1');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide what()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "what()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-what1'
+         onclick='toggle_what1()'
+         style='display:none '>
+     what()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-what-content1' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'>A <span style="color: #dd0000; text-decoration-color: #dd0000; background-color: #ffffff">TypeError</span> is usually caused by trying to combine two incompatible   
+types of objects, by calling a function with the wrong type of object,
+or by trying to do an operation not allowed on a given type of object.
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_why1(){
+     var content = document.getElementById('friendly-tb-why-content1');
+     var btn = document.getElementById('friendly-tb-btn-show-why1');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide why()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "why()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-why1'
+         onclick='toggle_why1()'
+         style='display:none '>
+     why()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-why-content1' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'>You tried to concatenate (add) two different types of objects: a      
+string (<span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">str</span>) and an integer (<span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">int</span>).                                    
+</pre></div></div><div class="output text_html"><script type="text/Javascript"> function toggle_where1(){
+     var content = document.getElementById('friendly-tb-where-content1');
+     var btn = document.getElementById('friendly-tb-btn-show-where1');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            btn.textContent = "Hide where()";
+        } else {
+            content.style.display = 'none';
+            btn.textContent = "where()";
+       }
+    }
+     </script>
+     <button
+         id='friendly-tb-btn-show-where1'
+         onclick='toggle_where1()'
+         style='display:none '>
+     where()
+     </button>
+</div><div class="output text_html"><div id='friendly-tb-where-content1' style='display:none'><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #dd0000; text-decoration-color: #dd0000">Exception raised on line </span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">6</span><span style="color: #dd0000; text-decoration-color: #dd0000"> of code block </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">[</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">16</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">]</span><span style="color: #dd0000; text-decoration-color: #dd0000">.</span>                                                      
+
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       2|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> string2</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> =</span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff"> "Engineering"</span>
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       3|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> string3</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> =</span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff"> "Class of"</span>
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       4|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> year</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> =</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> 2027</span>
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       5|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> </span>
+<span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">     &gt; </span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">6|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> alma_mater</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff"> = </span><span style="color: #ffffff; text-decoration-color: #ffffff; background-color: #cc0000">string1 + " " + string2 + " " + string3 + " " + year</span>
+<span style="color: #808080; text-decoration-color: #808080; background-color: #ffffff">       7|</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff"> </span><span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">print</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">(</span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">alma_mater</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">)</span>
+
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel'</span><span style="background-color: #ffffff">                                                                              </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Engineering'</span><span style="background-color: #ffffff">                                                                         </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string3</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Class of'</span><span style="background-color: #ffffff">                                                                            </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">year</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  2027</span><span style="background-color: #ffffff">                                                                                     </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel '</span><span style="background-color: #ffffff">                                                                       </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel Engineering'</span><span style="background-color: #ffffff">                                                  </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel Engineering '</span><span style="background-color: #ffffff">                                           </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string3</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel Engineering Class of'</span><span style="background-color: #ffffff">                         </span>
+<span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">    </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string1</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string2</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #0011aa; text-decoration-color: #0011aa; background-color: #ffffff">string3</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">+</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff"> </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">" "</span><span style="color: #783114; text-decoration-color: #783114; background-color: #ffffff">:</span><span style="color: #101010; text-decoration-color: #101010; background-color: #ffffff">  </span><span style="color: #8b008b; text-decoration-color: #8b008b; background-color: #ffffff">'Drexel Engineering Class of '</span><span style="background-color: #ffffff">                  </span>
+
+<span style="color: #cc4400; text-decoration-color: #cc4400">Friendly warning: you have redefined the python builtin </span><span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">open</span><span style="color: #cc4400; text-decoration-color: #cc4400">.</span>                                       
+
+Friendly warning: you have redefined the python builtin <span style="color: #005500; text-decoration-color: #005500; background-color: #ffffff">str</span>.                                        
+</pre></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Drexel&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;Engineering&quot;</span>
+<span class="n">string3</span> <span class="o">=</span> <span class="s2">&quot;Class of&quot;</span>
+<span class="n">year</span> <span class="o">=</span> <span class="mi">2027</span>
+
+<span class="n">alma_mater</span> <span class="o">=</span> <span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string2</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string3</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alma_mater</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel Engineering Class of 2027
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="repeating-strings">
+<h2>Repeating Strings<a class="headerlink" href="#repeating-strings" title="Permalink to this headline">#</a></h2>
+<p>The multiply operator allows you to repeat strings</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">single_word</span> <span class="o">=</span> <span class="s2">&quot;hip &quot;</span>
+<span class="n">line1</span> <span class="o">=</span> <span class="n">single_word</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="s2">&quot;hurray! &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">line1</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hip hip hurray! hip hip hurray! hip hip hurray! 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="built-in-string-methods">
+<h2>Built-in String Methods<a class="headerlink" href="#built-in-string-methods" title="Permalink to this headline">#</a></h2>
+<p>Python provides many built-in methods or helper functions to manipulate strings.</p>
+<section id="capitalize-a-string">
+<h3>Capitalize a String<a class="headerlink" href="#capitalize-a-string" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;drexel engineering&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drexel engineering
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="checks-if-lower-case">
+<h3>Checks if lower case<a class="headerlink" href="#checks-if-lower-case" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;drexel engineering&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">islower</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="finds-substring">
+<h3>Finds Substring<a class="headerlink" href="#finds-substring" title="Permalink to this headline">#</a></h3>
+<p>Returns the lowest index in the string where the substring is found.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;eng&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="count-occurrence">
+<h3>Count Occurrence<a class="headerlink" href="#count-occurrence" title="Permalink to this headline">#</a></h3>
+<p>Counts how many times a substring occurs.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;drexel engineering &quot;</span> <span class="o">*</span> <span class="mi">4</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;initial string: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">)</span>
+
+<span class="nb">str</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;eng&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>initial string: drexel engineering drexel engineering drexel engineering drexel engineering 
+</pre></div>
+</div>
+<div class="output text_html"><pre style='white-space:pre;overflow-x:auto;line-height:normal'><span style="color: #101010; text-decoration-color: #101010">4</span>
+</pre></div></div>
+</div>
+</section>
+</section>
+<section id="replace-values">
+<h2>Replace Values<a class="headerlink" href="#replace-values" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">str.replace(substring,</span> <span class="pre">new)</span></code>: replaces all occurrences of the substring in string with new. You can also define a third argument max, which replaces at most max occurrences of substring in the string.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;hip hip hurray! hip hip hurray! hip hip hurray!&quot;</span>
+<span class="n">string2</span> <span class="o">=</span> <span class="n">string1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;hip&quot;</span><span class="p">,</span> <span class="s2">&quot;Hip&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">IDs&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">string1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">string2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hip hip hurray! hip hip hurray! hip hip hurray!
+Hip Hip hurray! Hip Hip hurray! Hip Hip hurray!
+
+IDs
+2449237610384
+2449237610672
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can see that the IDs for the string change. This is because they are immutable.</p>
+</section>
+<section id="splitting-strings">
+<h2>Splitting Strings<a class="headerlink" href="#splitting-strings" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">str.split(sep=&quot;&quot;)</span></code>: splits the string according to the delimiter (space if not provided) and returns a list of substrings.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string2</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><pre style='white-space:pre;overflow-x:auto;line-height:normal'>
+<span style="font-weight: bold">[</span>
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'hurray!'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'hurray!'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'Hip'</span>,
+<span style="color: #808080; text-decoration-color: #808080">│   </span><span style="color: #8b008b; text-decoration-color: #8b008b">'hurray!'</span>
+<span style="font-weight: bold">]</span>
+</pre></div></div>
+</div>
+</section>
+<section id="formatting-strings">
+<h2>Formatting Strings<a class="headerlink" href="#formatting-strings" title="Permalink to this headline">#</a></h2>
+<p>Sometimes you might want to substitute a variable into a string.</p>
+<section id="python-version-3-6-formatter">
+<h3>Python Version 3.6 Formatter<a class="headerlink" href="#python-version-3-6-formatter" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+    <span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> scored </span><span class="si">{1}</span><span class="s2"> points for the Drexel Dragons!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Coletrane Washington&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<span class="p">)</span>  <span class="c1"># Accessing values by position</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coletrane Washington scored 24 points for the Drexel Dragons!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
+    <span class="s2">&quot;</span><span class="si">{player_name}</span><span class="s2"> scored </span><span class="si">{points}</span><span class="s2"> points for the Drexel Dragons!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">player_name</span><span class="o">=</span><span class="s2">&quot;Coletrane Washington&quot;</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="mi">24</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coletrane Washington scored 24 points for the Drexel Dragons!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="python-version-3-6-f-strings">
+<h3>Python Version &gt;3.6 F-strings<a class="headerlink" href="#python-version-3-6-f-strings" title="Permalink to this headline">#</a></h3>
+<p>f-string is a string literal that is prefixed with <code class="docutils literal notranslate"><span class="pre">f</span></code> or <code class="docutils literal notranslate"><span class="pre">F</span></code>. You can define identifiers to be used in your string within curly braces { }.</p>
+<p>We recommend using F-strings because their beautiful practicality and simplicity.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">player_name</span> <span class="o">=</span> <span class="s2">&quot;Coletrane Washington&quot;</span>
+<span class="n">points</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">player_name</span><span class="si">}</span><span class="s2"> scored </span><span class="si">{</span><span class="n">points</span><span class="si">}</span><span class="s2"> points for the Drexel Dragons!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coletrane Washington scored 24 points for the Drexel Dragons!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./jupyterbook/week3/lecture3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="3_4_Dictionaries.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">📝 Dictionaries</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="3_Activity_2_Profanity_Detector.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">💻 Activity 3.2: Profanity &amp; Word Count Detector</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Shannon Capps and Joshua C. Agar<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
