@@ -55,4 +55,5 @@ parts:
           - file: jupyterbook/week3/lecture3/3_Activity_2_Profanity_Detector
           - file: jupyterbook/week3/lecture3/3_extra_Intro_to_numpy
       - file: jupyterbook/week3/homework3/hw3-types
+      - file: jupyterbook/week3/lab3/week_3_lab_intro
       - file: jupyterbook/week3/lab3/lab2-scrabble      
