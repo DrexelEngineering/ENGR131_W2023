@@ -57,3 +57,7 @@ parts:
       - file: jupyterbook/week3/homework3/hw3-types
       - file: jupyterbook/week3/lab3/week_3_lab_intro
       - file: jupyterbook/week3/lab3/lab2-scrabble      
+  - caption: "Week 4\uFE0F\u20E3"
+    chapters:
+      - file: jupyterbook/week4/homework4/hw4-functions
+      - file: jupyterbook/week4/lab4/lab4-image
