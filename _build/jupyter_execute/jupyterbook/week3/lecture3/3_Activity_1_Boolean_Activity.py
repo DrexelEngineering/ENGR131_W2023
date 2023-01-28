@@ -7,7 +7,7 @@
 
 # 1. Show the sum of two `True` values.
 
-# In[1]:
+# In[ ]:
 
 
 True ...
@@ -15,7 +15,7 @@ True ...
 
 # 2. Show the difference between `False` and `True`.
 
-# In[4]:
+# In[ ]:
 
 
 False - ...
@@ -23,7 +23,7 @@ False - ...
 
 # 3. What is the value of `False` times the sum of `True` and `True`?
 
-# In[6]:
+# In[ ]:
 
 
 ...
@@ -31,7 +31,7 @@ False - ...
 
 # 4. Show what happens to the datatype after two boolean values are added
 
-# In[3]:
+# In[ ]:
 
 
 print(type(False))
@@ -40,7 +40,7 @@ print(type(...))
 
 # 5. Write code using only booleans, `type()`, and  arithmetic operators that will result in the value 13 being printed when it is evaluated.
 
-# In[2]:
+# In[ ]:
 
 
 ...
