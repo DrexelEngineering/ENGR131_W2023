@@ -59,5 +59,21 @@ parts:
       - file: jupyterbook/week3/lab3/lab2-scrabble      
   - caption: "Week 4\uFE0F\u20E3"
     chapters:
+      - file: jupyterbook/week4/lecture4/lecture4
+        title: "Lecture 👩‍🏫"
+        sections:
+          - file: jupyterbook/week4/lecture4/0_Conceptual_Overview
+          - file: jupyterbook/week4/lecture4/1_Introduction_to_functions
+          - file: jupyterbook/week4/lecture4/2_activity_4_1
+          - file: jupyterbook/week4/lecture4/3_Functions_as_objects
+          - file: jupyterbook/week4/lecture4/4_Dynamic_Behavior_in_Python
+          - file: jupyterbook/week4/lecture4/5_activity_4_2
+          - file: jupyterbook/week4/lecture4/6_Debugging_in_functions
+          - file: jupyterbook/week4/lecture4/7_Functions_that_Return
+          - file: jupyterbook/week4/lecture4/8_activity_4_3
+          - file: jupyterbook/week4/lecture4/9_activity_4_4
       - file: jupyterbook/week4/homework4/hw4-functions
       - file: jupyterbook/week4/lab4/lab4-image
+
+
+
