@@ -35,7 +35,7 @@ And can also span across multiple lines."""
 # Immutable object -  an object whose state cannot be modified after it is created
 # </div>
 
-# In[49]:
+# In[3]:
 
 
 triple_quote = """This is triple quoted string using "single" quotes."""
@@ -49,9 +49,9 @@ triple_quote[35] = "'"
 # In[3]:
 
 
-str = "Drexel \t Engineering"
+string = "Drexel \t Engineering"
 
-print(str)
+print(string)
 
 
 # You can add a line break with `\n`
@@ -59,9 +59,9 @@ print(str)
 # In[4]:
 
 
-str = "Drexel \nEngineering"
+string = "Drexel \nEngineering"
 
-print(str)
+print(string)
 
 
 # <div class="admonition note alert alert-info">
@@ -85,7 +85,7 @@ len(triple_quote)
 # * Since strings are a sequence of characters, you can access it through slicing and indexing just like you would with Python lists or tuples. 
 # * Strings are indexed with respect to each character in the string and the indexing begins at 0
 
-# ![](images\String_Index.webp)
+# ![](images/String_Index.png)
 
 # In[6]:
 
@@ -188,7 +188,7 @@ print(alma_mater)
 
 # This will only work if all the datatypes are strings
 
-# In[16]:
+# In[17]:
 
 
 string1 = "Drexel"
@@ -200,7 +200,7 @@ alma_mater = string1 + " " + string2 + " " + string3 + " " + year
 print(alma_mater)
 
 
-# In[2]:
+# In[16]:
 
 
 string1 = "Drexel"
@@ -216,7 +216,7 @@ print(alma_mater)
 # 
 # The multiply operator allows you to repeat strings
 
-# In[65]:
+# In[17]:
 
 
 single_word = "hip "
@@ -230,53 +230,53 @@ print(line1 * 3)
 
 # ### Capitalize a String
 
-# In[66]:
+# In[18]:
 
 
-str = "drexel engineering"
+string = "drexel engineering"
 
-print(str.capitalize())
+print(string.capitalize())
 
 
 # ### Checks if lower case
 
-# In[67]:
+# In[19]:
 
 
-str = "drexel engineering"
+string = "drexel engineering"
 
-print(str.islower())
+print(string.islower())
 
 
 # ### Finds Substring
 # 
 # Returns the lowest index in the string where the substring is found.
 
-# In[68]:
+# In[20]:
 
 
-print(str.find("eng"))
+print(string.find("eng"))
 
 
 # ### Count Occurrence
 # 
 # Counts how many times a substring occurs.
 
-# In[69]:
+# In[21]:
 
 
-str = "drexel engineering " * 4
+string = "drexel engineering " * 4
 
-print("initial string: " + str)
+print("initial string: " + string)
 
-str.count("eng")
+print(string.count("eng"))
 
 
 # ## Replace Values
 # 
 # `str.replace(substring, new)`: replaces all occurrences of the substring in string with new. You can also define a third argument max, which replaces at most max occurrences of substring in the string. 
 
-# In[70]:
+# In[22]:
 
 
 string1 = "hip hip hurray! hip hip hurray! hip hip hurray!"
@@ -295,7 +295,7 @@ print(id(string2))
 # 
 # `str.split(sep="")`: splits the string according to the delimiter (space if not provided) and returns a list of substrings.
 
-# In[71]:
+# In[23]:
 
 
 string2.split(sep=" ")
@@ -307,7 +307,7 @@ string2.split(sep=" ")
 # 
 # ### Python Version 3.6 Formatter
 
-# In[72]:
+# In[24]:
 
 
 print(
@@ -315,7 +315,7 @@ print(
 )  # Accessing values by position
 
 
-# In[73]:
+# In[25]:
 
 
 print(
@@ -331,7 +331,7 @@ print(
 # 
 # We recommend using F-strings because their beautiful practicality and simplicity.
 
-# In[74]:
+# In[26]:
 
 
 player_name = "Coletrane Washington"

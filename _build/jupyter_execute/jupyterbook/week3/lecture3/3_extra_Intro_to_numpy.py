@@ -616,11 +616,11 @@ a
 # 
 # Once you’ve created your arrays, you can start to work with them. Let’s say, for example, that you’ve created two arrays, one called “data” and one called “ones”
 # 
-# ![](figs/np_array_dataones.png)
+# ![](images/np_array_dataones.png)
 
 # You can add the arrays together with the plus sign.
 # 
-# ![](figs/np_data_plus_ones.png)
+# ![](images/np_data_plus_ones.png)
 
 # In[60]:
 
@@ -632,7 +632,7 @@ data + ones
 
 # You can do all operations on arrays
 # 
-# ![](figs/np_sub_mult_divide.png)
+# ![](images/np_sub_mult_divide.png)
 
 # In[61]:
 
@@ -696,7 +696,7 @@ data = np.array([1.0, 2.0])
 data * 1.6
 
 
-# ![](figs/np_multiply_broadcasting.png)
+# ![](images/np_multiply_broadcasting.png)
 # 
 # NumPy understands that the multiplication should happen with each cell.  
 # * Broadcasting is a mechanism that allows NumPy to perform operations on arrays of different shapes. 
@@ -745,7 +745,7 @@ print(indices_list)
 # 
 # It’s common to need to transpose your matrices. NumPy arrays have the property T that allows you to transpose a matrix.
 # 
-# ![](figs/np_transposing_reshaping.png)
+# ![](images/np_transposing_reshaping.png)
 
 # In[71]:
 
@@ -756,7 +756,7 @@ data.T
 
 # You may also need to switch the dimensions of a matrix. This can happen when, for example, you have a model that expects a certain input shape that is different from your dataset. This is where the `reshape` method can be useful. You simply need to pass in the new dimensions that you want for the matrix.
 # 
-# ![](figs/np_reshape.png)
+# ![](images/np_reshape.png)
 
 # In[72]:
 

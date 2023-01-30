@@ -350,6 +350,68 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../week4/lecture4/lecture4.html">
+   Lecture 👩‍🏫
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/0_Conceptual_Overview.html">
+     📝 Conceptual Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/1_Introduction_to_functions.html">
+     📝 Introduction to Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/2_activity_4_1.html">
+     💻 Activity 4.1: Build a function to convert inches to feet
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/3_Functions_as_objects.html">
+     📝Functions as Objects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/4_Dynamic_Behavior_in_Python.html">
+     📝 Dynamic Behavior in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/5_activity_4_2.html">
+     💻 Activity 4.2: Solving an Old School Punishment With a New Trick
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/6_Debugging_in_functions.html">
+     📝 Debugging in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/7_Functions_that_Return.html">
+     📝 Return Output using Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/8_activity_4_3.html">
+     💻 Activity 4.3: Analyzing Text
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../week4/lecture4/9_activity_4_4.html">
+     💻 Activity 4.4: Using Functions to Build the Game of Craps
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../week4/homework4/hw4-functions.html">
    🏡📝 Homework 4 - Applying Functions with Engineering Applications
@@ -1128,8 +1190,8 @@ Not all packages are installed with Python. You can download a distribution that
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 6 µs, sys: 9 µs, total: 15 µs
-Wall time: 15.7 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 7 µs, sys: 10 µs, total: 17 µs
+Wall time: 17.6 µs
 </pre></div>
 </div>
 </div>
@@ -1658,8 +1720,8 @@ Wall time: 15.7 µs
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>139843311796272
-139843311796272
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140502273802480
+140502273802480
 </pre></div>
 </div>
 </div>
@@ -1797,9 +1859,9 @@ Wall time: 15.7 µs
 <section id="basic-array-operations">
 <h2>Basic array operations<a class="headerlink" href="#basic-array-operations" title="Permalink to this headline">#</a></h2>
 <p>Once you’ve created your arrays, you can start to work with them. Let’s say, for example, that you’ve created two arrays, one called “data” and one called “ones”</p>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_array_dataones.png" /></p>
+<p><img alt="" src="../../../_images/np_array_dataones.png" /></p>
 <p>You can add the arrays together with the plus sign.</p>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_data_plus_ones.png" /></p>
+<p><img alt="" src="../../../_images/np_data_plus_ones.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
@@ -1815,7 +1877,7 @@ Wall time: 15.7 µs
 </div>
 </div>
 <p>You can do all operations on arrays</p>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_sub_mult_divide.png" /></p>
+<p><img alt="" src="../../../_images/np_sub_mult_divide.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">-</span> <span class="n">ones</span>
@@ -1914,7 +1976,7 @@ Wall time: 15.7 µs
 </div>
 </div>
 </div>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_multiply_broadcasting.png" /></p>
+<p><img alt="" src="../../../_images/np_multiply_broadcasting.png" /></p>
 <p>NumPy understands that the multiplication should happen with each cell.</p>
 <ul class="simple">
 <li><p>Broadcasting is a mechanism that allows NumPy to perform operations on arrays of different shapes.</p></li>
@@ -1967,7 +2029,7 @@ Wall time: 15.7 µs
 <section id="transposing-and-reshaping">
 <h2>Transposing and Reshaping<a class="headerlink" href="#transposing-and-reshaping" title="Permalink to this headline">#</a></h2>
 <p>It’s common to need to transpose your matrices. NumPy arrays have the property T that allows you to transpose a matrix.</p>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_transposing_reshaping.png" /></p>
+<p><img alt="" src="../../../_images/np_transposing_reshaping.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
@@ -1983,7 +2045,7 @@ Wall time: 15.7 µs
 </div>
 </div>
 <p>You may also need to switch the dimensions of a matrix. This can happen when, for example, you have a model that expects a certain input shape that is different from your dataset. This is where the <code class="docutils literal notranslate"><span class="pre">reshape</span></code> method can be useful. You simply need to pass in the new dimensions that you want for the matrix.</p>
-<p><img alt="" src="jupyterbook/week3/lecture3/figs/np_reshape.png" /></p>
+<p><img alt="" src="../../../_images/np_reshape.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
