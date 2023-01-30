@@ -228,7 +228,7 @@ plt.imshow(to_sepia(img));
 # 
 # It can be helpful to crop an image to make its size smaller and focus around an object of interest. Some AI image classification systems require training data that is cropped to a square region of interest.
 # 
-# In this problem your task is to crop the black and white image of the bird so that it is a square image centered around the bird. Specifically, you should crop a $601$ x $601$ square centered around the pixel with $(x,y)$ coordinates $(656,375)$. Note: The point $(0,0)$ is the top left of the image, and $y$ coordinates increase towards the bottom.
+# In this problem your task is to crop the black and white image of the bird so that it is a square image centered around the bird. Specifically, you should crop a $601$ x $601$ square centered around the pixel with $(x,y)$ coordinates $(565,375)$. Note: The point $(0,0)$ is the top left of the image, and $y$ coordinates increase towards the bottom.
 # 
 # Write python code to do the following:
 # 
