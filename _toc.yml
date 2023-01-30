@@ -55,8 +55,8 @@ parts:
           - file: jupyterbook/week3/lecture3/3_Activity_2_Profanity_Detector
           - file: jupyterbook/week3/lecture3/3_extra_Intro_to_numpy
       - file: jupyterbook/week3/homework3/hw3-types
-      - file: jupyterbook/week3/lab3/week_3_lab_intro
-      - file: jupyterbook/week3/lab3/lab2-scrabble      
+      - file: jupyterbook/week3/lab2/week_3_lab_intro
+      - file: jupyterbook/week3/lab2/lab2-scrabble      
   - caption: "Week 4\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week4/lecture4/lecture4
@@ -73,7 +73,8 @@ parts:
           - file: jupyterbook/week4/lecture4/8_activity_4_3
           - file: jupyterbook/week4/lecture4/9_activity_4_4
       - file: jupyterbook/week4/homework4/hw4-functions
-      - file: jupyterbook/week4/lab4/lab4-image
+      - file: jupyterbook/week4/lab3/week_4_lab_intro
+      - file: jupyterbook/week4/lab3/lab3-image
 
 
 
