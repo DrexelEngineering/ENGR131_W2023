@@ -6,10 +6,10 @@
 
 # Initialize Otter
 import otter
-grader = otter.Notebook("lab4-image.ipynb")
+grader = otter.Notebook("lab3-image.ipynb")
 
 
-# # 🧪🖥 Lab 4: Image Processing
+# # 🧪🖥 Lab 3: Image Processing
 # 
 # This lab explores basic image processing in Python.
 # 
@@ -269,7 +269,7 @@ plt.imshow(bw_bird_cropped);
 # 
 # * Load an image of your choosing and store it in a variable called `my_img`
 # * Store a black and white version of the image in a varialbe called `bw_my_img`
-# * Store a cropped version of the black and white image in a variable called `by_my_img_cropped`
+# * Store a cropped version of the black and white image in a variable called `bw_my_img_cropped`
 # * Your crop should be square of an appropriate size, centered around the region of interest.
 # 
 # Hint: You will need to upload your image so that it is in the same directory as this notebook.
