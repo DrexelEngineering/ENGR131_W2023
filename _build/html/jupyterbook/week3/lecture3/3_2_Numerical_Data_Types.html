@@ -994,10 +994,16 @@ A - alpha (transparency)</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fe37ea506a0&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">16</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">skimage.io</span> <span class="kn">import</span> <span class="n">imread</span><span class="p">,</span> <span class="n">imshow</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">drexel_dragon</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s2">&quot;./images/drexel-dragon-all_blue.png&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">imshow</span><span class="p">(</span><span class="n">drexel_dragon</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;skimage&#39;
 </pre></div>
 </div>
-<img alt="../../../_images/3_2_Numerical_Data_Types_41_1.png" src="../../../_images/3_2_Numerical_Data_Types_41_1.png" />
 </div>
 </div>
 <p>Let’s view the shape of the variable holding the image information.</p>

@@ -17,13 +17,13 @@ Article_1 = newsgroups_train.data[0]
 Article_2 = newsgroups_train.data[1]
 
 
-# In[2]:
+# In[33]:
 
 
 print(Article_1)
 
 
-# In[3]:
+# In[34]:
 
 
 print(Article_2)
@@ -54,7 +54,7 @@ print(Article_2)
 
 
 
-# In[4]:
+# In[5]:
 
 
 # check both articles visually
