@@ -80,7 +80,7 @@ parts:
     # - file: jupyterbook/week5/lecture5/lecture5
     #     title: "Lecture 👩‍🏫"
     #     sections:
-      - file: jupyterbook/week5/homework4/hw4-branching
+      - file: jupyterbook/week5/homework5/hw5-branching
       - file: jupyterbook/week5/lab4/lab4-RPS
 
 

@@ -91,13 +91,13 @@
 # | 2-1/16 | Expressions & Modules | Ch. 2,3 | No Class | HW2 (Mathematical Calculations) | Lab2 (Commenting Randomization Code: Modules) |
 # | 3-1/23 | Types & Strings |  Ch. 4,5  | *application* | HW3 (Types) | Lab3 (Scrabble) | 
 # | 4-1/30 | Functions & Recursion | Ch. 6,7 | *application* | HW4 (Functions) | Lab4 (Image Processing) | 
-# | 5-2/6 | Branching & Loops | Ch. 8,9 | *application* | HW5 (Branching)| Peer Review Video | 
-# | 6-2/13 | No Class | No Reading | **Midterm** | No HW | Lab5 (Rock, Paper, Scissors) | 
-# | 7-2/20 | Flow Control & File Handling | Ch. 10 | *application* | HW6 (Loops) | Lab6 (DNA Analysis)|
+# | 5-2/6 | Branching & Loops | Ch. 8,9 | *application* | HW5 (Branching)| Lab5 (Rock, Paper, Scissors) | 
+# | 6-2/13 | Flow Control & File Handling | Ch. 10 | *application* | HW6 (Loops) | Peer Review Video | 
+# | 7-2/20 | No Class | No Reading | **Midterm** | No HW | Lab6 (DNA Analysis)|
 # | 8-2/27 | Lists & Dictionaries | Ch. 11 | *application* | HW7 (Strings) | Lab7 (Audio Signal Processing) | 
 # | 9-3/6 | Classes | Ch. 12,13 | *application* | HW8 (Triangulation) | Lab8 (Pollutant Tracking) | 
 # | 10-3/13 | Visualization & Exceptions | Ch. 14,15 | *application* | No HW | Peer Review Video | 
-# | 11-3/20 | **Final Exam** during prescribed time  | |  |  |  | 
+# | 11-3/20 | **Final Exam** at 8 am on Monday, March 20  | |  |  |  | 
 # 
 # <br>
 
@@ -108,8 +108,8 @@
 # | 3-1/23 | Types | String basics, String formatting, List basics, Dictionary basics.  Container types, string slicing, advanced string formatting, strings as anonymous/nameless objects, string methods, splitting and joining strings, the string formatting method | 
 # | 4-1/30 | Functions | User-defined functions, function parameters, returning values from functions, dynamic typing, functions as objects, scope, namespaces, function arguments, keyword arguments, defining default function parameter values, arbitrary argument lists, multiple function outputs | 
 # | 5-2/6 | Branching & Loops & Exceptions | Code blocks, if-else statements, relational and equality operators, boolean operators and expressions, conditional expressions; while-loops, iterators, for-loops; handling exceptions using try-except, multiple exception handlers, raising exceptions, exceptions with functions. | 
-# | 6-2/13 | No Class | Review prior concepts |
-# | 7-2/20 | Flow Control & File Handling | Multiple if-else statements, membership operators,  iteration using the built-in range() function, while-loops vs for-loops, nested loops, modifying iteration using break and continue, iteration using by both index and value using enumerate()reading files; writing files, interfacing with the operating system and file systems, handling human-readable data, handling binary data, passing files via command-line arguments, using the with statement to create safe file handling contexts, parsing Comma Separated Value (CSV) files  |
+# | 6-2/13 | Flow Control & File Handling | Multiple if-else statements, membership operators,  iteration using the built-in range() function, while-loops vs for-loops, nested loops, modifying iteration using break and continue, iteration using by both index and value using enumerate()reading files; writing files, interfacing with the operating system and file systems, handling human-readable data, handling binary data, passing files via command-line arguments, using the with statement to create safe file handling contexts, parsing Comma Separated Value (CSV) files |
+# | 7-2/20 | No Class | Review prior concepts  |
 # | 8-2/27 | Lists and Dictionaries | Lists, list methods, iterating over a list, nested lists, list slicing, loops that mutate lists, list comprehensions, sorting lists, command line arguments. dictionaries: dictionary methods, iterating over dictionaries, nested dictionaries | 
 # | 9-3/6 |  Classes | Intro to Object Oriented Programming (OOP), grouping data with classes, class methods, class and instance object types, class constructors, class interfaces, operator overloading and using classes to build complex custom numeric types | 
 # | 10-3/13 | Visualization | Introduction to Matplotlib, plotting and visualizing data, styling plots, text and annotations| 
@@ -123,8 +123,8 @@
 # | Homework | 2.5 |  25%  | 12:00 pm Fridays | Develop individual mastery of skills |
 # | Lab Participation | 2 |  10% | lab time slot | Collaborate to apply skills to creative problems |
 # | Lab Completion | 1 |  15%  | 12:00 pm Mondays | Collaborate to apply skills to creative problems |
-# | Midterm | n/a |  15%  | 8:00 am on Monday, Feb 13 | Demonstrate mastery; connect diverse skills
-# | Final | n/a |  20%  | finals week |
+# | Midterm | n/a |  15%  | 8:00 am on Wed., Feb. 22 | Demonstrate mastery; connect diverse skills
+# | Final | n/a |  20%  | 8:00 am on Mon., Mar. 20 |
 
 # The mapping between the percent grade (rounded to the integer) and the final letter grade will be assigned as follows:
 # 
@@ -165,9 +165,9 @@
 
 # **d. Midterm and Final** 
 # 
-# The midterm will be designed to demonstrate individual mastery and connections between concepts taught. This will be a common exam at 08:00 am on Monday, February 13, which will be completed on paper with pen or pencil only.
+# The midterm will be designed to demonstrate individual mastery and connections between concepts taught. This will be a common exam at 08:00 am on Wednesday, February 22, which will be completed on paper with pen or pencil only.
 # 
-# The final exam will be a practical exam during the assigned time period. The exam will demonstrate your ability to write efficient, well-commented, and error-free code.
+# The final exam will be a practical exam at 8:00 am on Monday, March 20. The exam will demonstrate your ability to write efficient, well-commented, and error-free code. 
 
 # ## 5. Academic Policies ##
 # 

@@ -1,0 +1,11 @@
+x = 20
+
+
+def my_function(value):
+    y = value
+    z = y + 3
+    print(z)
+
+
+my_function(7)
+

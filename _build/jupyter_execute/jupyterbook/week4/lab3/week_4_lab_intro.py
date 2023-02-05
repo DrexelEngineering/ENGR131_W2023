@@ -7,7 +7,7 @@
 
 # ## Functions
 
-# #### Defining a function
+# ### Defining a function
 # A function is defined using the `def` keyword. All code within the function must be indented.
 
 # In[1]:
@@ -18,7 +18,7 @@ def myfunc():
     print(x)
 
 
-# #### Calling a function
+# ### Calling a function
 # To run the code within a function, we can write the name of a function followed by parentheses. This is called "calling the function." The code below can be used to call the myfunc function.
 
 # In[2]:
@@ -27,7 +27,7 @@ def myfunc():
 myfunc()
 
 
-# #### Function inputs
+# ### Function inputs
 # A function can be given input arguments which are included within the parentheses of the function definition.
 
 # In[3]:
@@ -45,7 +45,7 @@ def dbl(x):
 dbl(6)
 
 
-# #### Function outputs
+# ### Function outputs
 # A function can output data by using the `return` keyword. After the return statement, the function is exited immediately, so no indented code below the return statement gets run.
 
 # In[5]:
@@ -64,7 +64,7 @@ y = square(3)
 print(y)
 
 
-# #### Multiple inputs and outputs
+# ### Multiple inputs and outputs
 # Functions can have multiple inputs and outputs, separated by commas. The example function below takes in two inputs, a rectangle's length and width, and it returns the rectangle's area and perimeter.
 
 # In[7]:

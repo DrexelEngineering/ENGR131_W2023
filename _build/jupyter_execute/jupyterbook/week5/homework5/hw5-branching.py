@@ -9,7 +9,7 @@ import otter
 grader = otter.Notebook("hw5-branching.ipynb")
 
 
-# # Homework 5
+# # 🏡📝 Homework 5
 # 
 # This assignment includes three problems on the topic of branching.
 # 
@@ -17,7 +17,7 @@ grader = otter.Notebook("hw5-branching.ipynb")
 
 # **Question 1: Grade Calculator** 
 # 
-# Your task is to write a funciton accepts an integer score and returns a string of the letter grade that score corresponds to. The mapping of score ranges to letter grades is:
+# Your task is to write a function accepts an integer score and returns a string of the letter grade that score corresponds to. The mapping of score ranges to letter grades is:
 # 
 # <center>
 # 

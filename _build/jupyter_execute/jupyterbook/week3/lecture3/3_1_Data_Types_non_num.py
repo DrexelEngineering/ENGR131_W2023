@@ -76,19 +76,19 @@ type(true)
 # <tt class="docutils literal"> == - is an operator for is equal to 
 # </div>
 
-# In[4]:
+# In[5]:
 
 
 True == 1
 
 
-# In[5]:
+# In[6]:
 
 
 True == 0
 
 
-# In[6]:
+# In[8]:
 
 
 False == 0
@@ -104,7 +104,7 @@ False == 0
 # <tt class="docutils literal"> / <tt> - Division operator<br> 
 # </div>
 
-# In[7]:
+# In[9]:
 
 
 True + (False / True)
@@ -123,7 +123,7 @@ True + (False / True)
 
 # String with "
 
-# In[8]:
+# In[10]:
 
 
 "Drexel Engineering"
@@ -131,7 +131,7 @@ True + (False / True)
 
 # String with '
 
-# In[9]:
+# In[11]:
 
 
 "Drexel Engineering"
@@ -139,7 +139,7 @@ True + (False / True)
 
 # Are these the same?
 
-# In[10]:
+# In[12]:
 
 
 "Drexel Engineering" == "Drexel Engineering"
@@ -147,7 +147,7 @@ True + (False / True)
 
 # Use the `type` function to confirm the datatype of an object or variable.
 
-# In[11]:
+# In[13]:
 
 
 type("Drexel Engineering")
@@ -155,7 +155,7 @@ type("Drexel Engineering")
 
 # Strings can be numbers.
 
-# In[12]:
+# In[14]:
 
 
 type("123")
@@ -163,7 +163,7 @@ type("123")
 
 # Strings can be combinations of characters, numbers, and even emojis.
 
-# In[13]:
+# In[15]:
 
 
 type("Drexel 🐉 112")
