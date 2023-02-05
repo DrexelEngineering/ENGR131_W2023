@@ -75,6 +75,12 @@ parts:
       - file: jupyterbook/week4/homework4/hw4-functions
       - file: jupyterbook/week4/lab3/week_4_lab_intro
       - file: jupyterbook/week4/lab3/lab3-image
-
+  - caption: "Week 5\uFE0F\u20E3"
+    chapters:
+    # - file: jupyterbook/week5/lecture5/lecture5
+    #     title: "Lecture 👩‍🏫"
+    #     sections:
+      - file: jupyterbook/week5/homework4/hw4-branching
+      - file: jupyterbook/week5/lab4/lab4-RPS
 
 
