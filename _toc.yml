@@ -85,7 +85,7 @@ parts:
           - file: jupyterbook/week5/lecture5/2_activity_5_1
           - file: jupyterbook/week5/lecture5/3_intro_loops_integrals
           - file: jupyterbook/week5/lecture5/4_activity_5_2
-          - file: jupyterbook/week5/lecture5/4_activity_5_3
+          - file: jupyterbook/week5/lecture5/5_activity_5_3
       - file: jupyterbook/week5/homework5/hw5-branching
       - file: jupyterbook/week5/lab4/lab4-RPS
 
