@@ -88,5 +88,6 @@ parts:
           - file: jupyterbook/week5/lecture5/5_activity_5_3
       - file: jupyterbook/week5/homework5/hw5-branching
       - file: jupyterbook/week5/lab4/lab4-RPS
+      - file: jupyterbook/week5/lab4/week_5_lab_intro
 
 
