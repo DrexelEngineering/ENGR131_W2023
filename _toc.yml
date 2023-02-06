@@ -77,9 +77,15 @@ parts:
       - file: jupyterbook/week4/lab3/lab3-image
   - caption: "Week 5\uFE0F\u20E3"
     chapters:
-    # - file: jupyterbook/week5/lecture5/lecture5
-    #     title: "Lecture 👩‍🏫"
-    #     sections:
+      - file: jupyterbook/week5/lecture5/lecture5
+          title: "Lecture 👩‍🏫"
+          sections:
+          - file: jupyterbook/week5/lecture5/0_Logistics_Inspiration
+          - file: jupyterbook/week5/lecture5/1_intro_branching
+          - file: jupyterbook/week5/lecture5/2_activity_5_1
+          - file: jupyterbook/week5/lecture5/3_intro_loops_integrals
+          - file: jupyterbook/week5/lecture5/4_activity_5_2
+          - file: jupyterbook/week5/lecture5/4_activity_5_3
       - file: jupyterbook/week5/homework5/hw5-branching
       - file: jupyterbook/week5/lab4/lab4-RPS
 
