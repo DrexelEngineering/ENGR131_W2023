@@ -18,7 +18,7 @@ parts:
   - caption: "Week 1\uFE0F\u20E3"
     chapters:
       - file: jupyterbook/week1/lecture1/lecture1
-        title:"Lecture 👩‍🏫"
+        title: "Lecture 👩‍🏫"
         sections:
           - file: jupyterbook/week1/lecture1/1_1_Why_Coding_is_the_most_important_skill
           - file: jupyterbook/week1/lecture1/1_2_Who_is_Prof_Capps
