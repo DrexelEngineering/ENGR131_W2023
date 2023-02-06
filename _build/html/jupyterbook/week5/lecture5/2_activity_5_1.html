@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Lecture 5 &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    <title>Activity 5.1: Nuclear Plant Temperature Alert &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Introduction to Loops with Integrals" href="3_intro_loops_integrals.html" />
+    <link rel="prev" title="Introduction to Branching" href="1_intro_branching.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -431,7 +433,49 @@ const thebe_selector_output = ".output, .cell_output"
   Week 5️⃣
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="lecture5.html">
+   Lecture 👩‍🏫
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="0_Logistics_Inspiration.html">
+     Logistics Recap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_intro_branching.html">
+     Introduction to Branching
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Activity 5.1: Nuclear Plant Temperature Alert
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_intro_loops_integrals.html">
+     Introduction to Loops with Integrals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="4_activity_5_2.html">
+     Activity 5.2: Taking integrals with loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="5_activity_5_3.html">
+     Activity 5.3: Advancing integral evaluations by combining loops and branches
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../homework5/hw5-branching.html">
    🏡📝 Homework 5
@@ -493,6 +537,71 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week5/lecture5/2_activity_5_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week5/lecture5/2_activity_5_1.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week5/lecture5/2_activity_5_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -532,7 +641,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week5/lecture5/lecture.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week5/lecture5/2_activity_5_1.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -560,7 +669,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/jupyterbook/week5/lecture5/lecture.md"
+        <a href="../../../_sources/jupyterbook/week5/lecture5/2_activity_5_1.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -571,7 +680,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -609,7 +718,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 5</h1>
+                <h1>Activity 5.1: Nuclear Plant Temperature Alert</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -621,18 +730,54 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-5">
-<h1>Lecture 5<a class="headerlink" href="#lecture-5" title="Permalink to this headline">#</a></h1>
-<!-- 1. {doc}`Conceptual Overview                                            <./0_Conceptual_Overview>`
-2. {doc}`Introduction to Functions                                      <./1_Introduction_to_functions>`
-3. {doc}`Activity 4.1: Unit Conversions                                 <./2_activity_4_1>`
-4. {doc}`Functions as Objects                                           <./3_Functions_as_objects>`
-5. {doc}`Dynamic Behavior                                                <./4_Dynamic_Behavior_in_Python>`
-6. {doc}`Activity 4.2: Solving an Old School Punishment With a New TricK <./5_activity_4_2>`
-7. {doc}`Debugging in Functions                                          <./6_Debugging_in_functions>`
-8. {doc}`Functions that Return                                          <./7_Functions_that_Return>`
-9. {doc}`Activity 4.3: Analyzing Text                                   <./8_activity_4_3>`
-10. {doc}`Using Functions to Build the Game of Craps                   <./9_activity_4_4>` -->
+  <section class="tex2jax_ignore mathjax_ignore" id="activity-5-1-nuclear-plant-temperature-alert">
+<h1>Activity 5.1: Nuclear Plant Temperature Alert<a class="headerlink" href="#activity-5-1-nuclear-plant-temperature-alert" title="Permalink to this headline">#</a></h1>
+<p>We have just covered the relationship of a process value to a desired set point and discussed the importance of redundancy, especially in systems that have the potential to harm people.</p>
+<p>Consider a nuclear reactor. A meltdown would be sufficiently catastrophic that the temperature of the cooling water around the nuclear fuel rods is monitored by four sensors.</p>
+<p>An alarm should go off if</p>
+<ol class="simple">
+<li><p>any of the two sensors report a temperature greater than 100 degrees Celsius, or</p></li>
+<li><p>any two of the sensor readings disagree by strictly 8 degrees.</p></li>
+</ol>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">coolingWaterAlarm(t1,t2,t3,t4)</span></code> where <code class="docutils literal notranslate"><span class="pre">t1</span></code>, <code class="docutils literal notranslate"><span class="pre">t2</span></code>, <code class="docutils literal notranslate"><span class="pre">t3</span></code>, and <code class="docutils literal notranslate"><span class="pre">t4</span></code> are the temperature readings for sensor 1, sensor 2, sensor 3, and sensor 4, respectively.</p>
+<p>The function should print</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Alarm!</span> <span class="pre">Temperatures</span> <span class="pre">differ.</span></code> if the first condition above is met,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alarm!</span> <span class="pre">Temperatures</span> <span class="pre">exceed</span> <span class="pre">100</span> <span class="pre">deg</span> <span class="pre">Celsius.</span></code> if the second condition above is met, or</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Normal</span> <span class="pre">operation</span></code> if neither condition is met.</p></li>
+</ol>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#write your function below</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this call to test your function</span>
+<span class="n">coolingWaterAlarm</span><span class="p">(</span><span class="mi">93</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">101</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this call to test your function</span>
+<span class="n">coolingWaterAlarm</span><span class="p">(</span><span class="mi">95</span><span class="p">,</span><span class="mi">103</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">101</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this call to test your function</span>
+<span class="n">coolingWaterAlarm</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">101</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -662,6 +807,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="1_intro_branching.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to Branching</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="3_intro_loops_integrals.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to Loops with Integrals</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

@@ -15,7 +15,7 @@ grader = otter.Notebook("lab2-scrabble.ipynb")
 # 
 # 
 
-# ### Intro to Scrabble
+# ## Intro to Scrabble
 # 
 # Scrabble is a board game in which players lay tiles containing letters to spell words. Each letter has an associated point value based on the rarity of the letter. For instance, the very common letter `E` is worth only one point, while the much rarer `Q` is worth 10 points. The letter scores are shown in the table below:
 # 
