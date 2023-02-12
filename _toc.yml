@@ -89,5 +89,7 @@ parts:
       - file: jupyterbook/week5/homework5/hw5-branching
       - file: jupyterbook/week5/lab4/lab4-RPS
       - file: jupyterbook/week5/lab4/week_5_lab_intro
-
+  - caption: "Week 6\uFE0F\u20E3"
+    chapters:
+      - file: jupyterbook/week6/homework6/hw6-loops
 
