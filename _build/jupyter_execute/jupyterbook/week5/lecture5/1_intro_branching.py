@@ -47,7 +47,7 @@
 # * Material scientists improve designs of windows and doors to enhance the controllability of the temperature and sustainability of the optimal conditions.
 
 # The thermostat typically acts as both the sensor collecting feedback and the controller determining whether the process should be heating, cooling, or no intervention. 
-# 
+
 # The very simplest process control requires only the process variable, or the room temperature in this case, and the set point, or the desired temperature in this case.
 
 # In[1]:
