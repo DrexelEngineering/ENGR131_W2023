@@ -91,5 +91,16 @@ parts:
       - file: jupyterbook/week5/lab4/week_5_lab_intro
   - caption: "Week 6\uFE0F\u20E3"
     chapters:
+    chapters:
+      - file: jupyterbook/week6/lecture6/lecture6
+        title: "Lecture 👩‍🏫"
+        sections:
+          - file: jupyterbook/week6/lecture6/6_0_Logistics_Inspiration
+          - file: jupyterbook/week6/lecture6/6_1_enumerate
+          - file: jupyterbook/week6/lecture6/6_2_review_for
+          - file: jupyterbook/week6/lecture6/6_3_intro_while
+          - file: jupyterbook/week6/lecture6/6_4_activity_6_1
+          - file: jupyterbook/week6/lecture6/6_5_break_continue
+          - file: jupyterbook/week6/lecture6/6_6_activity_6_2
       - file: jupyterbook/week6/homework6/hw6-loops
 
