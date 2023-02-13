@@ -1,4 +1,4 @@
-# Lecture 5
+# Lecture 6
 
 1. {doc}`Logistics and Ideation                                    <./6_0_Logistics_Inspiration>`
 2. {doc}`Introduction of Enumerate                                 <./6_1_enumerate>`
