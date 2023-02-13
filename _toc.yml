@@ -102,5 +102,7 @@ parts:
           - file: jupyterbook/week6/lecture6/6_4_activity_6_1
           - file: jupyterbook/week6/lecture6/6_5_break_continue
           - file: jupyterbook/week6/lecture6/6_6_activity_6_2
+          - file: jupyterbook/week6/lecture6/6_7_file_handling
+          - file: jupyterbook/week6/lecture6/6_8_activity_6_3_Determining_the_superbowl_winner
       - file: jupyterbook/week6/homework6/hw6-loops
 
