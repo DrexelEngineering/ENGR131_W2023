@@ -10,18 +10,7 @@
      "skip-execution"
     ]
    },
-   "outputs": [
-    {
-     "ename": "",
-     "evalue": "",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31mRunning cells with 'base' requires ipykernel package.\n",
-      "\u001b[1;31mRun the following command to install 'ipykernel' into the Python environment. \n",
-      "\u001b[1;31mCommand: 'conda install -n base ipykernel --update-deps --force-reinstall'"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# Initialize Otter\n",
     "import otter\n",
@@ -32,9 +21,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "# 🧪🖥 Lab 3: Image Processing\n",
     "\n",
@@ -60,9 +49,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "**Loading and viewing Images** \n",
     "\n",
@@ -85,9 +74,9 @@
   {
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "To view the image, we can use plt.imshow()"
    ]
@@ -109,9 +98,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "This image is represented in Python as a 3 dimensional array with dimensions ($H$, $W$, $C$), where \n",
     "\n",
@@ -146,9 +135,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "From this, we can see that this image has a height of 854 pixels, a width of 1000 pixels, and 3 color channels. The 3 color channels represent the red, green, and blue components of an image. The color of each pixel in the full color image is determined by its RGB components. \n",
     "\n",
@@ -178,9 +167,9 @@
   {
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "We can view the 3 color channels individually like this:"
    ]
@@ -233,9 +222,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "**Task 1: To Black and White** \n",
     "\n",
@@ -302,9 +291,9 @@
   {
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "View your black and white image:"
    ]
@@ -326,9 +315,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "**Task 2: To Sepia Tone** \n",
     "\n",
@@ -394,9 +383,9 @@
   {
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "View your sepia tone image:"
    ]
@@ -418,15 +407,15 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "**Task 3: Cropping** \n",
     "\n",
     "It can be helpful to crop an image to make its size smaller and focus around an object of interest. Some AI image classification systems require training data that is cropped to a square region of interest.\n",
     "\n",
-    "In this problem your task is to crop the black and white image of the bird so that it is a square image centered around the bird. Specifically, you should crop a $601$ x $601$ square centered around the pixel with $(x,y)$ coordinates $(565,375)$. Note: The point $(0,0)$ is the top left of the image, and $y$ coordinates increase towards the bottom.\n",
+    "In this problem your task is to crop the black and white image of the bird so that it is a square image centered around the bird. Specifically, you should crop a $601$ x $601$ square centered around the pixel with $(x,y)$ coordinates $(656,375)$. Note: The point $(0,0)$ is the top left of the image, and $y$ coordinates increase towards the bottom.\n",
     "\n",
     "Write python code to do the following:\n",
     "\n",
@@ -470,9 +459,9 @@
   {
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "Let's view the cropped image."
    ]
@@ -494,9 +483,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "**Task 4: Processing your own image** \n",
     "\n",
@@ -547,9 +536,9 @@
    "attachments": {},
    "cell_type": "markdown",
    "metadata": {
-    "deletable": false,
+    "deletable": false, 
     "editable": false
-   },
+  },
    "source": [
     "View your cropped image:"
    ]
@@ -570,7 +559,7 @@
  ],
  "metadata": {
   "kernelspec": {
-   "display_name": "base",
+   "display_name": "engr131",
    "language": "python",
    "name": "python3"
   },
@@ -584,7 +573,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.9.15"
+   "version": "3.10.8 | packaged by conda-forge | (main, Nov 22 2022, 08:27:35) [Clang 14.0.6 ]"
   },
   "otter": {
    "OK_FORMAT": true,
@@ -762,7 +751,7 @@
   },
   "vscode": {
    "interpreter": {
-    "hash": "d7d046052154998ca7dd3d9af52f7220fee50748c9a05b256540159ca8eb430c"
+    "hash": "6a0ce902ec1b836c748f6f45e439265664d32456bd8f9cc005804ba2748aa9ba"
    }
   }
  },
