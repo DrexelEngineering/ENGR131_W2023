@@ -107,4 +107,6 @@ parts:
       - file: jupyterbook/week6/homework6/hw6-loops
       - file: jupyterbook/week6/peerReview1/week_6_lab_intro
       - file: jupyterbook/week6/peerReview1/peerReview1
-
+  - caption: "Week 7\uFE0F\u20E3"
+    chapters:
+      - file: jupyterbook/week7/lab6/lab6-DNA
