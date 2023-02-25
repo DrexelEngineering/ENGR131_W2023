@@ -114,4 +114,4 @@ parts:
       - file: jupyterbook/week7/lab6/week_7_lab_intro
   - caption: "Week 8\uFE0F\u20E3"
     chapters:
-      - file: jupyterbook/week6/homework8/hw8-strings
+      - file: jupyterbook/week8/homework8/hw8-strings
