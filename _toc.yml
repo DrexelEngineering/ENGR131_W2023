@@ -125,3 +125,5 @@ parts:
           - file: jupyterbook/week8/lecture8/8_4_Activity_8_2_Current
           - file: jupyterbook/week8/lecture8/8_5_Dictionaries_Physics
       - file: jupyterbook/week8/homework8/hw8-strings
+      - file: jupyterbook/week8/lab7/Week_8_lab_intro
+      - file: jupyterbook/week8/lab7/lab7-audio
