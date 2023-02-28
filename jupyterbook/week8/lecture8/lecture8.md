@@ -1,4 +1,4 @@
-# Lecture 5
+# Lecture 8
 
 1. {doc}`Logistics and Ideation                                    <./8_0_Logistics_Inspiration>`
 2. {doc}`Using Lists to Plot                                       <./8_1_Lists_Plot>`
