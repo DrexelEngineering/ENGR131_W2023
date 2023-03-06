@@ -8,3 +8,4 @@
 6. {doc}`Inheritance                                               <./5_Inheritance>`
 7. {doc}`Activity 9.3: Building the game LCR                       <./6_Activity_9_3_lrc>`
 8. {doc}`Instructions for setting up your codespaces account       <./Instructions_for_codespaces>`
+9. {doc}`Activity 9.2 Solutions: Building a Group Assignment Tool   <./4_Activity_2_Generating_Groups_solutions>`
