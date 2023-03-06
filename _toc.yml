@@ -142,3 +142,5 @@ parts:
           - file: jupyterbook/week9/lecture9/6_Activity_9_3_lrc
       - file: jupyterbook/week9/homework9/hw9-classes
       - file: jupyterbook/week9/lecture9/Instructions_for_codespaces
+      - file: jupyterbook/week9/lab8/week_9_lab_intro
+      - file: jupyterbook/week9/lab8/lab8-pollutant
