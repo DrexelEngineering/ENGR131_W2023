@@ -141,3 +141,4 @@ parts:
           - file: jupyterbook/week9/lecture9/5_Inheritance
           - file: jupyterbook/week9/lecture9/6_Activity_9_3_lrc
       - file: jupyterbook/week9/homework9/hw9-classes
+      - file: jupyterbook/week9/lecture9/Instructions_for_codespaces
