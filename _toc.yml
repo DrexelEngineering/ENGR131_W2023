@@ -127,3 +127,17 @@ parts:
       - file: jupyterbook/week8/homework8/hw8-strings
       - file: jupyterbook/week8/lab7/Week_8_lab_intro
       - file: jupyterbook/week8/lab7/lab7-audio
+  - caption: "Week 9\uFE0F\u20E3"
+    chapters:
+    chapters:
+      - file: jupyterbook/week9/lecture9/lecture9
+        title: "Lecture 👩‍🏫"
+        sections:
+          - file: jupyterbook/week9/lecture9/0_Logistics_overview
+          - file: jupyterbook/week9/lecture9/1_Introduction_to_Classes
+          - file: jupyterbook/week9/lecture9/2_Activity_1_building_a_sensor
+          - file: jupyterbook/week9/lecture9/3_Creating_Multiple_Objects_of_a_Class
+          - file: jupyterbook/week9/lecture9/4_Activity_2_Generating_Groups
+          - file: jupyterbook/week9/lecture9/5_Inheritance
+          - file: jupyterbook/week9/lecture9/6_Activity_9_3_lrc
+      - file: jupyterbook/week9/homework9/hw9-classes
