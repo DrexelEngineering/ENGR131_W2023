@@ -145,3 +145,16 @@ parts:
       - file: jupyterbook/week9/lecture9/Instructions_for_codespaces
       - file: jupyterbook/week9/lab8/week_9_lab_intro
       - file: jupyterbook/week9/lab8/lab8-pollutant
+  - caption: "Week 10\uFE0F\u20E3"
+      chapters:
+      chapters:
+        - file: jupyterbook/week10/lecture10/lecture10
+          title: "Lecture 👩‍🏫"
+          sections:
+            - file: jupyterbook/week10/lecture10/0_Logistics_overview
+            - file: jupyterbook/week10/lecture10/1_Introduction_plotting
+            - file: jupyterbook/week10/lecture10/2_Activity_1_refining_a_plot
+            - file: jupyterbook/week10/lecture10/3_Colormaps
+            - file: jupyterbook/week10/lecture10/4_Activity_2_Bubble_plot
+            - file: jupyterbook/week10/lecture10/5_Curve_Fitting
+            - file: jupyterbook/week10/lecture10/6_Interactive_Graphics
