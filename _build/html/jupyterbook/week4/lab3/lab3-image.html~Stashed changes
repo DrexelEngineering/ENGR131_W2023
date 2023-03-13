@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>🧪🖥 Lab 6: DNA Analysis &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+    <title>🧪🖥 Lab 3: Image Processing &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="📝Week 7 - Lab Intro" href="week_7_lab_intro.html" />
-    <link rel="prev" title="Midterm" href="../midterm/midterm.html" />
+    <link rel="next" title="Lecture 5" href="../../week5/lecture5/lecture5.html" />
+    <link rel="prev" title="📝Week 4 - Lab Intro" href="week_4_lab_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -349,9 +351,9 @@ const thebe_selector_output = ".output, .cell_output"
   Week 4️⃣
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../week4/lecture4/lecture4.html">
+  <a class="reference internal" href="../lecture4/lecture4.html">
    Lecture 👩‍🏫
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -361,69 +363,69 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/0_Conceptual_Overview.html">
+    <a class="reference internal" href="../lecture4/0_Conceptual_Overview.html">
      📝 Conceptual Overview
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/1_Introduction_to_functions.html">
+    <a class="reference internal" href="../lecture4/1_Introduction_to_functions.html">
      📝 Introduction to Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/2_activity_4_1.html">
+    <a class="reference internal" href="../lecture4/2_activity_4_1.html">
      💻 Activity 4.1: Build a function to convert inches to feet
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/3_Functions_as_objects.html">
+    <a class="reference internal" href="../lecture4/3_Functions_as_objects.html">
      📝Functions as Objects
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/4_Dynamic_Behavior_in_Python.html">
+    <a class="reference internal" href="../lecture4/4_Dynamic_Behavior_in_Python.html">
      📝 Dynamic Behavior in Python
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/5_activity_4_2.html">
+    <a class="reference internal" href="../lecture4/5_activity_4_2.html">
      💻 Activity 4.2: Solving an Old School Punishment With a New Trick
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/6_Debugging_in_functions.html">
+    <a class="reference internal" href="../lecture4/6_Debugging_in_functions.html">
      📝 Debugging in Python
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/7_Functions_that_Return.html">
+    <a class="reference internal" href="../lecture4/7_Functions_that_Return.html">
      📝 Return Output using Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/8_activity_4_3.html">
+    <a class="reference internal" href="../lecture4/8_activity_4_3.html">
      💻 Activity 4.3: Analyzing Text
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../week4/lecture4/9_activity_4_4.html">
+    <a class="reference internal" href="../lecture4/9_activity_4_4.html">
      💻 Activity 4.4: Using Functions to Build the Game of Craps
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../week4/homework4/hw4-functions.html">
+  <a class="reference internal" href="../homework4/hw4-functions.html">
    🏡📝 Homework 4 - Applying Functions with Engineering Applications
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../week4/lab3/week_4_lab_intro.html">
+  <a class="reference internal" href="week_4_lab_intro.html">
    📝Week 4 - Lab Intro
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../week4/lab3/lab3-image.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    🧪🖥 Lab 3: Image Processing
   </a>
  </li>
@@ -582,19 +584,19 @@ const thebe_selector_output = ".output, .cell_output"
   Week 7️⃣
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../midterm/midterm.html">
+  <a class="reference internal" href="../../week7/midterm/midterm.html">
    Midterm
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../week7/lab6/lab6-DNA.html">
    🧪🖥 Lab 6: DNA Analysis
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="week_7_lab_intro.html">
+  <a class="reference internal" href="../../week7/lab6/week_7_lab_intro.html">
    📝Week 7 - Lab Intro
   </a>
  </li>
@@ -738,71 +740,10 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../week9/lab8/lab8-pollutant.html">
-<<<<<<< Updated upstream
-   🧪🖥️ Lab 8: Pollutant Triangulation
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Week 10️⃣
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../week10/lecture10/lecture10.html">
-   Lecture 👩‍🏫
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/0_Logistics_overview.html">
-     📝 Logistics: Final Exam, Final Lab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/1_Introduction_plotting.html">
-     📝 Introduction to Plotting in Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/2_Activity_1_refining_a_plot.html">
-     💻 Activity 10.1: Refining a Simple Plot
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/3_Colormaps.html">
-     📝 Choices for Figures
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/4_Activity_2_Bubble_plot.html">
-     💻 Activity 9.2: Making a Updated Bubble Plot of Engineering Jobs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/5_Curve_Fitting.html">
-     📝 Curve Fitting
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../week10/lecture10/6_Interactive_Graphics.html">
-     📝 Interactive Plotting with Bokeh
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-=======
    🧪🖥 Lab 8: Pollutant Triangulation
   </a>
  </li>
 </ul>
->>>>>>> Stashed changes
 
     </div>
 </nav></div>
@@ -861,7 +802,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week7/lab6/lab6-DNA.ipynb"
+        <a href="https://mybinder.org/v2/gh/DrexelEngineering/ENGR131_W2023/main?urlpath=lab/tree/jupyterbook/week4/lab3/lab3-image.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -879,7 +820,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week7/lab6/lab6-DNA.ipynb&branch=main"
+        <a href="https://jupyterhub.coe.drexel.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/DrexelEngineering/ENGR131_W2023&urlpath=lab/tree/ENGR131_W2023/jupyterbook/week4/lab3/lab3-image.ipynb&branch=main"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -897,7 +838,7 @@ title="Launch on JupyterHub"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week7/lab6/lab6-DNA.ipynb"
+        <a href="https://colab.research.google.com/github/DrexelEngineering/ENGR131_W2023/blob/main/jupyterbook/week4/lab3/lab3-image.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -957,7 +898,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week7/lab6/lab6-DNA.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/DrexelEngineering/ENGR131_W2023/issues/new?title=Issue%20on%20page%20%2Fjupyterbook/week4/lab3/lab3-image.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -985,7 +926,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/jupyterbook/week7/lab6/lab6-DNA.ipynb"
+        <a href="../../../_sources/jupyterbook/week4/lab3/lab3-image.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -1034,7 +975,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>🧪🖥 Lab 6: DNA Analysis</h1>
+                <h1>🧪🖥 Lab 3: Image Processing</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -1050,111 +991,263 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize Otter</span>
 <span class="kn">import</span> <span class="nn">otter</span>
-<span class="n">grader</span> <span class="o">=</span> <span class="n">otter</span><span class="o">.</span><span class="n">Notebook</span><span class="p">(</span><span class="s2">&quot;lab6-DNA.ipynb&quot;</span><span class="p">)</span>
+<span class="n">grader</span> <span class="o">=</span> <span class="n">otter</span><span class="o">.</span><span class="n">Notebook</span><span class="p">(</span><span class="s2">&quot;lab3-image.ipynb&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">Running</span> <span class="n">cells</span> <span class="k">with</span> <span class="s1">&#39;base&#39;</span> <span class="n">requires</span> <span class="n">ipykernel</span> <span class="n">package</span><span class="o">.</span>
+
+<span class="n">Run</span> <span class="n">the</span> <span class="n">following</span> <span class="n">command</span> <span class="n">to</span> <span class="n">install</span> <span class="s1">&#39;ipykernel&#39;</span> <span class="n">into</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">environment</span><span class="o">.</span> 
+
+<span class="ne">Command</span>: &#39;conda install -n base ipykernel --update-deps --force-reinstall&#39;
 </pre></div>
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="lab-6-dna-analysis">
-<h1>🧪🖥 Lab 6: DNA Analysis<a class="headerlink" href="#lab-6-dna-analysis" title="Permalink to this headline">#</a></h1>
-<p>This lab conducts DNA analysis with strings and dictionaries.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="lab-3-image-processing">
+<h1>🧪🖥 Lab 3: Image Processing<a class="headerlink" href="#lab-3-image-processing" title="Permalink to this headline">#</a></h1>
+<p>This lab explores basic image processing in Python.</p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Introduction</strong></p>
-<p>In simple terms, your genetic code is a long string of characters drawn from a four-character alphabet <code class="docutils literal notranslate"><span class="pre">ACGT</span></code>, where each letter signifies a particular nucleic acid. Your skills using Python to manipulate strings can be used to perform analyses of genetic code. In this lab, you will write three functions that process a sample string of nucleic acid symbols in three particular ways.</p>
-<p><strong>Task 1: Base Counts</strong></p>
-<p>It can be important to count the number of times each nucleic acid occurs in a string of DNA. You will write a function which takes in a string of DNA and counts the number of times each base (<code class="docutils literal notranslate"><span class="pre">A</span></code>,<code class="docutils literal notranslate"><span class="pre">C</span></code>,<code class="docutils literal notranslate"><span class="pre">G</span></code>, or <code class="docutils literal notranslate"><span class="pre">T</span></code>) occurs. The function returns a dictionary where each key is a letter and its value is the number of times it occurs in the sequence.</p>
+<p><strong>Loading and viewing Images</strong></p>
+<p>The matplotlib.pyplot module, which has been imported, can be used to load and view images. The following code loads an image called <code class="docutils literal notranslate"><span class="pre">&quot;bird.jpeg&quot;</span></code>, scales it to have floating point pixel values from 0 to 1 (instead of 0 to 255), and stores it in a variable called <code class="docutils literal notranslate"><span class="pre">img</span></code>. Make sure the provided <code class="docutils literal notranslate"><span class="pre">bird.jpeg</span></code> file is in the same directory as this notebook.</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;bird.jpeg&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">255</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To view the image, we can use plt.imshow()</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This image is represented in Python as a 3 dimensional array with dimensions (<span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(W\)</span>, <span class="math notranslate nohighlight">\(C\)</span>), where</p>
+<center>
+<p><span class="math notranslate nohighlight">\(H\)</span> = height</p>
+<p><span class="math notranslate nohighlight">\(W\)</span> = width</p>
+<p><span class="math notranslate nohighlight">\(C\)</span> = number of color channels</p>
+</center>
+<p>To view the dimensions, we can print the img array’s “shape” as below:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>From this, we can see that this image has a height of 854 pixels, a width of 1000 pixels, and 3 color channels. The 3 color channels represent the red, green, and blue components of an image. The color of each pixel in the full color image is determined by its RGB components.</p>
+<p>The following code lets us extract the three separate color channels from the image. We store these color channels – each with dimensions (<span class="math notranslate nohighlight">\(H\)</span>,<span class="math notranslate nohighlight">\(W\)</span>) – in variables <code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For red, get the contents of the image at color channel index 0</span>
+<span class="n">R</span> <span class="o">=</span> <span class="n">img</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># For green, get the contents of the image at color channel index 1</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">img</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># For blue, get the contents of the image at color channel index 2</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">img</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can view the 3 color channels individually like this:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a plot containing 3 subplots</span>
+<span class="n">figure</span><span class="p">,</span> <span class="n">plots</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">### plotting the red component</span>
+<span class="c1"># start with an empty image array of zeros</span>
+<span class="n">r_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="c1"># populate the image with the red color channel data from img</span>
+<span class="n">r_img</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">R</span>
+<span class="c1"># plot the red component image</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">r_img</span><span class="p">)</span>
+<span class="c1"># turn off the axis to make the plot look tidy</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="c1">### plotting the green component</span>
+<span class="c1"># start with an empty image array of zeros</span>
+<span class="n">g_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="c1"># populate the image with the green color channel data from img</span>
+<span class="n">g_img</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">G</span>
+<span class="c1"># plot the red component image</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">g_img</span><span class="p">)</span>
+<span class="c1"># turn off the axis to make the plot look tidy</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="c1">### plotting the blue component</span>
+<span class="c1"># start with an empty image array of zeros</span>
+<span class="n">b_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="c1"># populate the image with the blue color channel data from img</span>
+<span class="n">b_img</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span>
+<span class="c1"># plot the red component image</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">b_img</span><span class="p">)</span>
+<span class="c1"># turn off the axis to make the plot look tidy</span>
+<span class="n">plots</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task 1: To Black and White</strong></p>
+<p>Your task is to write a function that computes a black and white version of an image. A black and white (or grayscale) image has equal values for its <span class="math notranslate nohighlight">\(R\)</span>, <span class="math notranslate nohighlight">\(G\)</span>, and <span class="math notranslate nohighlight">\(B\)</span> components. One way to create a black and white version of a color images, that we will use in this lab, is to average the three color components. The new components <code class="docutils literal notranslate"><span class="pre">newR</span></code>, <code class="docutils literal notranslate"><span class="pre">newG</span></code>, and <code class="docutils literal notranslate"><span class="pre">newB</span></code> would be computed as follows.</p>
+<center>
+<p><code class="docutils literal notranslate"><span class="pre">newR</span></code> = <code class="docutils literal notranslate"><span class="pre">newG</span></code> = <code class="docutils literal notranslate"><span class="pre">newB</span></code> = <span class="math notranslate nohighlight">\(\frac{1}{3} \)</span> (<code class="docutils literal notranslate"><span class="pre">R</span></code> <span class="math notranslate nohighlight">\( + \)</span> <code class="docutils literal notranslate"><span class="pre">G</span></code> <span class="math notranslate nohighlight">\( + \)</span> <code class="docutils literal notranslate"><span class="pre">B</span></code> <span class="math notranslate nohighlight">\()\)</span></p>
+</center>
+<p>Hint: Numpy arrays of equal size can be added, subtracted, multiplied, etc. as if the were numbers. For instance, two arrays of equal dimensions <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> can be added pixel-by-pixel with the single line:</p>
+<center>
+<p><code class="docutils literal notranslate"><span class="pre">a</span></code> + <code class="docutils literal notranslate"><span class="pre">b</span></code></p>
+</center>
 <p>Write python code to do the following:</p>
 <ul class="simple">
-<li><p>Complete a function called <code class="docutils literal notranslate"><span class="pre">base_counts</span></code> which takes in a DNA string <code class="docutils literal notranslate"><span class="pre">s</span></code> of unknown length.</p></li>
-<li><p>First, initialize a dictionary with keys <code class="docutils literal notranslate"><span class="pre">&quot;A&quot;</span></code>,<code class="docutils literal notranslate"><span class="pre">&quot;C&quot;</span></code>,<code class="docutils literal notranslate"><span class="pre">&quot;G&quot;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&quot;T&quot;</span></code>, each having a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
-<li><p>Loop through the characters in string <code class="docutils literal notranslate"><span class="pre">s</span></code> and count each base by updating its value in the dictionary.</p></li>
-<li><p>Finally, return the resulting dictionary of base counts.</p></li>
-<li><p>Note: you may assume the string contains only the characters (<code class="docutils literal notranslate"><span class="pre">A</span></code>,<code class="docutils literal notranslate"><span class="pre">C</span></code>,<code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">T</span></code>).</p></li>
-<li><p>Note: If any base does not occur in the string, that base should still be included in the dictionary, with a value of 0.</p></li>
+<li><p>Define a function called <code class="docutils literal notranslate"><span class="pre">to_bw</span></code> which accepts as input a single argument, <code class="docutils literal notranslate"><span class="pre">I</span></code>, an array containing a color image.</p></li>
+<li><p>In the function, first extract the red, blue, and green color components of the image. (You may replicate how this was done above.)</p></li>
+<li><p>Compute the new components <code class="docutils literal notranslate"><span class="pre">newR</span></code>, <code class="docutils literal notranslate"><span class="pre">newG</span></code>, and <code class="docutils literal notranslate"><span class="pre">newB</span></code>, from <code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">B</span></code> using the equation above.</p></li>
+<li><p>Create an array of zeros called <code class="docutils literal notranslate"><span class="pre">bwI</span></code> and give it the same shape as the input array <code class="docutils literal notranslate"><span class="pre">I</span></code>.</p></li>
+<li><p>Populate the color channels of <code class="docutils literal notranslate"><span class="pre">bwI</span></code> to have the color components <code class="docutils literal notranslate"><span class="pre">newR</span></code>, <code class="docutils literal notranslate"><span class="pre">newG</span></code>, and <code class="docutils literal notranslate"><span class="pre">newB</span></code>.</p></li>
+<li><p>Return the grayscale image <code class="docutils literal notranslate"><span class="pre">bwI</span></code></p></li>
 </ul>
+<p>Hint: If you have a numpy array <code class="docutils literal notranslate"><span class="pre">X</span></code> and you want to create an array of zeros that has the same shape as <code class="docutils literal notranslate"><span class="pre">X</span></code>, do the following:
+<code class="docutils literal notranslate"><span class="pre">np.zeros(X.shape)</span></code></p>
 <p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">base_counts</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="o">...</span>
-
-<span class="c1"># use this to check your results</span>
-<span class="n">base_counts</span><span class="p">(</span><span class="s2">&quot;AATTC&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task1-base-counts&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task1-toBW&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Task 2: Pair Counts</strong></p>
-<p>In this next task you will count how many times pairs of bases occur in a string. Since there are 4 unique letters in the genetic code, there are 16 possible unique two-letter pairs. You will count pairs using a dictionary where the keys are two-character pairs (<code class="docutils literal notranslate"><span class="pre">&quot;AA&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;AC&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;AG&quot;</span></code>, etc.) and the values are the number of times each pair is observed. Note that every letter (except the very first and very last) is in two pairs: one where it is the first letter and the other where it is the second letter.</p>
+<p>View your black and white image:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">to_bw</span><span class="p">(</span><span class="n">img</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task 2: To Sepia Tone</strong></p>
+<p>Sepia toning is a chemical process used in photography which gives an image a brownish coloring. Image editing software can approximate the effect of sepia toning using the given set of equations.</p>
+<center>
+<p><code class="docutils literal notranslate"><span class="pre">newR</span></code> =  0.393 <code class="docutils literal notranslate"><span class="pre">R</span></code> + 0.769 <code class="docutils literal notranslate"><span class="pre">G</span></code> + 0.189 <code class="docutils literal notranslate"><span class="pre">B</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">newG</span></code> =  0.349 <code class="docutils literal notranslate"><span class="pre">R</span></code> + 0.686 <code class="docutils literal notranslate"><span class="pre">G</span></code> + 0.168 <code class="docutils literal notranslate"><span class="pre">B</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">newB</span></code> =  0.272 <code class="docutils literal notranslate"><span class="pre">R</span></code> + 0.534 <code class="docutils literal notranslate"><span class="pre">G</span></code> + 0.131 <code class="docutils literal notranslate"><span class="pre">B</span></code></p>
+</center>
+<p>Finally, any resulting pixel values <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">1.0</span></code> get assigned a value of <code class="docutils literal notranslate"><span class="pre">1.0</span></code>.</p>
 <p>Write python code to do the following:</p>
 <ul class="simple">
-<li><p>Complete a function called <code class="docutils literal notranslate"><span class="pre">pair_counts</span></code> which again takes in a DNA string <code class="docutils literal notranslate"><span class="pre">s</span></code> of unknown length.</p></li>
-<li><p>First, initialize a dictionary with keys (<code class="docutils literal notranslate"><span class="pre">&quot;AA&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;AC&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;AG&quot;</span></code>, etc.), each having a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
-<li><p>Loop through each pair in string <code class="docutils literal notranslate"><span class="pre">s</span></code> and count each by updating its value in the dictionary.</p></li>
-<li><p>Finally, return the resulting dictionary of pair counts.</p></li>
-<li><p>Note: you may assume the string contains only the characters (<code class="docutils literal notranslate"><span class="pre">A</span></code>,<code class="docutils literal notranslate"><span class="pre">C</span></code>,<code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">T</span></code>).</p></li>
-<li><p>Note: As before, if any pair does not occur in the string, that pair should still be included in the dictionary, with a value of 0.</p></li>
+<li><p>Define a function called <code class="docutils literal notranslate"><span class="pre">to_sepia</span></code> which accepts as input a single argument, <code class="docutils literal notranslate"><span class="pre">I</span></code>, an array containing a color image.</p></li>
+<li><p>As before, first extract the red, blue, and green color components of the image.</p></li>
+<li><p>Compute the new components <code class="docutils literal notranslate"><span class="pre">newR</span></code>, <code class="docutils literal notranslate"><span class="pre">newG</span></code>, and <code class="docutils literal notranslate"><span class="pre">newB</span></code>, from <code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">B</span></code> using the set of equations above.</p></li>
+<li><p>Create an array of zeros called <code class="docutils literal notranslate"><span class="pre">sepiaI</span></code> and give it the same shape as the input array <code class="docutils literal notranslate"><span class="pre">I</span></code>.</p></li>
+<li><p>Populate the color channels of <code class="docutils literal notranslate"><span class="pre">sepiaI</span></code> to have the color components <code class="docutils literal notranslate"><span class="pre">newR</span></code>, <code class="docutils literal notranslate"><span class="pre">newG</span></code>, and <code class="docutils literal notranslate"><span class="pre">newB</span></code>.</p></li>
+<li><p>For any values in the resulting image greater than <span class="math notranslate nohighlight">\(1\)</span>, replace them with the value <span class="math notranslate nohighlight">\(1\)</span></p></li>
+<li><p>Return the sepia tone image <code class="docutils literal notranslate"><span class="pre">sepiaI</span></code></p></li>
 </ul>
-<p>Hint: To loop through pairs in a string, consider looping over the index values of the first base in each pair. If <code class="docutils literal notranslate"><span class="pre">i</span></code> is the index of the first base, then <code class="docutils literal notranslate"><span class="pre">s[i:i+2]</span></code> slices the pair.</p>
+<p>Hint: Use <code class="docutils literal notranslate"><span class="pre">np.where(sepiaI</span> <span class="pre">&gt;</span> <span class="pre">1.0)</span></code> to get the indices in the sepia image where the value is greater than 1.</p>
 <p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pair_counts</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="o">...</span>
-
-<span class="c1"># use this to check your results</span>
-<span class="n">pair_counts</span><span class="p">(</span><span class="s2">&quot;AATTC&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task2-pair-counts&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task2-sepia&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Task 3: Number of Stops</strong></p>
-<p>Triplets of DNA bases are called codons. Certain codons signal a stopping message and are called “stop codons.” The following three-letter sequences are stop codons: <code class="docutils literal notranslate"><span class="pre">&quot;TAG&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;TGA&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;TAA&quot;</span></code>. Your final task is to count the number of times a stop codon occurs in a DNA string.</p>
+<p>View your sepia tone image:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">to_sepia</span><span class="p">(</span><span class="n">img</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task 3: Cropping</strong></p>
+<p>It can be helpful to crop an image to make its size smaller and focus around an object of interest. Some AI image classification systems require training data that is cropped to a square region of interest.</p>
+<p>In this problem your task is to crop the black and white image of the bird so that it is a square image centered around the bird. Specifically, you should crop a <span class="math notranslate nohighlight">\(601\)</span> x <span class="math notranslate nohighlight">\(601\)</span> square centered around the pixel with <span class="math notranslate nohighlight">\((x,y)\)</span> coordinates <span class="math notranslate nohighlight">\((565,375)\)</span>. Note: The point <span class="math notranslate nohighlight">\((0,0)\)</span> is the top left of the image, and <span class="math notranslate nohighlight">\(y\)</span> coordinates increase towards the bottom.</p>
 <p>Write python code to do the following:</p>
 <ul class="simple">
-<li><p>Complete a function called <code class="docutils literal notranslate"><span class="pre">num_stops</span></code> which takes in a DNA string <code class="docutils literal notranslate"><span class="pre">s</span></code> of unknown length.</p></li>
-<li><p>Initialize the count by setting a variable to zero. (You don’t need a dictionary since you are only making one count.)</p></li>
-<li><p>Loop through each triplet in string <code class="docutils literal notranslate"><span class="pre">s</span></code> and increment the count whenever a stop codon is encountered.</p></li>
-<li><p>Finally, return the integer number of stops.</p></li>
-<li><p>Note: you may assume the string contains only the characters (<code class="docutils literal notranslate"><span class="pre">A</span></code>,<code class="docutils literal notranslate"><span class="pre">C</span></code>,<code class="docutils literal notranslate"><span class="pre">G</span></code>, and <code class="docutils literal notranslate"><span class="pre">T</span></code>).</p></li>
+<li><p>Determine the desired range of <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-coordinates to crop</p></li>
+<li><p>Use array slicing to crop the black and white bird image and store it in a variable called <code class="docutils literal notranslate"><span class="pre">bw_bird_cropped</span></code>.</p></li>
 </ul>
-<p>Hint: You can loop through triplets in a string just like pairs, by looping over the index values the first base in each triplet. If <code class="docutils literal notranslate"><span class="pre">i</span></code> is the index of the first base, then <code class="docutils literal notranslate"><span class="pre">s[i:i+3]</span></code> slices the triplet.</p>
+<p>Hint: The code <code class="docutils literal notranslate"><span class="pre">I_crop</span> <span class="pre">=</span> <span class="pre">I[y1:y2+1,x1:x2+1]</span></code> crops image <code class="docutils literal notranslate"><span class="pre">I</span></code> between <span class="math notranslate nohighlight">\(x\)</span> bounds [<code class="docutils literal notranslate"><span class="pre">x1</span></code>,<code class="docutils literal notranslate"><span class="pre">x2</span></code>] and <span class="math notranslate nohighlight">\(y\)</span> bounds [<code class="docutils literal notranslate"><span class="pre">y1</span></code>,<code class="docutils literal notranslate"><span class="pre">y2</span></code>] and stores the resulting image in a variable called <code class="docutils literal notranslate"><span class="pre">I_crop</span></code>.</p>
 <p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">num_stops</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="o">...</span>
-
-<span class="c1"># use this to check your results</span>
-<span class="n">ex_string</span> <span class="o">=</span> <span class="s2">&quot;ATTTGAAATATGAATGTTAAGATGA&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num_stops</span><span class="p">(</span><span class="n">ex_string</span><span class="p">)</span><span class="si">}</span><span class="s2"> stops detected in </span><span class="si">{</span><span class="n">ex_string</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task3-num-stops&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task3-cropping&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s view the cropped image.</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">bw_bird_cropped</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Task 4: Processing your own image</strong></p>
+<p>In this final task, you will load your own image and process it as if it were an input in an AI image classification network. You will choose an image relevant to your area of engineering, filter it to be black and white, and perform a square cropping around a region of interest.</p>
+<p>Write python code to do the following:</p>
+<ul class="simple">
+<li><p>Load an image of your choosing and store it in a variable called <code class="docutils literal notranslate"><span class="pre">my_img</span></code></p></li>
+<li><p>Store a black and white version of the image in a varialbe called <code class="docutils literal notranslate"><span class="pre">bw_my_img</span></code></p></li>
+<li><p>Store a cropped version of the black and white image in a variable called <code class="docutils literal notranslate"><span class="pre">bw_my_img_cropped</span></code></p></li>
+<li><p>Your crop should be square of an appropriate size, centered around the region of interest.</p></li>
+</ul>
+<p>Hint: You will need to upload your image so that it is in the same directory as this notebook.</p>
+<p>Your code replaces the prompt:  <code class="docutils literal notranslate"><span class="pre">...</span></code></p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grader</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="s2">&quot;task4-own-image&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>View your cropped image:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">bw_my_img_cropped</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -1174,7 +1267,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./jupyterbook/week7/lab6"
+            path: "./jupyterbook/week4/lab3"
         },
         predefinedOutput: true
     }
@@ -1188,17 +1281,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../midterm/midterm.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="week_4_lab_intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Midterm</p>
+            <p class="prev-next-title">📝Week 4 - Lab Intro</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="week_7_lab_intro.html" title="next page">
+    <a class='right-next' id="next-link" href="../../week5/lecture5/lecture5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">📝Week 7 - Lab Intro</p>
+        <p class="prev-next-title">Lecture 5</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

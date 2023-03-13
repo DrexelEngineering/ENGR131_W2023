@@ -38,7 +38,13 @@ print(Article_2)
 
 
 
-# In[4]:
+# In[5]:
+
+
+"philosopher" in Article_1
+
+
+# In[6]:
 
 
 "philosopher" in Article_1
@@ -51,7 +57,11 @@ print(Article_2)
 
 
 
+<<<<<<< Updated upstream
 # In[5]:
+=======
+# In[7]:
+>>>>>>> Stashed changes
 
 
 "philosopher" in Article_2
@@ -66,7 +76,11 @@ print(Article_2)
 
 
 
+<<<<<<< Updated upstream
 # In[6]:
+=======
+# In[9]:
+>>>>>>> Stashed changes
 
 
 Article_1 = Article_1.replace("philosopher", '****')
@@ -94,7 +108,11 @@ print(Article_2)
 ...
 
 
+<<<<<<< Updated upstream
 # In[7]:
+=======
+# In[18]:
+>>>>>>> Stashed changes
 
 
 print(f"Article 1 has {len(Article_1.split(' '))} words")

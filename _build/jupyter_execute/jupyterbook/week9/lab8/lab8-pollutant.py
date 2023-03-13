@@ -4,20 +4,37 @@
 # In[ ]:
 
 
+<<<<<<< Updated upstream
 get_ipython().run_cell_magic('capture', '', '# OTTER IGNORE\n! pip install drexel-jupyter-logger\n! pip install otter-grader\n')
 
 
 # In[ ]:
 
 
+=======
+>>>>>>> Stashed changes
 # Initialize Otter
 import otter
 grader = otter.Notebook("lab8-pollutant.ipynb")
 
 
+<<<<<<< Updated upstream
 # # 🧪🖥️ Lab 8: Pollutant Triangulation
 # 
 # This lab uses classes to solve a problem involving pollutant triangulation.
+=======
+# # 🧪🖥 Lab 8: Pollutant Triangulation
+# 
+# This lab uses classes to solve a problem involving pollutant triangulation.
+# 
+# 
+
+# In[ ]:
+
+
+get_ipython().run_cell_magic('capture', '', '# OTTER IGNORE\n! pip install drexel-jupyter-logger\n')
+
+>>>>>>> Stashed changes
 
 # In[ ]:
 
@@ -35,7 +52,11 @@ import numpy as np
 # Now, let's suppose that the unknown point is actually a point source for some pollutant X, and at time 0 it
 # releases a burst of Chemical X. Assume no wind, and that X diffuses freely from its release point. 
 # 
+<<<<<<< Updated upstream
 # Suppose that we have measurement devices at the three points 1, 2, and 3 that track the concentration of X as a function of time, and that the concentration of X is detected to peak at times $t_1$, $t_2$, and $t_3$, at each point, respectively. Can we determine the location of the pollutant point source?
+=======
+# Suppose that we have measurement devices at the three points 1, 2, and 3 that track the concentration of X as a function of time, and that the concentration of X is detected to peak at times $t_1$, $t_2$, and $t_3$, at each point, respectively. Can we determine the location of the evil point source?
+>>>>>>> Stashed changes
 
 # ## Task 1: Make a class for point in pollutant system
 # 
@@ -50,11 +71,16 @@ import numpy as np
 # $$ K = \sqrt{D_X} $$
 # 
 # That satisfies the conditions
+<<<<<<< Updated upstream
 # 
 # $$ d_1 = K\sqrt{t_1} $$
 # 
 # $$ d_2 = K\sqrt{t_2} $$
 # 
+=======
+# $$ d_1 = K\sqrt{t_1} $$
+# $$ d_2 = K\sqrt{t_2} $$
+>>>>>>> Stashed changes
 # $$ d_3 = K\sqrt{t_3} $$
 # 
 # Write python code to do the following:
@@ -106,13 +132,18 @@ grader.check("task1-Point-class")
 # Consider two points $(x_1,y_1)$ and $(x_2,y_2$).
 # 
 # Let $(x,y)$ be an unknown point whose respective distances to the two points, $d_1$ and $d_2$, are known. The Pythagorean theorem allows us to express $x$ and $y$ (the coordinates of the unknown point) in terms of $(x_1,y_1)$, $(x_2,y_2)$, $d_1$, and $d_2$:
+<<<<<<< Updated upstream
 # 
 # $$ d_1^{2} = (x - x_1)^{2} + (y - y_1)^{2}$$
 # 
+=======
+# $$ d_1^{2} = (x - x_1)^{2} + (y - y_1)^{2}$$
+>>>>>>> Stashed changes
 # $$ d_2^{2} = (x - x_2)^{2} + (y - y_2)^{2}$$
 # 
 # 
 # Inverting these two formulae to make them explicit in $x$ and $y$ is really a lot of fun, but it takes a while. Here is the final result:
+<<<<<<< Updated upstream
 # 
 # $$ x_{\pm} = \frac{1}{2(1 + b^2)} \left[ 2 [x_1 - b(a - y_1)] \pm [4(b(a - y_1) - x_1)^2 - 4(1 + b^2)(x_1^{2} - d_1^{2} + (y_1 - a)^{2})]^{\frac{1}{2}} \right] $$
 # 
@@ -124,6 +155,15 @@ grader.check("task1-Point-class")
 # 
 # and 
 # 
+=======
+# $$ x_{\pm} = \frac{1}{2(1 + b^2)} \left[ 2 [x_1 - b(a - y_1)] \pm [4(b(a - y_1) - x_1)^2 - 4(1 + b^2)(x_1^{2} - d_1^{2} + (y_1 - a)^{2})]^{\frac{1}{2}} \right] $$
+# $$ y_{\pm} = a + bx_{\pm} $$
+# 
+# where
+# $$ a = \frac{d_1^{2} - d_2^{2} - [(x_1^{2} + y_1^{2}) - (x_2^{2} + y_2^{2})]}{2(y_2 - y_1)} $$
+# 
+# and 
+>>>>>>> Stashed changes
 # $$ b = - \frac{x_2 - x_1}{y_2 - y_1} $$
 # 
 # Note that the two possible values for $x$, $x_+$ and $x_-$, arise from the positive and negative sense of the square root, and the value of $y$ derives from its particular $x$. So because of the power of 2 in the Pythagorean theorem, we find that there are **two possible points**, $(x_+, y_+)$ and $(x_-, y_-)$, that are each $d_1$ from $(x_1, y_1)$ and $d_2$ from $(x_2, y_2)$. These are shown by the star and cross in the figure below.
@@ -137,9 +177,15 @@ grader.check("task1-Point-class")
 # Write a python code to do the following:
 # * Create a class `Point_System`
 # * Define the class constructor to accept as argument the Point objects `P1`,`P2`, and `P3`, in that order. Store each value in a data member, so that they can be used in other methods. 
+<<<<<<< Updated upstream
 # * Define a method called `pythagoras` which accepts as input and `x1,y1,x2,y2`. This method should return the euclidean distance between the two points.
 # * Define a method called `a_b` which accepts as input the distances between a point and `self.P1` and `self.P2`, as `d1` and `d2` respectively. This method should return the tuple `a,b`, calculated with the equation above.
 # * Define a method called `x_y` which accepts as input the distances between a point and `self.P1` and `self.P2`, as `d1` and `d2` respectively. This method should return the tuple `xm,ym,xp,yp`, which are the "minus" coordinates `(xm,ym)` and "plus" coordinates `(xp,yp)` of a point, calculated with the equation above. 
+=======
+# * Define a method called `pythagoras` which accepts as input and `x1,y1,x2,y2`, which are the coordinates of the points `self.P1` and `self.P2`. This method should return the euclidean distance between the two points.
+# * Define a method called `a_b` which accepts as input the distances between a point and `self.P1` and `self.P2`, as `d1` and `d2` respectively. This method should return the tuple `a,b`, calculated with the equation above.
+# * Define a method called `x_y` which accepts as input the distances between a point and `self.P1` and `self.P2`, as `d1` and `d2` respectively. This method should return the tuple `m,ym,xp,yp`, which are the "minus" coordinates `(xm,ym)` and "plus" coordinates `(xp,yp)` of a point, calculated with the equation above. 
+>>>>>>> Stashed changes
 # * Define a method called `triangulate` which accepts as input the distances between a point and `self.P1` and `self.P2`, as `d1` and `d2` respectively. This method should return the tuple `xf,yf`, the coordinate closest to the third point, `self.P3`.
 #     1. Calculate the potential coordinates of a point the distance `d1` from point `self.P1`, and distance `d2` from `self.P2` using the method we defined, `x_y`.  Assign this to the variables `xm,ym,xp,yp`.
 #     2. Assign a variable `d3m` to be the distance between the estimated "minus" coordinate `xm,ym` and the point `self.P3`
@@ -210,7 +256,11 @@ grader.check("task2-System-class")
 # Print the estimated diffusivity
 print(f'Diffusivity of X is about {K**2:.3f}')
 # Print the estimated location of the point source
+<<<<<<< Updated upstream
 print(f'Pollutant point source is ({xf:.3f},{yf:.3f})')
+=======
+print(f'Evil point source is ({xf:.3f},{yf:.3f})')
+>>>>>>> Stashed changes
 
 
 # In[ ]:
@@ -241,6 +291,10 @@ plt.plot([P3.x,xf],[P3.y,yf],'k-')
 plt.annotate('P1',xy=(P1.x,P1.y))
 plt.annotate('P2',xy=(P2.x,P2.y))
 plt.annotate('P3',xy=(P3.x,P3.y))
+<<<<<<< Updated upstream
 plt.annotate('pollutant point source',xy=(xf,yf))
+=======
+plt.annotate('evil point source',xy=(xf,yf))
+>>>>>>> Stashed changes
 plt.show()
 

@@ -78,9 +78,15 @@ def reimann(numRectangles,evalPoint):
                 integral_R += h * f[i+1]
                 
     elif evalPoint == "left":
+<<<<<<< Updated upstream
         pass
     elif evalPoint == "mid":
         pass
+=======
+
+    elif evalPoint == "mid":
+
+>>>>>>> Stashed changes
     else: 
         print("The evaluation point method is not 'right', 'left', or 'mid'. Please try again.")
 
@@ -118,7 +124,11 @@ def reimann(numRectangles,evalPoint):
     print(f'The integral is {integral_R} for {numRectangles} using the {evalPoint} point for evaluating the function.')
 
 
+<<<<<<< Updated upstream
 # In[2]:
+=======
+# In[ ]:
+>>>>>>> Stashed changes
 
 
 import numpy as np
@@ -201,7 +211,11 @@ reimann()
 reimann()
 
 
+<<<<<<< Updated upstream
 # In[3]:
+=======
+# In[ ]:
+>>>>>>> Stashed changes
 
 
 # call the function with two arguments 

@@ -6,7 +6,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+<<<<<<< Updated upstream
     <title>🧪🖥️ Lab 8: Pollutant Triangulation &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+=======
+    <title>🧪🖥 Lab 8: Pollutant Triangulation &#8212; ENGR 131: Winter 2023: Introductory Programming for Engineers</title>
+>>>>>>> Stashed changes
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +58,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+<<<<<<< Updated upstream
     <link rel="next" title="Lecture 9" href="../../week10/lecture10/lecture10.html" />
+=======
+>>>>>>> Stashed changes
     <link rel="prev" title="📝Week 9 - Lab Intro" href="week_9_lab_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -740,6 +747,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
+<<<<<<< Updated upstream
    🧪🖥️ Lab 8: Pollutant Triangulation
   </a>
  </li>
@@ -798,6 +806,12 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
 </ul>
+=======
+   🧪🖥 Lab 8: Pollutant Triangulation
+  </a>
+ </li>
+</ul>
+>>>>>>> Stashed changes
 
     </div>
 </nav></div>
@@ -1068,7 +1082,11 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
+<<<<<<< Updated upstream
                 <h1>🧪🖥️ Lab 8: Pollutant Triangulation</h1>
+=======
+                <h1>🧪🖥 Lab 8: Pollutant Triangulation</h1>
+>>>>>>> Stashed changes
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -1110,26 +1128,46 @@ title="Print to PDF"
                 
   <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
+<<<<<<< Updated upstream
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
 # OTTER IGNORE
 ! pip install drexel-jupyter-logger
 ! pip install otter-grader
+=======
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize Otter</span>
+<span class="kn">import</span> <span class="nn">otter</span>
+<span class="n">grader</span> <span class="o">=</span> <span class="n">otter</span><span class="o">.</span><span class="n">Notebook</span><span class="p">(</span><span class="s2">&quot;lab8-pollutant.ipynb&quot;</span><span class="p">)</span>
+>>>>>>> Stashed changes
 </pre></div>
 </div>
 </div>
 </div>
+<<<<<<< Updated upstream
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize Otter</span>
 <span class="kn">import</span> <span class="nn">otter</span>
 <span class="n">grader</span> <span class="o">=</span> <span class="n">otter</span><span class="o">.</span><span class="n">Notebook</span><span class="p">(</span><span class="s2">&quot;lab8-pollutant.ipynb&quot;</span><span class="p">)</span>
+=======
+<section class="tex2jax_ignore mathjax_ignore" id="lab-8-pollutant-triangulation">
+<h1>🧪🖥 Lab 8: Pollutant Triangulation<a class="headerlink" href="#lab-8-pollutant-triangulation" title="Permalink to this headline">#</a></h1>
+<p>This lab uses classes to solve a problem involving pollutant triangulation.</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
+# OTTER IGNORE
+! pip install drexel-jupyter-logger
+>>>>>>> Stashed changes
 </pre></div>
 </div>
 </div>
 </div>
+<<<<<<< Updated upstream
 <section class="tex2jax_ignore mathjax_ignore" id="lab-8-pollutant-triangulation">
 <h1>🧪🖥️ Lab 8: Pollutant Triangulation<a class="headerlink" href="#lab-8-pollutant-triangulation" title="Permalink to this headline">#</a></h1>
 <p>This lab uses classes to solve a problem involving pollutant triangulation.</p>
+=======
+>>>>>>> Stashed changes
 <div class="cell tag_skip-execution docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">drexel_jupyter_logger</span>
@@ -1145,7 +1183,11 @@ title="Print to PDF"
 <p>Triangulation, such as used in GPS positioning uses three points and two distances to calculate the location of an unknown point.</p>
 <p>Now, let’s suppose that the unknown point is actually a point source for some pollutant X, and at time 0 it
 releases a burst of Chemical X. Assume no wind, and that X diffuses freely from its release point.</p>
+<<<<<<< Updated upstream
 <p>Suppose that we have measurement devices at the three points 1, 2, and 3 that track the concentration of X as a function of time, and that the concentration of X is detected to peak at times <span class="math notranslate nohighlight">\(t_1\)</span>, <span class="math notranslate nohighlight">\(t_2\)</span>, and <span class="math notranslate nohighlight">\(t_3\)</span>, at each point, respectively. Can we determine the location of the pollutant point source?</p>
+=======
+<p>Suppose that we have measurement devices at the three points 1, 2, and 3 that track the concentration of X as a function of time, and that the concentration of X is detected to peak at times <span class="math notranslate nohighlight">\(t_1\)</span>, <span class="math notranslate nohighlight">\(t_2\)</span>, and <span class="math notranslate nohighlight">\(t_3\)</span>, at each point, respectively. Can we determine the location of the evil point source?</p>
+>>>>>>> Stashed changes
 </section>
 <section id="task-1-make-a-class-for-point-in-pollutant-system">
 <h2>Task 1: Make a class for point in pollutant system<a class="headerlink" href="#task-1-make-a-class-for-point-in-pollutant-system" title="Permalink to this headline">#</a></h2>
@@ -1156,6 +1198,7 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <p>We can express the diffusivity using the following diffusion constant:</p>
 <div class="math notranslate nohighlight">
 \[ K = \sqrt{D_X} \]</div>
+<<<<<<< Updated upstream
 <p>That satisfies the conditions</p>
 <div class="math notranslate nohighlight">
 \[ d_1 = K\sqrt{t_1} \]</div>
@@ -1163,6 +1206,12 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 \[ d_2 = K\sqrt{t_2} \]</div>
 <div class="math notranslate nohighlight">
 \[ d_3 = K\sqrt{t_3} \]</div>
+=======
+<p>That satisfies the conditions
+$<span class="math notranslate nohighlight">\( d_1 = K\sqrt{t_1} \)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( d_2 = K\sqrt{t_2} \)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( d_3 = K\sqrt{t_3} \)</span>$</p>
+>>>>>>> Stashed changes
 <p>Write python code to do the following:</p>
 <ul class="simple">
 <li><p>Define a class called <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
@@ -1209,6 +1258,7 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <p><strong>Intro to Triangulation</strong></p>
 <p>Triangulation is the process of locating an unknown point given two know points, and two known distances.</p>
 <p>Consider two points <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> and <span class="math notranslate nohighlight">\((x_2,y_2\)</span>).</p>
+<<<<<<< Updated upstream
 <p>Let <span class="math notranslate nohighlight">\((x,y)\)</span> be an unknown point whose respective distances to the two points, <span class="math notranslate nohighlight">\(d_1\)</span> and <span class="math notranslate nohighlight">\(d_2\)</span>, are known. The Pythagorean theorem allows us to express <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> (the coordinates of the unknown point) in terms of <span class="math notranslate nohighlight">\((x_1,y_1)\)</span>, <span class="math notranslate nohighlight">\((x_2,y_2)\)</span>, <span class="math notranslate nohighlight">\(d_1\)</span>, and <span class="math notranslate nohighlight">\(d_2\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ d_1^{2} = (x - x_1)^{2} + (y - y_1)^{2}\]</div>
@@ -1225,6 +1275,18 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <p>and</p>
 <div class="math notranslate nohighlight">
 \[ b = - \frac{x_2 - x_1}{y_2 - y_1} \]</div>
+=======
+<p>Let <span class="math notranslate nohighlight">\((x,y)\)</span> be an unknown point whose respective distances to the two points, <span class="math notranslate nohighlight">\(d_1\)</span> and <span class="math notranslate nohighlight">\(d_2\)</span>, are known. The Pythagorean theorem allows us to express <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> (the coordinates of the unknown point) in terms of <span class="math notranslate nohighlight">\((x_1,y_1)\)</span>, <span class="math notranslate nohighlight">\((x_2,y_2)\)</span>, <span class="math notranslate nohighlight">\(d_1\)</span>, and <span class="math notranslate nohighlight">\(d_2\)</span>:
+$<span class="math notranslate nohighlight">\( d_1^{2} = (x - x_1)^{2} + (y - y_1)^{2}\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( d_2^{2} = (x - x_2)^{2} + (y - y_2)^{2}\)</span>$</p>
+<p>Inverting these two formulae to make them explicit in <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> is really a lot of fun, but it takes a while. Here is the final result:
+$<span class="math notranslate nohighlight">\( x_{\pm} = \frac{1}{2(1 + b^2)} \left[ 2 [x_1 - b(a - y_1)] \pm [4(b(a - y_1) - x_1)^2 - 4(1 + b^2)(x_1^{2} - d_1^{2} + (y_1 - a)^{2})]^{\frac{1}{2}} \right] \)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( y_{\pm} = a + bx_{\pm} \)</span>$</p>
+<p>where
+$<span class="math notranslate nohighlight">\( a = \frac{d_1^{2} - d_2^{2} - [(x_1^{2} + y_1^{2}) - (x_2^{2} + y_2^{2})]}{2(y_2 - y_1)} \)</span>$</p>
+<p>and
+$<span class="math notranslate nohighlight">\( b = - \frac{x_2 - x_1}{y_2 - y_1} \)</span>$</p>
+>>>>>>> Stashed changes
 <p>Note that the two possible values for <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x_+\)</span> and <span class="math notranslate nohighlight">\(x_-\)</span>, arise from the positive and negative sense of the square root, and the value of <span class="math notranslate nohighlight">\(y\)</span> derives from its particular <span class="math notranslate nohighlight">\(x\)</span>. So because of the power of 2 in the Pythagorean theorem, we find that there are <strong>two possible points</strong>, <span class="math notranslate nohighlight">\((x_+, y_+)\)</span> and <span class="math notranslate nohighlight">\((x_-, y_-)\)</span>, that are each <span class="math notranslate nohighlight">\(d_1\)</span> from <span class="math notranslate nohighlight">\((x_1, y_1)\)</span> and <span class="math notranslate nohighlight">\(d_2\)</span> from <span class="math notranslate nohighlight">\((x_2, y_2)\)</span>. These are shown by the star and cross in the figure below.</p>
 <p>“Triangulation” refers to the fact that we need a <strong>third</strong> known point to decide which of <span class="math notranslate nohighlight">\((x_+, y_+)\)</span> and <span class="math notranslate nohighlight">\((x_-, y_-)\)</span> is our sought-after point. We would like the final unknown point to be the one that is closer to <span class="math notranslate nohighlight">\((x_3, y_3)\)</span>, shown as the star in the figure below:</p>
 <div>
@@ -1234,9 +1296,15 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <ul class="simple">
 <li><p>Create a class <code class="docutils literal notranslate"><span class="pre">Point_System</span></code></p></li>
 <li><p>Define the class constructor to accept as argument the Point objects <code class="docutils literal notranslate"><span class="pre">P1</span></code>,<code class="docutils literal notranslate"><span class="pre">P2</span></code>, and <code class="docutils literal notranslate"><span class="pre">P3</span></code>, in that order. Store each value in a data member, so that they can be used in other methods.</p></li>
+<<<<<<< Updated upstream
 <li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">pythagoras</span></code> which accepts as input and <code class="docutils literal notranslate"><span class="pre">x1,y1,x2,y2</span></code>. This method should return the euclidean distance between the two points.</p></li>
 <li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">a_b</span></code> which accepts as input the distances between a point and <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>, as <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> respectively. This method should return the tuple <code class="docutils literal notranslate"><span class="pre">a,b</span></code>, calculated with the equation above.</p></li>
 <li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">x_y</span></code> which accepts as input the distances between a point and <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>, as <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> respectively. This method should return the tuple <code class="docutils literal notranslate"><span class="pre">xm,ym,xp,yp</span></code>, which are the “minus” coordinates <code class="docutils literal notranslate"><span class="pre">(xm,ym)</span></code> and “plus” coordinates <code class="docutils literal notranslate"><span class="pre">(xp,yp)</span></code> of a point, calculated with the equation above.</p></li>
+=======
+<li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">pythagoras</span></code> which accepts as input and <code class="docutils literal notranslate"><span class="pre">x1,y1,x2,y2</span></code>, which are the coordinates of the points <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>. This method should return the euclidean distance between the two points.</p></li>
+<li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">a_b</span></code> which accepts as input the distances between a point and <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>, as <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> respectively. This method should return the tuple <code class="docutils literal notranslate"><span class="pre">a,b</span></code>, calculated with the equation above.</p></li>
+<li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">x_y</span></code> which accepts as input the distances between a point and <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>, as <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> respectively. This method should return the tuple <code class="docutils literal notranslate"><span class="pre">m,ym,xp,yp</span></code>, which are the “minus” coordinates <code class="docutils literal notranslate"><span class="pre">(xm,ym)</span></code> and “plus” coordinates <code class="docutils literal notranslate"><span class="pre">(xp,yp)</span></code> of a point, calculated with the equation above.</p></li>
+>>>>>>> Stashed changes
 <li><p>Define a method called <code class="docutils literal notranslate"><span class="pre">triangulate</span></code> which accepts as input the distances between a point and <code class="docutils literal notranslate"><span class="pre">self.P1</span></code> and <code class="docutils literal notranslate"><span class="pre">self.P2</span></code>, as <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> respectively. This method should return the tuple <code class="docutils literal notranslate"><span class="pre">xf,yf</span></code>, the coordinate closest to the third point, <code class="docutils literal notranslate"><span class="pre">self.P3</span></code>.</p>
 <ol class="simple">
 <li><p>Calculate the potential coordinates of a point the distance <code class="docutils literal notranslate"><span class="pre">d1</span></code> from point <code class="docutils literal notranslate"><span class="pre">self.P1</span></code>, and distance <code class="docutils literal notranslate"><span class="pre">d2</span></code> from <code class="docutils literal notranslate"><span class="pre">self.P2</span></code> using the method we defined, <code class="docutils literal notranslate"><span class="pre">x_y</span></code>.  Assign this to the variables <code class="docutils literal notranslate"><span class="pre">xm,ym,xp,yp</span></code>.</p></li>
@@ -1311,7 +1379,11 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <span class="c1"># Print the estimated diffusivity</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Diffusivity of X is about </span><span class="si">{</span><span class="n">K</span><span class="o">**</span><span class="mi">2</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="c1"># Print the estimated location of the point source</span>
+<<<<<<< Updated upstream
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Pollutant point source is (</span><span class="si">{</span><span class="n">xf</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">yf</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+=======
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Evil point source is (</span><span class="si">{</span><span class="n">xf</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">yf</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+>>>>>>> Stashed changes
 </pre></div>
 </div>
 </div>
@@ -1343,7 +1415,11 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
 <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;P1&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">P1</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">P1</span><span class="o">.</span><span class="n">y</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;P2&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">P2</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">P2</span><span class="o">.</span><span class="n">y</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;P3&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">P3</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">P3</span><span class="o">.</span><span class="n">y</span><span class="p">))</span>
+<<<<<<< Updated upstream
 <span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;pollutant point source&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">xf</span><span class="p">,</span><span class="n">yf</span><span class="p">))</span>
+=======
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;evil point source&#39;</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">xf</span><span class="p">,</span><span class="n">yf</span><span class="p">))</span>
+>>>>>>> Stashed changes
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1386,6 +1462,7 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
             <p class="prev-next-title">📝Week 9 - Lab Intro</p>
         </div>
     </a>
+<<<<<<< Updated upstream
     <a class='right-next' id="next-link" href="../../week10/lecture10/lecture10.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -1393,6 +1470,8 @@ releases a burst of Chemical X. Assume no wind, and that X diffuses freely from 
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
+=======
+>>>>>>> Stashed changes
 </div>
             </footer>
         </div>

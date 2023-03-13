@@ -75,7 +75,10 @@ def string_len(word):
 # In[5]:
 
 
+<<<<<<< Updated upstream
 import numpy as np
+=======
+>>>>>>> Stashed changes
 word_counts = counter(article, " ")
 sentence_counts = counter(article, ". ")
 word_lengths = np.array(list(map(string_len, article.split(" "))))
@@ -98,16 +101,23 @@ print(f"Average Sentence Length = {average_sentence_length:0.2f}")
 ...
 
 
+<<<<<<< Updated upstream
 # In[6]:
+=======
+# In[ ]:
+>>>>>>> Stashed changes
 
 
 import matplotlib.pyplot as plt
 
 plt.hist(word_lengths, 10)
 
+<<<<<<< Updated upstream
 
 # In[ ]:
 
 
 
 
+=======
+>>>>>>> Stashed changes
