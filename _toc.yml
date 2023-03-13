@@ -158,3 +158,5 @@ parts:
           - file: jupyterbook/week10/lecture10/4_Activity_2_Bubble_plot
           - file: jupyterbook/week10/lecture10/5_Curve_Fitting
           - file: jupyterbook/week10/lecture10/6_Interactive_Graphics
+      - file: jupyterbook/week10/lab10/week_10_lab_intro
+      - file: jupyterbook/week10/lab10/lab9-fitting
