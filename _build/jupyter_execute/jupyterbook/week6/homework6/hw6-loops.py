@@ -9,7 +9,7 @@ import otter
 grader = otter.Notebook("hw6-loops.ipynb")
 
 
-# # Homework 6
+# # 🏡📝 Homework 6
 # 
 # This assignment includes three problems on the topic of loops.
 # 

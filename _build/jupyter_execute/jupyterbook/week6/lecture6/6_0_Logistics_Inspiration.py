@@ -1,31 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Logistics Recap
+# # 📝 Logistics Recap
 # 
 
 # **Midterm**: 8 am on Wednesday, February 22
-# * Location: Mitchell Auditorium in Bossone Research Center (for 12 pm on Monday lecture)
 # 
+# * If you are in *a Tuesday lab* or *the 2 pm Monday lecture*, please go to Main Auditorium.
+# 
+# * If you are *not in a Tuesday lab* and *in the 12 pm Monday lecture*, please go to Mitchell Auditorium in Bossone.
 
 # * No class on Monday, Feb 20
 # 
 # * Office Hours on Monday, Feb 20: 12 pm on Monday in Nesbitt Hall
 # 
 # * No office hours on Wed-Fri, February 23-25
-
-# * graded rapidly so that you have feedback for conversations with advisors
-
-# **Midterm**: 8 am on Wednesday, February 22
-# * Location: Main Auditorium in Main Building (for 2 pm on Monday lecture)
-# 
-
-# * No class on Monday, Feb 20
-# 
-# * Office Hours on Monday, Feb 20: 2 pm on Monday in Nesbitt Hall
-# 
-# * No office hours on Wed-Fri, February 23-25
-# 
 
 # * graded rapidly so that you have feedback for conversations with advisors
 

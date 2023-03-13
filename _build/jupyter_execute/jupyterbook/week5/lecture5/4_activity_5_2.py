@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Activity 5.2: Taking integrals with loops
+# # 💻 Activity 5.2: Taking integrals with loops
 # 
 
 # Let's explore how two important choices impact the accuracy of this method for approximating integrals.
@@ -47,6 +47,34 @@ def riemann(numRectangles,evalPoint):
     print(f'The integral is {integral_R} for {numRectangles} using the {evalPoint} point for evaluating the function.')
 
 
+# In[1]:
+
+
+import numpy as np
+
+def riemann(numRectangles,evalPoint): 
+    # define the boundaries of the integral
+    a = 0
+    b = 5
+    
+    # define the curve
+    x = np.linspace(a,b,numRectangles)
+    f = np.sin(x/2)+1
+
+    ### determine the width of the rectangle
+    h = (b - a) / (numRectangles - 1)
+
+    integral_R = 0.
+
+    # integrate using the value of f at the right
+    for i in range(numRectangles):
+        if i < (numRectangles-1):
+            integral_R += h * f[i+1]
+    
+    # print the integral, number of rectangles, and the chosen point for evaluation
+    print(f'The integral is {integral_R} for {numRectangles} using the {evalPoint} point for evaluating the function.')
+
+
 # Evaluate the function using 2, 5, and 11 rectangles between $a$ and $b$ and "right" as the evaluation point. 
 # 
 # Feel free to try other values, too, until you think you've approximated the integral reasonably well.
@@ -68,4 +96,21 @@ riemann(...)
 
 # 11 rectangles
 riemann(...)
+
+
+# In[2]:
+
+
+# call the function with two arguments 
+# - one integer for the number of rectangles
+# - one string for the "right" method
+
+# 2 rectangles
+riemann(2,"right")
+
+# 5 rectangles
+riemann(5,"right")
+
+# 11 rectangles
+riemann(11,"right")
 

@@ -9,11 +9,7 @@ import otter
 grader = otter.Notebook("lab4-RPS.ipynb")
 
 
-<<<<<<< Updated upstream
 # # 🧪🖥 Lab 4: Rock, Paper, Scissors Game
-=======
-# # Lab 4: Rock, Paper, Scissors Game
->>>>>>> Stashed changes
 # 
 # In this lab you will use branching to complete a playable game of rock paper scissors.
 # 
@@ -25,11 +21,7 @@ grader = otter.Notebook("lab4-RPS.ipynb")
 import random
 
 
-<<<<<<< Updated upstream
 # ## History of Rock, Paper, Scissors
-=======
-# ### History of Rock, Paper, Scissors
->>>>>>> Stashed changes
 # 
 # Rock paper scissors (also known by other orderings of the three items, with "rock" sometimes being called "stone," or as Rochambeau, roshambo, or ro-sham-bo) is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright in the air.
 # 
@@ -137,11 +129,7 @@ final_message(2,0)
 grader.check("task3-final-message")
 
 
-<<<<<<< Updated upstream
 # ## Play the game!
-=======
-# # Play the game!
->>>>>>> Stashed changes
 # Once you've completed the three tasks above, run the code below to play the game. Read through the commented code carefully and try to follow the logic of the implementation.
 
 # In[ ]:

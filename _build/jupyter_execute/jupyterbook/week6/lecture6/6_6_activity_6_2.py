@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Activity 6.2: Apply the break or continue keywords
+# # 💻 Activity 6.2: Apply the break or continue keywords
 
 # ## Revisit for loop implementation of modulus operator
 # 
@@ -26,11 +26,24 @@ def forModulus(dividend, divisor):
 # In[2]:
 
 
+# add your code where the ... appears
+def forModulus(dividend, divisor):
+    remainder = dividend
+    for i in range(dividend):
+        if ((remainder-divisor) < 0):
+            break
+        remainder -= divisor
+    return remainder
+
+
+# In[3]:
+
+
 print(forModulus(5,3))
 print(5%3)
 
 
-# In[3]:
+# In[4]:
 
 
 print(forModulus(4,2))

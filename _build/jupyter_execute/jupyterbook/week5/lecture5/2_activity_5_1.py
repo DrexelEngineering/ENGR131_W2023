@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Activity 5.1: Nuclear Plant Temperature Alert
+# # 💻 Activity 5.1: Nuclear Plant Temperature Alert
 # 
 # We have just covered the relationship of a process value to a desired set point and discussed the importance of redundancy, especially in systems that have the potential to harm people.
 # 
@@ -25,6 +25,32 @@
 
 #write your function below
 
+
+
+# In[1]:
+
+
+import numpy as np
+
+
+def coolingWaterAlarm(t1, t2, t3, t4):
+    tlist = [t1, t2, t3, t4]
+    # if (
+    #     abs(t2 - t1) > 8
+    #     or abs(t3 - t1) > 8
+    #     or abs(t4 - t1) > 8
+    #     or abs(t3 - t2) > 8
+    #     or abs(t4 - t2) > 8
+    #     or abs(t4 - t3) > 8
+    # ):
+    # option 2
+    if max(tlist) - min(tlist) > 8:
+        output = "Alarm! Temperatures differ."
+    elif sorted(tlist, reverse=True)[1] > 100:
+        output = "Alarm! Temperatures exceed 100 deg Celsius."
+    else:
+        output = "Normal operation"
+    print(f"{output}")
 
 
 # In[ ]:

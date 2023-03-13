@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # File Handling
+# # 📝 File Handling
 # 
 # * File handling is a good way to persist data after a program terminates. 
 
@@ -421,7 +421,7 @@ print(values_[0])
 get_ipython().system('pip install xlrd')
 
 
-# In[33]:
+# In[32]:
 
 
 import pandas as pd
@@ -431,7 +431,7 @@ df = pd.read_excel("Metro_Interstate_Traffic_Volume.xls")
 
 # Pandas DataFrames have many functions:
 
-# In[34]:
+# In[33]:
 
 
 df.head()
@@ -439,7 +439,7 @@ df.head()
 
 # Getting the max value
 
-# In[35]:
+# In[34]:
 
 
 df['rain_1h'].max()
@@ -447,7 +447,7 @@ df['rain_1h'].max()
 
 # Getting the Unique Values
 
-# In[36]:
+# In[35]:
 
 
 df['weather_description'].unique()
@@ -455,7 +455,7 @@ df['weather_description'].unique()
 
 # Multilevel indexing
 
-# In[37]:
+# In[36]:
 
 
 df[df['rain_1h']>10]['traffic_volume']
@@ -463,7 +463,7 @@ df[df['rain_1h']>10]['traffic_volume']
 
 # Even plotting
 
-# In[38]:
+# In[37]:
 
 
 df[df['rain_1h']>10]['traffic_volume'].hist()

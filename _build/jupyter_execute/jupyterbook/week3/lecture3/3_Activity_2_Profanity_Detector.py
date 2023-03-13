@@ -31,7 +31,7 @@ print(Article_2)
 
 # 1. Determine if there is a profane word in the article?
 
-# In[3]:
+# In[4]:
 
 
 # Article 1
@@ -41,20 +41,38 @@ print(Article_2)
 # In[4]:
 
 
+"philosopher" in Article_1
+
+
+# In[6]:
+
+
 # Article 2
 
 
 
+# In[5]:
+
+
+"philosopher" in Article_2
+
+
 # 2. Replace the profane word with `****`
 
-# In[41]:
+# In[8]:
 
 
 # Replace 
 
 
 
-# In[4]:
+# In[6]:
+
+
+Article_1 = Article_1.replace("philosopher", '****')
+
+
+# In[10]:
 
 
 # check both articles visually
@@ -70,8 +88,21 @@ print(Article_2)
 # 1. count the number of words, and 
 # 2. determine if the number of words in each article is greater than the word limit of 200.
 
-# In[ ]:
+# In[11]:
 
 
 ...
+
+
+# In[7]:
+
+
+print(f"Article 1 has {len(Article_1.split(' '))} words")
+print(f"Article 2 has {len(Article_2.split(' '))} words")
+
+
+# In[ ]:
+
+
+
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Logistics Recap
+# # 📝 Logistics Recap
 # 
 
 # **Midterm**: 8 am on Wednesday, February 22

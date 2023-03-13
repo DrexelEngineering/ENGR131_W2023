@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Introduction of Enumerate
+# # 📝 Introduction of Enumerate
 
 # A skill necessary for programming is reading documentation to learn how to use functions. 
 # 
